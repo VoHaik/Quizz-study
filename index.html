@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ôn Thi Kinh Tế Chính Trị Mác - Lênin (MLN122) - Học Thuộc Lòng Siêu Tốc 496 Câu</title>
+  <meta name="description" content="Ứng dụng web ôn thi trắc nghiệm học thuộc lòng 496 câu hỏi môn Kinh tế chính trị Mác - Lênin (MLN122) siêu tốc cho sinh viên.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header Navbar -->
+    <header>
+      <div class="brand">
+        <div class="brand-icon">⚡</div>
+        <div>
+          <h1 class="brand-title">MLN122 - Ôn Thi Siêu Tốc</h1>
+          <div class="brand-subtitle">Học thuộc lòng 496 câu trắc nghiệm Kinh tế chính trị</div>
+        </div>
+      </div>
+
+      <nav class="nav-modes">
+        <button class="mode-tab active" data-mode="quick" id="tab-quick">⚡ Luyện Siêu Tốc</button>
+        <button class="mode-tab" data-mode="flashcard" id="tab-flashcard">🧠 Flashcards</button>
+        <button class="mode-tab" data-mode="mistakes" id="tab-mistakes">🎯 Câu Sai & Khó</button>
+        <button class="mode-tab" data-mode="exam" id="tab-exam">📝 Thi Thử (40 câu)</button>
+        <button class="mode-tab" data-mode="bank" id="tab-bank">🔍 Ngân Hàng Câu Hỏi</button>
+      </nav>
+
+      <div class="header-actions">
+        <select class="select-range" id="rangeSelect" title="Chọn dải câu hỏi để học">
+          <option value="all">Toàn bộ 496 câu</option>
+        </select>
+
+        <div class="custom-range-box" id="customRangeBox" style="display: none; align-items: center; gap: 0.4rem; background: rgba(15, 23, 42, 0.8); padding: 0.25rem 0.6rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Từ:</span>
+          <input type="number" id="customStart" value="1" min="1" max="496" style="width: 55px; background: rgba(255,255,255,0.08); border: 1px solid var(--border-subtle); border-radius: 4px; padding: 3px 6px; font-size: 0.85rem; text-align: center; color: #fff;">
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Đến:</span>
+          <input type="number" id="customEnd" value="150" min="1" max="496" style="width: 55px; background: rgba(255,255,255,0.08); border: 1px solid var(--border-subtle); border-radius: 4px; padding: 3px 6px; font-size: 0.85rem; text-align: center; color: #fff;">
+          <button class="btn-action btn-primary" id="applyCustomRangeBtn" style="padding: 0.3rem 0.7rem; font-size: 0.8rem; border-radius: 4px;">Áp dụng</button>
+        </div>
+
+        <button class="btn-action btn-primary" id="importModalBtn" style="padding: 0.4rem 0.85rem; font-size: 0.85rem; background: linear-gradient(135deg, var(--primary), var(--accent-purple)); border: none;" title="Chuyển đổi môn học hoặc import file bộ đề mới">
+          📁 Import / Đổi môn
+        </button>
+
+        <button class="btn-action btn-secondary" id="shuffleToggle" style="padding: 0.4rem 0.85rem; font-size: 0.85rem;" title="Bật/Tắt xáo trộn câu hỏi và đáp án">
+          🔀 <span id="shuffleStatus">Xáo trộn: TẮT</span>
+        </button>
+
+        <button class="btn-icon" id="soundToggle" title="Bật/Tắt âm thanh">🔊</button>
+        <button class="btn-icon" id="resetBtn" title="Reset tiến độ học">🔄</button>
+      </div>
+    </header>
+
+    <!-- Stats & Progress Meter -->
+    <section class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-icon total">📚</div>
+        <div>
+          <div class="stat-val" id="statTotal">496</div>
+          <div class="stat-lbl">Tổng số câu</div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon correct">✔</div>
+        <div>
+          <div class="stat-val" id="statCorrect">0</div>
+          <div class="stat-lbl">Đã thuộc</div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon wrong">✖</div>
+        <div>
+          <div class="stat-val" id="statWrong">0</div>
+          <div class="stat-lbl">Câu làm sai</div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon star">★</div>
+        <div>
+          <div class="stat-val" id="statStar">0</div>
+          <div class="stat-lbl">Đã ghi nhớ</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overall Progress Line -->
+    <div class="progress-container">
+      <div class="progress-info">
+        <span>Tiến độ học thuộc lòng</span>
+        <span id="progressText">Đã thuộc 0/496 câu (0%)</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Main Dynamic Views -->
+    <main>
+      <!-- View 1: Quick Practice Quiz -->
+      <section class="view-section active" id="view-quick">
+        <div id="quickQuizContainer" style="display: flex; flex-direction: column; flex: 1;">
+          <!-- Dynamically Rendered by JS -->
+        </div>
+      </section>
+
+      <!-- View 2: Flashcards Mode -->
+      <section class="view-section" id="view-flashcard">
+        <div style="display: flex; flex-direction: column; flex: 1; align-items: center;">
+          <div class="flashcard-container" id="flashcardContainer">
+            <!-- Dynamically Rendered by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- View 3: Mistakes Mode -->
+      <section class="view-section" id="view-mistakes">
+        <div id="mistakesContainer" style="display: flex; flex-direction: column; flex: 1;">
+          <!-- Uses renderQuickQuiz for mistakes -->
+        </div>
+      </section>
+
+      <!-- View 4: Exam Simulator -->
+      <section class="view-section" id="view-exam">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; background: var(--bg-card); padding: 1rem 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <div>
+            <h2 style="font-size: 1.2rem; font-weight: 700;">Đề Thi Thử Kinh Tế Chính Trị (40 Câu - 40 Phút)</h2>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Mô phỏng cấu trúc đề thi chính thức trên lớp.</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--accent-gold);" id="examTimer">40:00</div>
+            <button class="btn-action btn-primary" id="submitExamBtn">Nộp Bài Thi</button>
+          </div>
+        </div>
+
+        <div id="examQuestionsContainer">
+          <!-- Dynamically Rendered by JS -->
+        </div>
+      </section>
+
+      <!-- View 5: Question Bank & Search -->
+      <section class="view-section" id="view-bank">
+        <div class="search-bar">
+          <input type="text" class="search-input" id="searchInput" placeholder="🔎 Tìm kiếm từ khóa hoặc số câu (Ví dụ: 'giá trị thặng dư', 'Adam Smith', '120')...">
+        </div>
+
+        <div class="bank-list" id="bankList">
+          <!-- Dynamically Rendered by JS -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Import / Subject Switcher Modal -->
+  <div class="modal-backdrop" id="importModal" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; font-family: var(--font-heading);">📁 Quản Lý Bộ Đề & Import Dữ Liệu</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Chọn bộ đề sẵn có hoặc tải lên file Markdown / JSON mới</p>
+        </div>
+        <button class="modal-close" id="closeImportModalBtn">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <!-- Section 1: Presets -->
+        <div class="import-section">
+          <label class="section-label">📚 Bộ Đề Tích Hợp Sẵn:</label>
+          <div class="preset-buttons">
+            <button class="preset-btn active" data-preset="mln122" id="presetMln122">
+              <span class="preset-title">🇻🇳 MLN122 - Kinh Tế Chính Trị</span>
+              <span class="preset-sub">496 câu trắc nghiệm Mác - Lênin</span>
+            </button>
+            <button class="preset-btn" data-preset="ite302c" id="presetIte302c">
+              <span class="preset-title">🤖 ITE302c - Ethics in AI & Data Science</span>
+              <span class="preset-sub">394 câu trắc nghiệm (Chuẩn Nhung Hoàng)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Section 2: Drag & Drop File Upload -->
+        <div class="import-section">
+          <label class="section-label">📤 Tải Lên File Bộ Đề Mới (.md, .txt, .json):</label>
+          <div class="drop-zone" id="dropZone">
+            <div class="drop-zone-icon">📄</div>
+            <div class="drop-zone-text" id="dropZoneText">Kéo thả file <b>.md / .txt / .json</b> vào đây hoặc <span style="color: var(--primary); text-decoration: underline; cursor: pointer;">click để chọn file</span></div>
+            <input type="file" id="fileInput" accept=".md,.txt,.json" style="display: none;">
+          </div>
+        </div>
+
+        <!-- Section 3: Paste Text -->
+        <div class="import-section">
+          <label class="section-label">📝 Hoặc Dán Trực Tiếp Nội Dung Markdown / Quizlet / JSON:</label>
+          <textarea id="importTextarea" class="import-textarea" placeholder="Ví dụ Markdown:
+### Câu 1
+**Câu hỏi:** Nội dung câu hỏi...
+- A. Đáp án A
+- B. Đáp án B
+**Đáp án đúng:** `A`"></textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-action btn-secondary" id="cancelImportBtn">Hủy</button>
+        <button class="btn-action btn-primary" id="confirmImportBtn" style="background: linear-gradient(135deg, var(--primary), var(--accent-cyan));">⚡ Nhập & Học Ngay</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="parser.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
