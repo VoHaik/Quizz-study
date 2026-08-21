@@ -84,18 +84,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function getQuestionWithOptionsShuffled(q) {
-    const shuffledOpts = shuffleArray(q.options.map(o => ({ ...o })));
+    const optsWithOrigKey = q.options.map(o => ({
+      originalKey: o.key,
+      text: o.text
+    }));
 
-    const originalCorrectTexts = q.options
-      .filter(o => q.correctAnswers.includes(o.key))
-      .map(o => o.text);
+    const shuffledOpts = shuffleArray(optsWithOrigKey);
 
     const keys = ['A', 'B', 'C', 'D', 'E'];
     const newCorrectAnswers = [];
 
     const newOptions = shuffledOpts.map((opt, idx) => {
       const newKey = keys[idx];
-      if (originalCorrectTexts.includes(opt.text)) {
+      if (q.correctAnswers.includes(opt.originalKey)) {
         newCorrectAnswers.push(newKey);
       }
       return {
@@ -283,6 +284,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       sel.appendChild(opt);
     }
 
+    const multiSelectCount = allQuestions.filter(q => (q.correctAnswers && q.correctAnswers.length >= 2) || q.question.toLowerCase().includes('select two') || q.question.toLowerCase().includes('select 2')).length;
+    if (multiSelectCount > 0) {
+      const multiOpt = document.createElement('option');
+      multiOpt.value = 'multi_select';
+      multiOpt.textContent = `✌️ Câu hỏi chọn 2 đáp án (${multiSelectCount} câu)`;
+      sel.appendChild(multiOpt);
+    }
+
     const customOpt = document.createElement('option');
     customOpt.value = 'custom';
     customOpt.textContent = '⚙️ Tùy chỉnh (Nhập dải câu...)';
@@ -296,6 +305,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         filterActiveQuestions(true, true);
       }
     };
+
+    const multiSelectBtn = document.getElementById('multiSelectBtn');
+    if (multiSelectBtn) {
+      multiSelectBtn.onclick = () => {
+        if (sel) {
+          sel.value = 'multi_select';
+          if (customBox) customBox.style.display = 'none';
+          filterActiveQuestions(true, true);
+        }
+      };
+    }
 
     const applyBtn = document.getElementById('applyCustomRangeBtn');
     if (applyBtn) {
@@ -340,6 +360,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       const combinedIds = Array.from(new Set([...mistakeIds, ...starredIds, ...wrongFromAnswered]));
       baseList = allQuestions.filter(q => combinedIds.includes(q.id));
+    } else if (val === 'multi_select') {
+      baseList = allQuestions.filter(q => (q.correctAnswers && q.correctAnswers.length >= 2) || q.question.toLowerCase().includes('select two') || q.question.toLowerCase().includes('select 2'));
     } else if (val === 'custom') {
       let cStart = parseInt(document.getElementById('customStart').value, 10) || 1;
       let cEnd = parseInt(document.getElementById('customEnd').value, 10) || 496;

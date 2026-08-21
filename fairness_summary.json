@@ -1,0 +1,1782 @@
+{
+  "fairnessMetrics": [
+    {
+      "id": 1,
+      "question": "Which of the following principles are most commonly cited in AI-based ethical frameworks?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Happiness and spiritual contentment"
+        },
+        {
+          "key": "B",
+          "text": "Human control and autonomy"
+        },
+        {
+          "key": "C",
+          "text": "Fairness and non-discrimination"
+        },
+        {
+          "key": "D",
+          "text": "Transparency and explainability"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 11,
+      "question": "Why is a model that has been overfitted to its training data a source of fairness risk?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because the model is too complex."
+        },
+        {
+          "key": "B",
+          "text": "Because the model includes too much noise."
+        },
+        {
+          "key": "C",
+          "text": "Because the model won't generalize to the entire population."
+        },
+        {
+          "key": "D",
+          "text": "Because the model has a temporal bias."
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "rawAnswer": "C"
+    },
+    {
+      "id": 41,
+      "question": "Which of the following describes the AI Fairness 360 project?",
+      "options": [
+        {
+          "key": "A",
+          "text": "An AI product that represents a completely fair model for AI practitioners to use as a benchmark."
+        },
+        {
+          "key": "B",
+          "text": "A checklist for machine learning practitioners to follow when training fair AI models."
+        },
+        {
+          "key": "C",
+          "text": "A global initiative that promotes fairness in AI through seminars, conferences, and other community-driven activities."
+        },
+        {
+          "key": "D",
+          "text": "An open source library that evaluates models for bias and provides mitigation tactics to reduce that bias."
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 62,
+      "question": "Which of the following is a best practice for incorporating diversity, equity, and inclusiveness in communication?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ensure multiple groups of people based on race, gender , etc., are communicating in different ways"
+        },
+        {
+          "key": "B",
+          "text": "Focus on the organization's intended message rather than incorporating feedback from external stakeholders"
+        },
+        {
+          "key": "C",
+          "text": "Reassure customers that the organization is diverse, equitable, and inclusive"
+        },
+        {
+          "key": "D",
+          "text": "Promote an organizational culture that embraces these values"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 195,
+      "question": "In 2019,_____% of equity-futures and cash-equity trades were executed by algorithms",
+      "options": [
+        {
+          "key": "A",
+          "text": "1-5%"
+        },
+        {
+          "key": "B",
+          "text": "80-90%"
+        },
+        {
+          "key": "C",
+          "text": "20-30%"
+        },
+        {
+          "key": "D",
+          "text": "11-17%"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 199,
+      "question": "If we know one group's worthiness score has been artificially inflated, one solution for fairness is to",
+      "options": [
+        {
+          "key": "A",
+          "text": "creating separate decision thresholds for each group"
+        },
+        {
+          "key": "B",
+          "text": "remove that group from the dataset"
+        },
+        {
+          "key": "C",
+          "text": "balance the error rate by prioritizing the other group"
+        },
+        {
+          "key": "D",
+          "text": "Add the inflation to the other data"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 221,
+      "question": "In machine learning, what do we plot on the X,Y axis to determine a pareto curve?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rejection rate, false-positive rate"
+        },
+        {
+          "key": "B",
+          "text": "Rejection rate, subgroup fairness rate"
+        },
+        {
+          "key": "C",
+          "text": "Error rate, true positive rate"
+        },
+        {
+          "key": "D",
+          "text": "Error rate, rejection rate"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 235,
+      "question": "A benefit of glass-box models is that if an attribute is skewing the fairness of a decision, a human agent may choose to",
+      "options": [
+        {
+          "key": "A",
+          "text": "alert the team"
+        },
+        {
+          "key": "B",
+          "text": "trust it"
+        },
+        {
+          "key": "C",
+          "text": "ignore it"
+        },
+        {
+          "key": "D",
+          "text": "re-run the algorithm without it"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 256,
+      "question": "Fairness in machine learning can protect groups from bias, but can still harm",
+      "options": [
+        {
+          "key": "A",
+          "text": "training datasets"
+        },
+        {
+          "key": "B",
+          "text": "individuals within those groups"
+        },
+        {
+          "key": "C",
+          "text": "researchers"
+        },
+        {
+          "key": "D",
+          "text": "future models"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 261,
+      "question": "What can be learned from a predictive model should not change if the _________ is either included or excluded in the training set",
+      "options": [
+        {
+          "key": "A",
+          "text": "individual's data"
+        },
+        {
+          "key": "B",
+          "text": "biased dataset"
+        },
+        {
+          "key": "C",
+          "text": "model fairness score"
+        },
+        {
+          "key": "D",
+          "text": "dataset filter"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 263,
+      "question": "In fixing the Word2Vec model, we have an advantage over a traditional black box model in that",
+      "options": [
+        {
+          "key": "A",
+          "text": "we have access to the training data"
+        },
+        {
+          "key": "B",
+          "text": "we can decide which inputs to use"
+        },
+        {
+          "key": "C",
+          "text": "we can generate a fairness score"
+        },
+        {
+          "key": "D",
+          "text": "we can see the decision-making model"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 276,
+      "question": "Why is it impractical to protect all possible subgroups in predictive models?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fairness scores won't be high enough to be reasonable"
+        },
+        {
+          "key": "B",
+          "text": "Accuracy will be lowered beyond a reasonable rate"
+        },
+        {
+          "key": "C",
+          "text": "There won't be enough data to reflect each subgroup"
+        },
+        {
+          "key": "D",
+          "text": "Individuals do not need protection from predictive models"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 277,
+      "question": "Delete unused data __________ is a method of data minimization",
+      "options": [
+        {
+          "key": "A",
+          "text": "early and often"
+        },
+        {
+          "key": "B",
+          "text": "before threat modeling"
+        },
+        {
+          "key": "C",
+          "text": "before modeling"
+        },
+        {
+          "key": "D",
+          "text": "after fairness preparations"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 289,
+      "question": "How can AI uphold justice?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The more AI-based products being used in the justice system, the more justice can be upheld."
+        },
+        {
+          "key": "B",
+          "text": "AI systems can be designed from the start to help promote fairness and minimize bias."
+        },
+        {
+          "key": "C",
+          "text": "AI systems can replace human judges, who are often biased."
+        },
+        {
+          "key": "D",
+          "text": "AI can automate many of the clerical tasks involved in the justice system."
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 313,
+      "question": "Which type of fairness fails to address merit while maintaining accuracy?",
+      "options": [
+        {
+          "key": "A",
+          "text": "equality of prediction rate"
+        },
+        {
+          "key": "B",
+          "text": "statistical parity"
+        },
+        {
+          "key": "C",
+          "text": "equality of false positives"
+        },
+        {
+          "key": "D",
+          "text": "error rate parity"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 318,
+      "question": "Predictive loops in marketplace models like dating apps are especially susceptible to bias due to",
+      "options": [
+        {
+          "key": "A",
+          "text": "fairness quotients"
+        },
+        {
+          "key": "B",
+          "text": "engagement levels"
+        },
+        {
+          "key": "C",
+          "text": "marketplace forces"
+        },
+        {
+          "key": "D",
+          "text": "short feedback cycles"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 319,
+      "question": "A goal of a fair model's accuracy standards is to",
+      "options": [
+        {
+          "key": "A",
+          "text": "minimize the error rate as long as the training data isn't affected"
+        },
+        {
+          "key": "B",
+          "text": "minimize the quality metrics as long as the quantity metrics aren't affected"
+        },
+        {
+          "key": "C",
+          "text": "minimize the fairness score as long as the error rate isn't affected"
+        },
+        {
+          "key": "D",
+          "text": "minimize the error rate as long as parity is obtained"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 320,
+      "question": "Fairness is best defined as just treatment without __________",
+      "options": [
+        {
+          "key": "A",
+          "text": "bias and contempt"
+        },
+        {
+          "key": "B",
+          "text": "prejudice and favoritism"
+        },
+        {
+          "key": "C",
+          "text": "favoritism or discrimination"
+        },
+        {
+          "key": "D",
+          "text": "discrimination and prejudice"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "rawAnswer": "C"
+    },
+    {
+      "id": 321,
+      "question": "What tools do researchers have to evaluate the fairness of existing black box models?(073-356-8678)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Evaluate inputs, evaluate data"
+        },
+        {
+          "key": "B",
+          "text": "Change inputs, evaluate training data"
+        },
+        {
+          "key": "C",
+          "text": "Change training data, evaluate outputs"
+        },
+        {
+          "key": "D",
+          "text": "Change inputs, evaluate outputs"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 322,
+      "question": "What shared principle from ethical frameworks is the primary reason for the consideration of human rights when building AI systems?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fairness/non-discrimination"
+        },
+        {
+          "key": "B",
+          "text": "Privacy"
+        },
+        {
+          "key": "C",
+          "text": "Transparency"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 337,
+      "question": "Which type of fairness would make sense when dividing tickets evenly between groups?",
+      "options": [
+        {
+          "key": "A",
+          "text": "equality of false positives"
+        },
+        {
+          "key": "B",
+          "text": "equality of prediction rate"
+        },
+        {
+          "key": "C",
+          "text": "statistical parity"
+        },
+        {
+          "key": "D",
+          "text": "error rate parity"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "rawAnswer": "C"
+    },
+    {
+      "id": 342,
+      "question": "Differential privacy works by adding what to a dataset?",
+      "options": [
+        {
+          "key": "A",
+          "text": "filters"
+        },
+        {
+          "key": "B",
+          "text": "fairness scoring"
+        },
+        {
+          "key": "C",
+          "text": "noise"
+        },
+        {
+          "key": "D",
+          "text": "k-anonymity"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "rawAnswer": "C"
+    },
+    {
+      "id": 346,
+      "question": "A model that prioritizes equality on the outputs uses",
+      "options": [
+        {
+          "key": "A",
+          "text": "error rate parity"
+        },
+        {
+          "key": "B",
+          "text": "equality of prediction rate"
+        },
+        {
+          "key": "C",
+          "text": "equality of assignment rate"
+        },
+        {
+          "key": "D",
+          "text": "statistical parity"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 352,
+      "question": "Why is equity an important principle in emerging tech ethics?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It increases brand value"
+        },
+        {
+          "key": "B",
+          "text": "It ensures fairness in access and outcomes"
+        },
+        {
+          "key": "C",
+          "text": "It simplifies design"
+        },
+        {
+          "key": "D",
+          "text": "It boosts marketing campaigns"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 368,
+      "question": "Which technique helps improve algorithmic fairness?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Using larger datasets only"
+        },
+        {
+          "key": "B",
+          "text": "Bias testing and diverse training data"
+        },
+        {
+          "key": "C",
+          "text": "Increasing processing speed"
+        },
+        {
+          "key": "D",
+          "text": "Reducing system complexity"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 372,
+      "question": "If one group comprises the majority of the training data, they will skew the dataset and give the model",
+      "options": [
+        {
+          "key": "A",
+          "text": "less fairness for that group"
+        },
+        {
+          "key": "B",
+          "text": "more confidence about that group"
+        },
+        {
+          "key": "C",
+          "text": "less confidence about that group"
+        },
+        {
+          "key": "D",
+          "text": "more fairness for that group"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    }
+  ],
+  "biasTypes": [
+    {
+      "id": 26,
+      "question": "How can confirmation bias impact us socially? (Select two.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "It can prevent us from being social with other people."
+        },
+        {
+          "key": "B",
+          "text": "It can impede socio-political cooperation."
+        },
+        {
+          "key": "C",
+          "text": "It can lead to a diverse set of friends."
+        },
+        {
+          "key": "D",
+          "text": "It can lead to groupthink, which can in turn halt forward progress."
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "D"
+      ],
+      "rawAnswer": "BD"
+    },
+    {
+      "id": 43,
+      "question": "Which type of bias causes people to trust an automated decision-making system (ADS) over a human's decision?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Automation bias"
+        },
+        {
+          "key": "B",
+          "text": "Confirmation bias"
+        },
+        {
+          "key": "C",
+          "text": "Complacency bias"
+        },
+        {
+          "key": "D",
+          "text": "Implicit bias"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 60,
+      "question": "How does the \"virtuous cycle\" that benefits Big Tech operate?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Better classes of customers lead to richer and more refined data for algorithmic systems."
+        },
+        {
+          "key": "B",
+          "text": "Organizations write algorithms with fewer biases, which leads to fairer outcomes."
+        },
+        {
+          "key": "C",
+          "text": "By acting virtuous, the public respects Big Tech more and more."
+        },
+        {
+          "key": "D",
+          "text": "Data-driven algorithms improve solutions, leading to new customers, and better data."
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 73,
+      "question": "Which of the following describes the technique of homomorphic encryption?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A method of mitigating biased algorithms through enhanced secrecy."
+        },
+        {
+          "key": "B",
+          "text": "A method of swapping public and private keys between hosts."
+        },
+        {
+          "key": "C",
+          "text": "A method of cryptography that hides data inside other data."
+        },
+        {
+          "key": "D",
+          "text": "A method of performing operations on encrypted data."
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 74,
+      "question": "What causes bias?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Biases are caused by the opinions of our families."
+        },
+        {
+          "key": "B",
+          "text": "Bias is biological, we are born with it."
+        },
+        {
+          "key": "C",
+          "text": "Bias is caused by the media."
+        },
+        {
+          "key": "D",
+          "text": "Biases are learned from our families, our social groups, and the media."
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 76,
+      "question": "Why is the question of robot rights and emancipation one that isn't as important as addressing issues of bias, privacy, transparency, and other principles discussed in the various ethical frameworks?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Humans are anthropocentric and don't want to extend rights to other sentient entities."
+        },
+        {
+          "key": "B",
+          "text": "These rights necessitate that robots become sentient entities, which is currently not feasible."
+        },
+        {
+          "key": "C",
+          "text": "Robots are mechanical instruments and therefore don't deserve to have rights."
+        },
+        {
+          "key": "D",
+          "text": "There is no legal precedent for granting rights to entities that are not humans."
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 82,
+      "question": "Why are groups like race and religion considered protected classes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "These groups have been used as the basis for wholesale discrimination."
+        },
+        {
+          "key": "B",
+          "text": "These groups can be used to personally identify someone."
+        },
+        {
+          "key": "C",
+          "text": "People use these groups as the basis for their identities."
+        },
+        {
+          "key": "D",
+          "text": "Organizations are legally not allowed to collect information about these groups."
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 85,
+      "question": "Which of the following negative consequences is the direct result of failing to be truthful in communicating about a crisis?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Reputational damage"
+        },
+        {
+          "key": "B",
+          "text": "Discrimination"
+        },
+        {
+          "key": "C",
+          "text": "Financial loss"
+        },
+        {
+          "key": "D",
+          "text": "Security risk"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 120,
+      "question": "Which of the following are potential training data inadequacies that you should communicate to your users in support of transparency? (Select two.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "The amount of time it took to collect the data."
+        },
+        {
+          "key": "B",
+          "text": "Any missing values in the dataset and how they were handled."
+        },
+        {
+          "key": "C",
+          "text": "The relatively large size of a dataset used in training."
+        },
+        {
+          "key": "D",
+          "text": "Any known bias in the sample data."
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "D"
+      ],
+      "rawAnswer": "BD"
+    },
+    {
+      "id": 122,
+      "question": "In using AI-enabled solutions within the context of medical imaging analysis, which of the following is the most important ethical consideration?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Explainability"
+        },
+        {
+          "key": "B",
+          "text": "Privacy"
+        },
+        {
+          "key": "C",
+          "text": "Security"
+        },
+        {
+          "key": "D",
+          "text": "Bias"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 128,
+      "question": "Which of the following describes an illusory-correlation bias?",
+      "options": [
+        {
+          "key": "A",
+          "text": "When you incorrectly assume a correlation because there is an illusory confounding variable."
+        },
+        {
+          "key": "B",
+          "text": "When you correlate variables that do not exist in your data set."
+        },
+        {
+          "key": "C",
+          "text": "When you correlate a variable with a confounding variable."
+        },
+        {
+          "key": "D",
+          "text": "When you incorrectly assume a cause and effect relationship because two variables are correlated."
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 147,
+      "question": "Which of the following describe important aspects in the role of an ethical AI engineer? (Select two.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Building and maintaining computational hardware."
+        },
+        {
+          "key": "B",
+          "text": "Writing new equations to express intelligence."
+        },
+        {
+          "key": "C",
+          "text": "Keeping up with the latest developments and vulnerabilities."
+        },
+        {
+          "key": "D",
+          "text": "Cleaning and sorting data, and auditing for bias."
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "D"
+      ],
+      "rawAnswer": "CD"
+    },
+    {
+      "id": 150,
+      "question": "In which of the following could STRIDE or VAST classifications be applied?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Network optimization tools"
+        },
+        {
+          "key": "B",
+          "text": "Black box mitigation methods"
+        },
+        {
+          "key": "C",
+          "text": "Bias mitigation techniques"
+        },
+        {
+          "key": "D",
+          "text": "Threat modeling or analysis tools"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 172,
+      "question": "When your collected data doesn't accurately reflect the full environment, you're experiencing",
+      "options": [
+        {
+          "key": "A",
+          "text": "prejudice bias"
+        },
+        {
+          "key": "B",
+          "text": "observer bias"
+        },
+        {
+          "key": "C",
+          "text": "exclusion bias"
+        },
+        {
+          "key": "D",
+          "text": "sample bias"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 184,
+      "question": "In presenting an audit report, a researcher would",
+      "options": [
+        {
+          "key": "A",
+          "text": "prevent the model from launching"
+        },
+        {
+          "key": "B",
+          "text": "score the weight of input attributes on output"
+        },
+        {
+          "key": "C",
+          "text": "de-bias the results"
+        },
+        {
+          "key": "D",
+          "text": "re-train the model"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 194,
+      "question": "Which of the following describes the purpose of a STEEPV analysis?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To perform a strategic analysis of user needs and behaviors."
+        },
+        {
+          "key": "B",
+          "text": "To perform a strategic analysis of how bias can manifest in AI products."
+        },
+        {
+          "key": "C",
+          "text": "To perform a strategic analysis of how internal office politics impact business operations."
+        },
+        {
+          "key": "D",
+          "text": "To perform a strategic analysis of how external environments impact business operations."
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 206,
+      "question": "A ___ model can still be unfair even though it won't explicitly know which groups are being inputted into the system",
+      "options": [
+        {
+          "key": "A",
+          "text": "blind attribute"
+        },
+        {
+          "key": "B",
+          "text": "single attribute"
+        },
+        {
+          "key": "C",
+          "text": "false-negative optimized"
+        },
+        {
+          "key": "D",
+          "text": "biased training"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 207,
+      "question": "The nature of a predictive model may reveal____",
+      "options": [
+        {
+          "key": "A",
+          "text": "the ethics of the individual inputs"
+        },
+        {
+          "key": "B",
+          "text": "the researchers behind it"
+        },
+        {
+          "key": "C",
+          "text": "the data it is trained on"
+        },
+        {
+          "key": "D",
+          "text": "the algorithm's bias"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "rawAnswer": "C"
+    },
+    {
+      "id": 208,
+      "question": "The tendency to only seek attributes in existing collected data is known as",
+      "options": [
+        {
+          "key": "A",
+          "text": "exclusion bias"
+        },
+        {
+          "key": "B",
+          "text": "observer bias"
+        },
+        {
+          "key": "C",
+          "text": "availability bias"
+        },
+        {
+          "key": "D",
+          "text": "prejudice bias"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "rawAnswer": "C"
+    },
+    {
+      "id": 210,
+      "question": "Which of the following ethical considerations should have priority in an emergency situation like the use of contact-tracing solutions during a pandemic? (Select two.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Privacy"
+        },
+        {
+          "key": "B",
+          "text": "Bias"
+        },
+        {
+          "key": "C",
+          "text": "Explainability"
+        },
+        {
+          "key": "D",
+          "text": "Accountability"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "D"
+      ],
+      "rawAnswer": "AD"
+    },
+    {
+      "id": 212,
+      "question": "Which of the following is one explanation for why cognitive biases exist?",
+      "options": [
+        {
+          "key": "A",
+          "text": "We use them to help remember things."
+        },
+        {
+          "key": "B",
+          "text": "We receive too much information and are overloaded."
+        },
+        {
+          "key": "C",
+          "text": "They are taught to us in school."
+        },
+        {
+          "key": "D",
+          "text": "They help us think logically instead of emotionally."
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 217,
+      "question": "For a model to make decisions that involve human life, the model needs",
+      "options": [
+        {
+          "key": "A",
+          "text": "programmed reflexive decision making ability"
+        },
+        {
+          "key": "B",
+          "text": "a list of bias tests to run against possible wrong outcomes"
+        },
+        {
+          "key": "C",
+          "text": "enough computing power to make correct predictions 100% of the time"
+        },
+        {
+          "key": "D",
+          "text": "a moral code of reasoning and priorities"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 225,
+      "question": "Which of the following are important ethical elements to safeguard within ethical AI systems? (Select two.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "The number of layers, tensors, or parameters used in a model."
+        },
+        {
+          "key": "B",
+          "text": "Performance and optimization."
+        },
+        {
+          "key": "C",
+          "text": "Transparency and explainability, balanced with privacy."
+        },
+        {
+          "key": "D",
+          "text": "Accountability and management of bias."
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "D"
+      ],
+      "rawAnswer": "CD"
+    },
+    {
+      "id": 244,
+      "question": "In a classification model that determines whether or not a customer qualifies for a coupon, a significantly lower percentage of males qualified than females. Which of the following types of discrimination does this outcome potentially represent?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Disparate impact"
+        },
+        {
+          "key": "B",
+          "text": "Disparate treatment"
+        },
+        {
+          "key": "C",
+          "text": "Disparate non-impact"
+        },
+        {
+          "key": "D",
+          "text": "Disparate mistreatment"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 252,
+      "question": "\"purposefully biased\" algorithm used to identify unfair attributes is known as",
+      "options": [
+        {
+          "key": "A",
+          "text": "a discriminatory algorithm"
+        },
+        {
+          "key": "B",
+          "text": "an adversarial algorithm"
+        },
+        {
+          "key": "C",
+          "text": "an aggregate algorithm"
+        },
+        {
+          "key": "D",
+          "text": "a predictive model"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 287,
+      "question": "Which of the following types of bias emerges when the same data is sampled over and over again, limiting a model's perspective?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Temporal bias"
+        },
+        {
+          "key": "B",
+          "text": "Implicit bias"
+        },
+        {
+          "key": "C",
+          "text": "Confirmation bias"
+        },
+        {
+          "key": "D",
+          "text": "Reinforcement bias"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 293,
+      "question": "Dating algorithms become biased mostly through offering users _________",
+      "options": [
+        {
+          "key": "A",
+          "text": "access to separate data models"
+        },
+        {
+          "key": "B",
+          "text": "unlimited matches per day"
+        },
+        {
+          "key": "C",
+          "text": "collaborative filtering"
+        },
+        {
+          "key": "D",
+          "text": "different ways to match with users"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "rawAnswer": "C"
+    },
+    {
+      "id": 299,
+      "question": "One way to avoid feedback loops in machine learning is to",
+      "options": [
+        {
+          "key": "A",
+          "text": "investigate exclusion bias"
+        },
+        {
+          "key": "B",
+          "text": "scrub datasets after each decision"
+        },
+        {
+          "key": "C",
+          "text": "destroy previous training data"
+        },
+        {
+          "key": "D",
+          "text": "label outputs to prevent re-training bias"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 300,
+      "question": "An example of automation bias is",
+      "options": [
+        {
+          "key": "A",
+          "text": "using scraped twitter data over survey data"
+        },
+        {
+          "key": "B",
+          "text": "using biased survey data instead of parsed survey data"
+        },
+        {
+          "key": "C",
+          "text": "using parsed twitter data over parsed Facebook data"
+        },
+        {
+          "key": "D",
+          "text": "using new data over existing data"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 306,
+      "question": "Which of the following are best practices for incorporating inclusive design in AI projects? (Select two.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Leverage customer input to reduce bias."
+        },
+        {
+          "key": "B",
+          "text": "Consider bias a spectrum."
+        },
+        {
+          "key": "C",
+          "text": "Keep machines and humans separate."
+        },
+        {
+          "key": "D",
+          "text": "Solve for many, extend to one."
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ],
+      "rawAnswer": "AB"
+    },
+    {
+      "id": 323,
+      "question": "The ____ theorem states that all models have the same error rate when averaged over all possible data generating distributions.",
+      "options": [
+        {
+          "key": "A",
+          "text": "biased aggregate"
+        },
+        {
+          "key": "B",
+          "text": "pareto efficiency"
+        },
+        {
+          "key": "C",
+          "text": "zero handouts"
+        },
+        {
+          "key": "D",
+          "text": "no free lunch"
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "rawAnswer": "D"
+    },
+    {
+      "id": 325,
+      "question": "As a cognitive bias, humans see lack of context/meaning around a piece of information and tend to",
+      "options": [
+        {
+          "key": "A",
+          "text": "fill in gaps with existing knowledge"
+        },
+        {
+          "key": "B",
+          "text": "use biased sources of research"
+        },
+        {
+          "key": "C",
+          "text": "seek authority figures"
+        },
+        {
+          "key": "D",
+          "text": "disagree with their previous beliefs"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 326,
+      "question": "An auditing model is an example of a____bias mitigation method",
+      "options": [
+        {
+          "key": "A",
+          "text": "sub-processing"
+        },
+        {
+          "key": "B",
+          "text": "in-processing"
+        },
+        {
+          "key": "C",
+          "text": "post-processing"
+        },
+        {
+          "key": "D",
+          "text": "pre-processing"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "rawAnswer": "C"
+    },
+    {
+      "id": 327,
+      "question": "A model that equalizes the number of mistakes it makes for each subgroup to reduce harm is deciding on",
+      "options": [
+        {
+          "key": "A",
+          "text": "equality of true outcomes"
+        },
+        {
+          "key": "B",
+          "text": "equality of false negatives"
+        },
+        {
+          "key": "C",
+          "text": "equality of training data"
+        },
+        {
+          "key": "D",
+          "text": "equality of prediction bias"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 328,
+      "question": "Which of the following are actions that can help combat implicit bias? (Select three.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Exposing yourself to \"counter-stereotypical\" examples."
+        },
+        {
+          "key": "B",
+          "text": "Cultivating awareness of your own biases."
+        },
+        {
+          "key": "C",
+          "text": "Surrounding yourself with others who have similar experiences."
+        },
+        {
+          "key": "D",
+          "text": "Interacting with diverse groups of people."
+        },
+        {
+          "key": "E",
+          "text": "Obtaining your information from the same one or two media sources that your family and friends access."
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "D",
+        "A"
+      ],
+      "rawAnswer": "BDA"
+    },
+    {
+      "id": 333,
+      "question": "What is non-maleficence?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The principle of doing no harm."
+        },
+        {
+          "key": "B",
+          "text": "The principle of having no bias."
+        },
+        {
+          "key": "C",
+          "text": "The principle of having no security risk."
+        },
+        {
+          "key": "D",
+          "text": "The principle of having security risk."
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 343,
+      "question": "Are criminal justice risk assessments race-neutral?",
+      "options": [
+        {
+          "key": "A",
+          "text": "No, the data is biased as it reflects historical bias."
+        },
+        {
+          "key": "B",
+          "text": "Yes, technology in itself is not racist."
+        },
+        {
+          "key": "C",
+          "text": "Yes, algorithms replace human judgement and they are unbiased."
+        },
+        {
+          "key": "D",
+          "text": "No, it is designed with intention to be unfair ."
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 348,
+      "question": "For a model to clean, parse, and self-train it's own dataset while remaining impartial, the model needs",
+      "options": [
+        {
+          "key": "A",
+          "text": "more powerful computing algorithms to auto-scrub data"
+        },
+        {
+          "key": "B",
+          "text": "a list of bias and domain tests to run and adjust for"
+        },
+        {
+          "key": "C",
+          "text": "10x the amount of data"
+        },
+        {
+          "key": "D",
+          "text": "a test for recency bias"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 359,
+      "question": "Which type of bias occurs when training data is not representative of the population?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Confirmation bias"
+        },
+        {
+          "key": "B",
+          "text": "Selection bias"
+        },
+        {
+          "key": "C",
+          "text": "Anchoring bias"
+        },
+        {
+          "key": "D",
+          "text": "Availability bias"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "rawAnswer": "B"
+    },
+    {
+      "id": 367,
+      "question": "Which psychological reason contributes to automation bias?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Over-reliance on technology"
+        },
+        {
+          "key": "B",
+          "text": "Fear of technology"
+        },
+        {
+          "key": "C",
+          "text": "Lack of technical skills"
+        },
+        {
+          "key": "D",
+          "text": "Distrust in human judgment"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    },
+    {
+      "id": 371,
+      "question": "What is one outcome of not considering ethics in algorithm design?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lower electricity bills"
+        },
+        {
+          "key": "B",
+          "text": "Enhanced system performance"
+        },
+        {
+          "key": "C",
+          "text": "Discriminatory or unsafe results"
+        },
+        {
+          "key": "D",
+          "text": "Better customer loyalty"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "rawAnswer": "C"
+    },
+    {
+      "id": 386,
+      "question": "What is the impact of biased algorithms on decision-making?",
+      "options": [
+        {
+          "key": "A",
+          "text": "They can lead to unfair and discriminatory outcomes"
+        },
+        {
+          "key": "B",
+          "text": "They enhance the precision and accuracy of decisions"
+        },
+        {
+          "key": "C",
+          "text": "They ensure all stakeholders are considered equally"
+        },
+        {
+          "key": "D",
+          "text": "They guarantee privacy and security in all data processes"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "rawAnswer": "A"
+    }
+  ]
+}
