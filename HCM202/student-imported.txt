@@ -1,0 +1,2616 @@
+{
+  "success": true,
+  "message": "Import completed: 260 succeeded, 0 failed. Allocated 0 tokens.",
+  "data": {
+    "totalRows": 260,
+    "successCount": 260,
+    "failureCount": 0,
+    "totalTokensAllocated": 0,
+    "remainingSchoolTokens": 19556000,
+    "errors": [],
+    "successfulAccounts": [
+      {
+        "uid": "4990301f-c12a-4407-8773-c38c1373ad53",
+        "studentCode": "LHP_HS2600001",
+        "userName": "lhp_hs_lhp_hs2600001",
+        "fullName": "Nguyễn Tuyết Ly",
+        "email": "lhp_hs_lhp_hs2600001@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 11000,
+        "initialPassword": "LHP_HS2600001@2026"
+      },
+      {
+        "uid": "97b5a374-66d9-4ac8-a7ab-8a0bb146ebc0",
+        "studentCode": "LHP_HS2600002",
+        "userName": "lhp_hs_lhp_hs2600002",
+        "fullName": "Phan Đức Trung",
+        "email": "lhp_hs_lhp_hs2600002@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600002@2026"
+      },
+      {
+        "uid": "74a09bb2-3f7d-44f5-88c2-ca61e6390892",
+        "studentCode": "LHP_HS2600003",
+        "userName": "lhp_hs_lhp_hs2600003",
+        "fullName": "Nguyễn Ngọc Thảo",
+        "email": "lhp_hs_lhp_hs2600003@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "StudentPass@489"
+      },
+      {
+        "uid": "65536ee0-b53e-47f0-8e9a-3f5370445cca",
+        "studentCode": "LHP_HS2600004",
+        "userName": "lhp_hs_lhp_hs2600004",
+        "fullName": "Dương Thanh Duyên",
+        "email": "lhp_hs_lhp_hs2600004@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600004@2026"
+      },
+      {
+        "uid": "7f33f9d6-d9e0-47f1-b695-8660a8f09ffa",
+        "studentCode": "LHP_HS2600005",
+        "userName": "lhp_hs_lhp_hs2600005",
+        "fullName": "Trần Diệu Huyền",
+        "email": "lhp_hs_lhp_hs2600005@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600005@2026"
+      },
+      {
+        "uid": "d2317c49-b1c4-46d5-9e93-14a091ba59ee",
+        "studentCode": "LHP_HS2600006",
+        "userName": "lhp_hs_lhp_hs2600006",
+        "fullName": "Võ Tiến Đạt",
+        "email": "lhp_hs_lhp_hs2600006@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600006@2026"
+      },
+      {
+        "uid": "84066140-828d-4f8e-9a3f-71a01825c1b2",
+        "studentCode": "LHP_HS2600007",
+        "userName": "lhp_hs_lhp_hs2600007",
+        "fullName": "Bùi Trọng Dũng",
+        "email": "lhp_hs_lhp_hs2600007@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600007@2026"
+      },
+      {
+        "uid": "dbfb93ac-e6a5-4da8-9a38-2e38324687d4",
+        "studentCode": "LHP_HS2600008",
+        "userName": "lhp_hs_lhp_hs2600008",
+        "fullName": "Hoàng Đức Tùng",
+        "email": "lhp_hs_lhp_hs2600008@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600008@2026"
+      },
+      {
+        "uid": "c4c51d5a-23b4-40b0-8e5e-21b347cf05f5",
+        "studentCode": "LHP_HS2600009",
+        "userName": "lhp_hs_lhp_hs2600009",
+        "fullName": "Lê Trọng Dũng",
+        "email": "lhp_hs_lhp_hs2600009@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600009@2026"
+      },
+      {
+        "uid": "375cf2ae-b9ef-4864-ae96-48df90f5c473",
+        "studentCode": "LHP_HS2600010",
+        "userName": "lhp_hs_lhp_hs2600010",
+        "fullName": "Đoàn Thị Duyên",
+        "email": "duyen.doan201065@gmail.com",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600010@2026"
+      },
+      {
+        "uid": "fc5ab6d1-16ef-4ec6-96e7-0d3f7eaa3b8b",
+        "studentCode": "LHP_HS2600011",
+        "userName": "lhp_hs_lhp_hs2600011",
+        "fullName": "Đặng Diệu Trinh",
+        "email": "lhp_hs_lhp_hs2600011@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600011@2026"
+      },
+      {
+        "uid": "38d00ded-848a-4485-b359-73682f9ea60e",
+        "studentCode": "LHP_HS2600012",
+        "userName": "lhp_hs_lhp_hs2600012",
+        "fullName": "Lý Thị Duyên",
+        "email": "duyen.ly201082@gmail.com",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@597"
+      },
+      {
+        "uid": "cf1014bd-4021-4811-a73d-7b9f34c5b8aa",
+        "studentCode": "LHP_HS2600013",
+        "userName": "lhp_hs_lhp_hs2600013",
+        "fullName": "Hoàng Diệu Tiên",
+        "email": "lhp_hs_lhp_hs2600013@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600013@2026"
+      },
+      {
+        "uid": "2549a855-c73b-4a51-8915-8aa3aaadca9c",
+        "studentCode": "LHP_HS2600014",
+        "userName": "lhp_hs_lhp_hs2600014",
+        "fullName": "Hồ Diệu Nhung",
+        "email": "nhung.ho201138@gmail.com",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "LHP_HS2600014@2026"
+      },
+      {
+        "uid": "9251dd85-607f-4062-98f6-b5415f46a85d",
+        "studentCode": "LHP_HS2600015",
+        "userName": "lhp_hs_lhp_hs2600015",
+        "fullName": "Trần Tuấn Đạt",
+        "email": "lhp_hs_lhp_hs2600015@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600015@2026"
+      },
+      {
+        "uid": "172e4b0b-db02-4549-baaa-c1d178c90cb3",
+        "studentCode": "LHP_HS2600016",
+        "userName": "lhp_hs_lhp_hs2600016",
+        "fullName": "Lý Trọng Tâm",
+        "email": "lhp_hs_lhp_hs2600016@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "LHP_HS2600016@2026"
+      },
+      {
+        "uid": "7b80dbfa-b8c5-42d2-a8ac-6675645a485e",
+        "studentCode": "LHP_HS2600017",
+        "userName": "lhp_hs_lhp_hs2600017",
+        "fullName": "Bùi Trọng Hải",
+        "email": "lhp_hs_lhp_hs2600017@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600017@2026"
+      },
+      {
+        "uid": "8f885dcd-0d1e-4727-9f20-037a1758c648",
+        "studentCode": "LHP_HS2600018",
+        "userName": "lhp_hs_lhp_hs2600018",
+        "fullName": "Đoàn Minh Dũng",
+        "email": "lhp_hs_lhp_hs2600018@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600018@2026"
+      },
+      {
+        "uid": "3d5b3c92-127a-4eed-8aff-2a3be99247ff",
+        "studentCode": "LHP_HS2600019",
+        "userName": "lhp_hs_lhp_hs2600019",
+        "fullName": "Nguyễn Hữu Nam",
+        "email": "lhp_hs_lhp_hs2600019@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600019@2026"
+      },
+      {
+        "uid": "3e55acb6-20a4-4c5b-a549-194b40fc41df",
+        "studentCode": "LHP_HS2600020",
+        "userName": "lhp_hs_lhp_hs2600020",
+        "fullName": "Đặng Đức Dũng",
+        "email": "dung.dang200884@gmail.com",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600020@2026"
+      },
+      {
+        "uid": "23d22361-d402-499e-b165-8d11c4b41209",
+        "studentCode": "LHP_HS2600021",
+        "userName": "lhp_hs_lhp_hs2600021",
+        "fullName": "Lê Ngọc Chi",
+        "email": "lhp_hs_lhp_hs2600021@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "LHP_HS2600021@2026"
+      },
+      {
+        "uid": "4d885f8b-c028-46d7-97a8-6af12bd9713b",
+        "studentCode": "LHP_HS2600022",
+        "userName": "lhp_hs_lhp_hs2600022",
+        "fullName": "Lâm Thanh Nga",
+        "email": "lhp_hs_lhp_hs2600022@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600022@2026"
+      },
+      {
+        "uid": "2353375c-c719-42de-9aca-b188e497293f",
+        "studentCode": "LHP_HS2600023",
+        "userName": "lhp_hs_lhp_hs2600023",
+        "fullName": "Lê Thị Thủy",
+        "email": "lhp_hs_lhp_hs2600023@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600023@2026"
+      },
+      {
+        "uid": "51d28893-0a7d-4aad-8b3d-aa8311c8d503",
+        "studentCode": "LHP_HS2600024",
+        "userName": "lhp_hs_lhp_hs2600024",
+        "fullName": "Đoàn Tiến Phát",
+        "email": "lhp_hs_lhp_hs2600024@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "StudentPass@999"
+      },
+      {
+        "uid": "ab29766a-670f-40f3-bac5-a41827daf672",
+        "studentCode": "LHP_HS2600025",
+        "userName": "lhp_hs_lhp_hs2600025",
+        "fullName": "Hoàng Khánh Mai",
+        "email": "lhp_hs_lhp_hs2600025@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600025@2026"
+      },
+      {
+        "uid": "66df00f4-94b1-4058-a480-77cb3e7aec36",
+        "studentCode": "LHP_HS2600026",
+        "userName": "lhp_hs_lhp_hs2600026",
+        "fullName": "Ngô Quang Cường",
+        "email": "cuong.ngo200843@gmail.com",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 3000,
+        "initialPassword": "LHP_HS2600026@2026"
+      },
+      {
+        "uid": "d61d61fb-af29-4c82-aaa1-3c423f0ef1eb",
+        "studentCode": "LHP_HS2600027",
+        "userName": "lhp_hs_lhp_hs2600027",
+        "fullName": "Đỗ Quốc Tùng",
+        "email": "tung.do200956@gmail.com",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600027@2026"
+      },
+      {
+        "uid": "69947754-80fd-44f8-94a5-c8b53705cc00",
+        "studentCode": "LHP_HS2600028",
+        "userName": "lhp_hs_lhp_hs2600028",
+        "fullName": "Vũ Anh Hải",
+        "email": "lhp_hs_lhp_hs2600028@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600028@2026"
+      },
+      {
+        "uid": "545031a7-be12-4d8c-a0e4-388d3a9c643d",
+        "studentCode": "LHP_HS2600029",
+        "userName": "lhp_hs_lhp_hs2600029",
+        "fullName": "Huỳnh Thùy Ánh",
+        "email": "lhp_hs_lhp_hs2600029@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600029@2026"
+      },
+      {
+        "uid": "ecea45b6-762a-490a-8fe1-09f794f6f879",
+        "studentCode": "LHP_HS2600030",
+        "userName": "lhp_hs_lhp_hs2600030",
+        "fullName": "Phạm Hữu Cường",
+        "email": "lhp_hs_lhp_hs2600030@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600030@2026"
+      },
+      {
+        "uid": "f8c46239-bb3b-40e0-ae04-63600f4e0d50",
+        "studentCode": "LHP_HS2600031",
+        "userName": "lhp_hs_lhp_hs2600031",
+        "fullName": "Phan Hữu Phúc",
+        "email": "lhp_hs_lhp_hs2600031@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600031@2026"
+      },
+      {
+        "uid": "5efb5601-3c3d-4987-8fcc-f0c9354a5667",
+        "studentCode": "LHP_HS2600032",
+        "userName": "lhp_hs_lhp_hs2600032",
+        "fullName": "Nguyễn Minh Nam",
+        "email": "nam.nguyen200986@gmail.com",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600032@2026"
+      },
+      {
+        "uid": "2ff4135e-95fe-4e88-acef-afb16a6ee106",
+        "studentCode": "LHP_HS2600033",
+        "userName": "lhp_hs_lhp_hs2600033",
+        "fullName": "Lâm Đức Nam",
+        "email": "nam.lam200878@gmail.com",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600033@2026"
+      },
+      {
+        "uid": "54652de4-5db3-40f5-89bb-bf91d7913be1",
+        "studentCode": "LHP_HS2600034",
+        "userName": "lhp_hs_lhp_hs2600034",
+        "fullName": "Lê Anh Phúc",
+        "email": "phuc.le201048@gmail.com",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600034@2026"
+      },
+      {
+        "uid": "5b8a4301-d3c7-4084-94ff-89ca0da3980d",
+        "studentCode": "LHP_HS2600035",
+        "userName": "lhp_hs_lhp_hs2600035",
+        "fullName": "Phan Thùy Oanh",
+        "email": "lhp_hs_lhp_hs2600035@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@393"
+      },
+      {
+        "uid": "e1b46bcd-2e0d-43ae-9102-a0cc400bf5fa",
+        "studentCode": "LHP_HS2600036",
+        "userName": "lhp_hs_lhp_hs2600036",
+        "fullName": "Dương Anh Kiên",
+        "email": "lhp_hs_lhp_hs2600036@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@869"
+      },
+      {
+        "uid": "fea23b52-d84d-4ad2-b10f-d7254fa3a6c4",
+        "studentCode": "LHP_HS2600037",
+        "userName": "lhp_hs_lhp_hs2600037",
+        "fullName": "Phan Hoàng Bảo",
+        "email": "lhp_hs_lhp_hs2600037@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600037@2026"
+      },
+      {
+        "uid": "9d5d90f0-fe90-4ccd-a160-edb92fcd9f10",
+        "studentCode": "LHP_HS2600038",
+        "userName": "lhp_hs_lhp_hs2600038",
+        "fullName": "Hồ Quỳnh Phương",
+        "email": "lhp_hs_lhp_hs2600038@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600038@2026"
+      },
+      {
+        "uid": "2a1de9ac-f1b1-43ac-a7d8-e502d871ec45",
+        "studentCode": "LHP_HS2600039",
+        "userName": "lhp_hs_lhp_hs2600039",
+        "fullName": "Đào Đình Dũng",
+        "email": "dung.dao200969@gmail.com",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600039@2026"
+      },
+      {
+        "uid": "b9854c35-00d9-47ca-93d8-45bd07f765bc",
+        "studentCode": "LHP_HS2600040",
+        "userName": "lhp_hs_lhp_hs2600040",
+        "fullName": "Đào Thùy Vân",
+        "email": "lhp_hs_lhp_hs2600040@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600040@2026"
+      },
+      {
+        "uid": "ae830eac-07f2-47d2-8f1a-32096716a49f",
+        "studentCode": "LHP_HS2600041",
+        "userName": "lhp_hs_lhp_hs2600041",
+        "fullName": "Đào Quỳnh Lan",
+        "email": "lhp_hs_lhp_hs2600041@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 3000,
+        "initialPassword": "LHP_HS2600041@2026"
+      },
+      {
+        "uid": "2200ffec-0836-4173-99bd-da2e3fb6e25f",
+        "studentCode": "LHP_HS2600042",
+        "userName": "lhp_hs_lhp_hs2600042",
+        "fullName": "Hoàng Tiến Kiên",
+        "email": "lhp_hs_lhp_hs2600042@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@952"
+      },
+      {
+        "uid": "26607dd9-5428-46ba-9558-8e4a15dbc5d8",
+        "studentCode": "LHP_HS2600043",
+        "userName": "lhp_hs_lhp_hs2600043",
+        "fullName": "Lâm Thùy Tiên",
+        "email": "lhp_hs_lhp_hs2600043@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600043@2026"
+      },
+      {
+        "uid": "d84dbbd0-13e0-4fe8-a6ab-89583b7ca3f2",
+        "studentCode": "LHP_HS2600044",
+        "userName": "lhp_hs_lhp_hs2600044",
+        "fullName": "Vũ Quỳnh Huyền",
+        "email": "huyen.vu201053@gmail.com",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600044@2026"
+      },
+      {
+        "uid": "2c496a53-ce4a-4fd5-b01b-b66eda227169",
+        "studentCode": "LHP_HS2600045",
+        "userName": "lhp_hs_lhp_hs2600045",
+        "fullName": "Đoàn Thị Phương",
+        "email": "lhp_hs_lhp_hs2600045@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600045@2026"
+      },
+      {
+        "uid": "b5e448b9-55e6-41d7-938d-6874da0eef01",
+        "studentCode": "LHP_HS2600046",
+        "userName": "lhp_hs_lhp_hs2600046",
+        "fullName": "Bùi Tuấn Sơn",
+        "email": "lhp_hs_lhp_hs2600046@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "LHP_HS2600046@2026"
+      },
+      {
+        "uid": "609a769a-4523-44e4-9ef1-6891b83d42bd",
+        "studentCode": "LHP_HS2600047",
+        "userName": "lhp_hs_lhp_hs2600047",
+        "fullName": "Trần Thị Lan",
+        "email": "lhp_hs_lhp_hs2600047@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600047@2026"
+      },
+      {
+        "uid": "9e26f041-695b-48d6-a2bf-1338fcd233c3",
+        "studentCode": "LHP_HS2600048",
+        "userName": "lhp_hs_lhp_hs2600048",
+        "fullName": "Huỳnh Kim Yến",
+        "email": "yen.huynh200813@gmail.com",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600048@2026"
+      },
+      {
+        "uid": "0f9709e8-7bea-41d8-8d5c-94c723685ef3",
+        "studentCode": "LHP_HS2600049",
+        "userName": "lhp_hs_lhp_hs2600049",
+        "fullName": "Phan Minh Vinh",
+        "email": "lhp_hs_lhp_hs2600049@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "LHP_HS2600049@2026"
+      },
+      {
+        "uid": "3df74e19-4d13-44fc-bdaf-ad3e0656f4e3",
+        "studentCode": "LHP_HS2600050",
+        "userName": "lhp_hs_lhp_hs2600050",
+        "fullName": "Đỗ Mai Trinh",
+        "email": "lhp_hs_lhp_hs2600050@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600050@2026"
+      },
+      {
+        "uid": "01b9ef56-fd4b-43fa-b8ba-164ffc24dfab",
+        "studentCode": "LHP_HS2600051",
+        "userName": "lhp_hs_lhp_hs2600051",
+        "fullName": "Ngô Ngọc Trúc",
+        "email": "lhp_hs_lhp_hs2600051@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600051@2026"
+      },
+      {
+        "uid": "3cc5205a-abfc-494d-b806-c0545b27b06e",
+        "studentCode": "LHP_HS2600052",
+        "userName": "lhp_hs_lhp_hs2600052",
+        "fullName": "Vũ Minh Nghĩa",
+        "email": "lhp_hs_lhp_hs2600052@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "LHP_HS2600052@2026"
+      },
+      {
+        "uid": "15cacf43-3a48-4a2d-b8a7-7ab271cc79ab",
+        "studentCode": "LHP_HS2600053",
+        "userName": "lhp_hs_lhp_hs2600053",
+        "fullName": "Đỗ Trọng Nam",
+        "email": "lhp_hs_lhp_hs2600053@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 11000,
+        "initialPassword": "LHP_HS2600053@2026"
+      },
+      {
+        "uid": "2bdb6c45-e9e9-42ca-a6ef-73a24f09a24e",
+        "studentCode": "LHP_HS2600054",
+        "userName": "lhp_hs_lhp_hs2600054",
+        "fullName": "Vũ Tuyết Tiên",
+        "email": "tien.vu201147@gmail.com",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600054@2026"
+      },
+      {
+        "uid": "cece068a-cc04-470c-a6d7-1363c42ffd15",
+        "studentCode": "LHP_HS2600055",
+        "userName": "lhp_hs_lhp_hs2600055",
+        "fullName": "Đỗ Thùy Vân",
+        "email": "lhp_hs_lhp_hs2600055@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600055@2026"
+      },
+      {
+        "uid": "cce397e4-e630-4e15-b7a7-56edfc71fd7b",
+        "studentCode": "LHP_HS2600056",
+        "userName": "lhp_hs_lhp_hs2600056",
+        "fullName": "Huỳnh Phương Hương",
+        "email": "lhp_hs_lhp_hs2600056@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600056@2026"
+      },
+      {
+        "uid": "e11fba17-6721-4d28-99a4-80b2abba6bb2",
+        "studentCode": "LHP_HS2600057",
+        "userName": "lhp_hs_lhp_hs2600057",
+        "fullName": "Đỗ Hoàng Phát",
+        "email": "phat.do200815@gmail.com",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600057@2026"
+      },
+      {
+        "uid": "2c8db1e3-e8ce-4bc6-8cd2-d6083f745413",
+        "studentCode": "LHP_HS2600058",
+        "userName": "lhp_hs_lhp_hs2600058",
+        "fullName": "Lý Mai Anh",
+        "email": "lhp_hs_lhp_hs2600058@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600058@2026"
+      },
+      {
+        "uid": "a6c46ac7-a4f2-4feb-8de8-3bff14d49c33",
+        "studentCode": "LHP_HS2600059",
+        "userName": "lhp_hs_lhp_hs2600059",
+        "fullName": "Lê Quốc Dũng",
+        "email": "lhp_hs_lhp_hs2600059@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600059@2026"
+      },
+      {
+        "uid": "aebcbadb-acb7-44ec-b686-0bde44ce3d9b",
+        "studentCode": "LHP_HS2600060",
+        "userName": "lhp_hs_lhp_hs2600060",
+        "fullName": "Hồ Quỳnh Thu",
+        "email": "lhp_hs_lhp_hs2600060@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600060@2026"
+      },
+      {
+        "uid": "48b1fc7d-2d3a-4159-992d-cc35e2cd8159",
+        "studentCode": "LHP_HS2600061",
+        "userName": "lhp_hs_lhp_hs2600061",
+        "fullName": "Võ Diệu Diệp",
+        "email": "lhp_hs_lhp_hs2600061@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600061@2026"
+      },
+      {
+        "uid": "7cc1561b-e1a5-4d25-b816-c04e86c93b99",
+        "studentCode": "LHP_HS2600062",
+        "userName": "lhp_hs_lhp_hs2600062",
+        "fullName": "Đặng Tiến Tiến",
+        "email": "lhp_hs_lhp_hs2600062@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600062@2026"
+      },
+      {
+        "uid": "5ae0b330-14d9-4291-994f-be95d3289bde",
+        "studentCode": "LHP_HS2600063",
+        "userName": "lhp_hs_lhp_hs2600063",
+        "fullName": "Đoàn Đức Hưng",
+        "email": "hung.doan201049@gmail.com",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600063@2026"
+      },
+      {
+        "uid": "65a29829-ea23-4d3f-a20c-4eea71c4a8a5",
+        "studentCode": "LHP_HS2600064",
+        "userName": "lhp_hs_lhp_hs2600064",
+        "fullName": "Đặng Tiến Tài",
+        "email": "lhp_hs_lhp_hs2600064@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600064@2026"
+      },
+      {
+        "uid": "d1e7b06c-2d0e-46e3-888c-23f19d9d8e4e",
+        "studentCode": "LHP_HS2600065",
+        "userName": "lhp_hs_lhp_hs2600065",
+        "fullName": "Lâm Quốc Bảo",
+        "email": "lhp_hs_lhp_hs2600065@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 11000,
+        "initialPassword": "LHP_HS2600065@2026"
+      },
+      {
+        "uid": "0ffb9c6a-e173-4074-bd20-ce7dc4cd0ae0",
+        "studentCode": "LHP_HS2600066",
+        "userName": "lhp_hs_lhp_hs2600066",
+        "fullName": "Lý Thu Quỳnh",
+        "email": "quynh.ly201030@gmail.com",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600066@2026"
+      },
+      {
+        "uid": "1c0f3321-9b7b-4b68-854b-f99b5abfb6a2",
+        "studentCode": "LHP_HS2600067",
+        "userName": "lhp_hs_lhp_hs2600067",
+        "fullName": "Lê Tuấn Nam",
+        "email": "lhp_hs_lhp_hs2600067@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600067@2026"
+      },
+      {
+        "uid": "530521ee-40df-4cab-aec2-e1a836dffe8a",
+        "studentCode": "LHP_HS2600068",
+        "userName": "lhp_hs_lhp_hs2600068",
+        "fullName": "Trần Đức Tú",
+        "email": "lhp_hs_lhp_hs2600068@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@373"
+      },
+      {
+        "uid": "e62d83a9-6018-42da-98fd-87ba502262d8",
+        "studentCode": "LHP_HS2600069",
+        "userName": "lhp_hs_lhp_hs2600069",
+        "fullName": "Lý Minh Bảo",
+        "email": "lhp_hs_lhp_hs2600069@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600069@2026"
+      },
+      {
+        "uid": "c4a70348-46b9-4768-b0d3-a1b2aaa377fd",
+        "studentCode": "LHP_HS2600070",
+        "userName": "lhp_hs_lhp_hs2600070",
+        "fullName": "Phạm Anh Hưng",
+        "email": "lhp_hs_lhp_hs2600070@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600070@2026"
+      },
+      {
+        "uid": "0e452ef8-a198-463a-846e-fe314b9a5a32",
+        "studentCode": "LHP_HS2600071",
+        "userName": "lhp_hs_lhp_hs2600071",
+        "fullName": "Phan Quốc Trung",
+        "email": "lhp_hs_lhp_hs2600071@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600071@2026"
+      },
+      {
+        "uid": "3245a9f7-b6eb-4575-8e83-60017ebda9d6",
+        "studentCode": "LHP_HS2600072",
+        "userName": "lhp_hs_lhp_hs2600072",
+        "fullName": "Đặng Tuyết My",
+        "email": "lhp_hs_lhp_hs2600072@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600072@2026"
+      },
+      {
+        "uid": "e907df6a-05e0-4299-97c5-44b513941ea9",
+        "studentCode": "LHP_HS2600073",
+        "userName": "lhp_hs_lhp_hs2600073",
+        "fullName": "Vũ Kim Oanh",
+        "email": "lhp_hs_lhp_hs2600073@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600073@2026"
+      },
+      {
+        "uid": "6a11ec1e-c246-4e4d-ba32-84698dc3e218",
+        "studentCode": "LHP_HS2600074",
+        "userName": "lhp_hs_lhp_hs2600074",
+        "fullName": "Trần Hoàng Trung",
+        "email": "lhp_hs_lhp_hs2600074@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600074@2026"
+      },
+      {
+        "uid": "4184fd8c-bdd5-47ad-971d-32dfb0cc3c1d",
+        "studentCode": "LHP_HS2600075",
+        "userName": "lhp_hs_lhp_hs2600075",
+        "fullName": "Võ Tuấn Tài",
+        "email": "lhp_hs_lhp_hs2600075@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600075@2026"
+      },
+      {
+        "uid": "5dbf456c-47ab-41d9-a696-9f429ca3e5c2",
+        "studentCode": "LHP_HS2600076",
+        "userName": "lhp_hs_lhp_hs2600076",
+        "fullName": "Trần Kim Chi",
+        "email": "lhp_hs_lhp_hs2600076@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600076@2026"
+      },
+      {
+        "uid": "f75018d4-ef24-495e-98b0-a88ba673a5d5",
+        "studentCode": "LHP_HS2600077",
+        "userName": "lhp_hs_lhp_hs2600077",
+        "fullName": "Phạm Quỳnh Hạnh",
+        "email": "lhp_hs_lhp_hs2600077@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600077@2026"
+      },
+      {
+        "uid": "4d203f3d-be5b-437d-b1fc-20bbbbc1d84f",
+        "studentCode": "LHP_HS2600078",
+        "userName": "lhp_hs_lhp_hs2600078",
+        "fullName": "Huỳnh Ngọc Hiền",
+        "email": "lhp_hs_lhp_hs2600078@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600078@2026"
+      },
+      {
+        "uid": "487c34a3-9d0f-40a3-b13c-a0ab5ba375e4",
+        "studentCode": "LHP_HS2600079",
+        "userName": "lhp_hs_lhp_hs2600079",
+        "fullName": "Võ Đình Nam",
+        "email": "lhp_hs_lhp_hs2600079@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600079@2026"
+      },
+      {
+        "uid": "5103e432-2cb4-4ba9-97cf-1634135fe2e7",
+        "studentCode": "LHP_HS2600080",
+        "userName": "lhp_hs_lhp_hs2600080",
+        "fullName": "Dương Khánh Hoa",
+        "email": "lhp_hs_lhp_hs2600080@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600080@2026"
+      },
+      {
+        "uid": "6fbc77ba-6040-48f2-a13c-525e12deedc6",
+        "studentCode": "LHP_HS2600081",
+        "userName": "lhp_hs_lhp_hs2600081",
+        "fullName": "Hồ Quang An",
+        "email": "lhp_hs_lhp_hs2600081@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600081@2026"
+      },
+      {
+        "uid": "6e31bdbc-2c59-4b28-b31c-cd87646e3fd8",
+        "studentCode": "LHP_HS2600082",
+        "userName": "lhp_hs_lhp_hs2600082",
+        "fullName": "Phan Quốc Nam",
+        "email": "lhp_hs_lhp_hs2600082@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600082@2026"
+      },
+      {
+        "uid": "68711b57-6e2b-494d-8880-ca7e96465ba1",
+        "studentCode": "LHP_HS2600083",
+        "userName": "lhp_hs_lhp_hs2600083",
+        "fullName": "Lê Khánh Nga",
+        "email": "nga.le201179@gmail.com",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600083@2026"
+      },
+      {
+        "uid": "d4579c55-9939-4cd8-81e0-d02ab1f8e5bc",
+        "studentCode": "LHP_HS2600084",
+        "userName": "lhp_hs_lhp_hs2600084",
+        "fullName": "Võ Quỳnh Mai",
+        "email": "lhp_hs_lhp_hs2600084@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600084@2026"
+      },
+      {
+        "uid": "534814fe-c60e-4732-af76-e2c1b9c6b9ce",
+        "studentCode": "LHP_HS2600085",
+        "userName": "lhp_hs_lhp_hs2600085",
+        "fullName": "Hồ Văn Nam",
+        "email": "lhp_hs_lhp_hs2600085@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600085@2026"
+      },
+      {
+        "uid": "4718e077-82d5-43fd-9efd-6ddf90d3c94f",
+        "studentCode": "LHP_HS2600086",
+        "userName": "lhp_hs_lhp_hs2600086",
+        "fullName": "Vũ Đình Bảo",
+        "email": "lhp_hs_lhp_hs2600086@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600086@2026"
+      },
+      {
+        "uid": "da978dd8-585c-4298-ba33-375235845da0",
+        "studentCode": "LHP_HS2600087",
+        "userName": "lhp_hs_lhp_hs2600087",
+        "fullName": "Trần Văn Phát",
+        "email": "lhp_hs_lhp_hs2600087@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600087@2026"
+      },
+      {
+        "uid": "1c42a5fa-9947-497c-8e86-4ccd41d98f12",
+        "studentCode": "LHP_HS2600088",
+        "userName": "lhp_hs_lhp_hs2600088",
+        "fullName": "Hoàng Hữu Hải",
+        "email": "lhp_hs_lhp_hs2600088@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600088@2026"
+      },
+      {
+        "uid": "2ba8f73d-15ac-40a0-9af2-f5eee0c48df5",
+        "studentCode": "LHP_HS2600089",
+        "userName": "lhp_hs_lhp_hs2600089",
+        "fullName": "Phạm Diệu Nhung",
+        "email": "lhp_hs_lhp_hs2600089@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600089@2026"
+      },
+      {
+        "uid": "9380be5b-59e8-49c9-978c-67f5a5ce71ff",
+        "studentCode": "LHP_HS2600090",
+        "userName": "lhp_hs_lhp_hs2600090",
+        "fullName": "Nguyễn Thị Ngân",
+        "email": "lhp_hs_lhp_hs2600090@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600090@2026"
+      },
+      {
+        "uid": "14bfbbc0-da31-4196-aabd-dc3eaacd8240",
+        "studentCode": "LHP_HS2600091",
+        "userName": "lhp_hs_lhp_hs2600091",
+        "fullName": "Hoàng Trọng An",
+        "email": "lhp_hs_lhp_hs2600091@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "StudentPass@987"
+      },
+      {
+        "uid": "4566b169-4e27-4463-b454-946794107a30",
+        "studentCode": "LHP_HS2600092",
+        "userName": "lhp_hs_lhp_hs2600092",
+        "fullName": "Vũ Kim Nga",
+        "email": "nga.vu200863@gmail.com",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600092@2026"
+      },
+      {
+        "uid": "2c53dc58-7991-480d-a1d5-bb17896580ac",
+        "studentCode": "LHP_HS2600093",
+        "userName": "lhp_hs_lhp_hs2600093",
+        "fullName": "Phạm Đình Trung",
+        "email": "lhp_hs_lhp_hs2600093@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600093@2026"
+      },
+      {
+        "uid": "2f87930e-9d9f-4c88-b960-8051f11071f0",
+        "studentCode": "LHP_HS2600094",
+        "userName": "lhp_hs_lhp_hs2600094",
+        "fullName": "Lý Hữu Thắng",
+        "email": "lhp_hs_lhp_hs2600094@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "LHP_HS2600094@2026"
+      },
+      {
+        "uid": "f2b36550-58ef-4f1a-af2a-989abb76cd11",
+        "studentCode": "LHP_HS2600095",
+        "userName": "lhp_hs_lhp_hs2600095",
+        "fullName": "Hồ Kim Trúc",
+        "email": "lhp_hs_lhp_hs2600095@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600095@2026"
+      },
+      {
+        "uid": "60338ffb-0654-4527-924e-1408217cd4f7",
+        "studentCode": "LHP_HS2600096",
+        "userName": "lhp_hs_lhp_hs2600096",
+        "fullName": "Phan Thùy Thu",
+        "email": "lhp_hs_lhp_hs2600096@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600096@2026"
+      },
+      {
+        "uid": "1b0a2828-765b-46f4-8713-5b64aaf2c643",
+        "studentCode": "LHP_HS2600097",
+        "userName": "lhp_hs_lhp_hs2600097",
+        "fullName": "Hoàng Anh Toàn",
+        "email": "toan.hoang200865@gmail.com",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600097@2026"
+      },
+      {
+        "uid": "03bfc618-aec7-4b33-b450-57399661dd0f",
+        "studentCode": "LHP_HS2600098",
+        "userName": "lhp_hs_lhp_hs2600098",
+        "fullName": "Phạm Thùy Ngọc",
+        "email": "lhp_hs_lhp_hs2600098@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600098@2026"
+      },
+      {
+        "uid": "588656f9-0d99-4087-b01b-b380cd13adea",
+        "studentCode": "LHP_HS2600099",
+        "userName": "lhp_hs_lhp_hs2600099",
+        "fullName": "Lý Đức Hải",
+        "email": "hai.ly201045@gmail.com",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600099@2026"
+      },
+      {
+        "uid": "cec71024-465a-46b3-a9ba-c807ba4e4367",
+        "studentCode": "LHP_HS2600100",
+        "userName": "lhp_hs_lhp_hs2600100",
+        "fullName": "Võ Văn Khang",
+        "email": "lhp_hs_lhp_hs2600100@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600100@2026"
+      },
+      {
+        "uid": "3539a0a0-b161-4d47-ac84-38a6ec219805",
+        "studentCode": "LHP_HS2600101",
+        "userName": "lhp_hs_lhp_hs2600101",
+        "fullName": "Nguyễn Minh Tú",
+        "email": "lhp_hs_lhp_hs2600101@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600101@2026"
+      },
+      {
+        "uid": "7ca4939f-16b3-4668-b542-8cafd03520b6",
+        "studentCode": "LHP_HS2600102",
+        "userName": "lhp_hs_lhp_hs2600102",
+        "fullName": "Hoàng Ngọc Châu",
+        "email": "lhp_hs_lhp_hs2600102@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600102@2026"
+      },
+      {
+        "uid": "00e82d83-02e2-4360-9239-10807251cd2e",
+        "studentCode": "LHP_HS2600103",
+        "userName": "lhp_hs_lhp_hs2600103",
+        "fullName": "Ngô Minh Nhân",
+        "email": "lhp_hs_lhp_hs2600103@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@408"
+      },
+      {
+        "uid": "5aef49ca-0b6a-46e7-ab99-c59268046e27",
+        "studentCode": "LHP_HS2600104",
+        "userName": "lhp_hs_lhp_hs2600104",
+        "fullName": "Đặng Thu Duyên",
+        "email": "lhp_hs_lhp_hs2600104@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600104@2026"
+      },
+      {
+        "uid": "e1ecff71-78c6-4fd7-95c9-c97d26dd8317",
+        "studentCode": "LHP_HS2600105",
+        "userName": "lhp_hs_lhp_hs2600105",
+        "fullName": "Trần Hữu Bảo",
+        "email": "lhp_hs_lhp_hs2600105@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600105@2026"
+      },
+      {
+        "uid": "424eceff-2e4e-4fe8-be64-c80ea2856441",
+        "studentCode": "LHP_HS2600106",
+        "userName": "lhp_hs_lhp_hs2600106",
+        "fullName": "Nguyễn Tuấn Huy",
+        "email": "huy.nguyen201123@gmail.com",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600106@2026"
+      },
+      {
+        "uid": "102101d8-a373-4d01-87ca-b6c1d700966f",
+        "studentCode": "LHP_HS2600107",
+        "userName": "lhp_hs_lhp_hs2600107",
+        "fullName": "Vũ Thu Hạnh",
+        "email": "hanh.vu200875@gmail.com",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600107@2026"
+      },
+      {
+        "uid": "7bac51bc-3899-40c6-84ff-7a0e1517ee21",
+        "studentCode": "LHP_HS2600108",
+        "userName": "lhp_hs_lhp_hs2600108",
+        "fullName": "Hoàng Quang Khoa",
+        "email": "lhp_hs_lhp_hs2600108@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600108@2026"
+      },
+      {
+        "uid": "7997b1a4-5e94-48c5-b1a1-e3c428f23c20",
+        "studentCode": "LHP_HS2600109",
+        "userName": "lhp_hs_lhp_hs2600109",
+        "fullName": "Lâm Trọng Vinh",
+        "email": "lhp_hs_lhp_hs2600109@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600109@2026"
+      },
+      {
+        "uid": "d2809da8-78d5-4f21-8511-aafb3429379e",
+        "studentCode": "LHP_HS2600110",
+        "userName": "lhp_hs_lhp_hs2600110",
+        "fullName": "Lê Đình Thịnh",
+        "email": "thinh.le201074@gmail.com",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@477"
+      },
+      {
+        "uid": "7c5981c3-a721-4d03-8cf7-60c0fd2616c0",
+        "studentCode": "LHP_HS2600111",
+        "userName": "lhp_hs_lhp_hs2600111",
+        "fullName": "Lê Kim Yến",
+        "email": "lhp_hs_lhp_hs2600111@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600111@2026"
+      },
+      {
+        "uid": "957e26b1-b89e-492c-a23d-ac2a8978bf35",
+        "studentCode": "LHP_HS2600112",
+        "userName": "lhp_hs_lhp_hs2600112",
+        "fullName": "Lý Hải Hưng",
+        "email": "lhp_hs_lhp_hs2600112@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 3000,
+        "initialPassword": "LHP_HS2600112@2026"
+      },
+      {
+        "uid": "86eb6755-0102-4e5c-87fb-72d00072f4ba",
+        "studentCode": "LHP_HS2600113",
+        "userName": "lhp_hs_lhp_hs2600113",
+        "fullName": "Dương Đình Tú",
+        "email": "lhp_hs_lhp_hs2600113@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "LHP_HS2600113@2026"
+      },
+      {
+        "uid": "2f5b49cd-dddd-4a52-b3f5-bed2b0e91496",
+        "studentCode": "LHP_HS2600114",
+        "userName": "lhp_hs_lhp_hs2600114",
+        "fullName": "Đoàn Anh Sơn",
+        "email": "lhp_hs_lhp_hs2600114@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "LHP_HS2600114@2026"
+      },
+      {
+        "uid": "8252a6f6-481c-413c-bf2b-a3a1619f6040",
+        "studentCode": "LHP_HS2600115",
+        "userName": "lhp_hs_lhp_hs2600115",
+        "fullName": "Đặng Diệu Phương",
+        "email": "lhp_hs_lhp_hs2600115@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600115@2026"
+      },
+      {
+        "uid": "e8b74f6a-2b94-4a07-98e3-d8c7b7c262d6",
+        "studentCode": "LHP_HS2600116",
+        "userName": "lhp_hs_lhp_hs2600116",
+        "fullName": "Ngô Hải Sang",
+        "email": "lhp_hs_lhp_hs2600116@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600116@2026"
+      },
+      {
+        "uid": "4ea826d1-a6d6-45b4-ae8a-98dd51e9c953",
+        "studentCode": "LHP_HS2600117",
+        "userName": "lhp_hs_lhp_hs2600117",
+        "fullName": "Phạm Hải Tuấn",
+        "email": "lhp_hs_lhp_hs2600117@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 3000,
+        "initialPassword": "LHP_HS2600117@2026"
+      },
+      {
+        "uid": "6ee9f8b1-d368-4e33-8acc-7006304144e5",
+        "studentCode": "LHP_HS2600118",
+        "userName": "lhp_hs_lhp_hs2600118",
+        "fullName": "Trần Thùy Nhung",
+        "email": "lhp_hs_lhp_hs2600118@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600118@2026"
+      },
+      {
+        "uid": "3802ea85-78c8-4744-8d22-118208587d08",
+        "studentCode": "LHP_HS2600119",
+        "userName": "lhp_hs_lhp_hs2600119",
+        "fullName": "Lý Phương Nhung",
+        "email": "lhp_hs_lhp_hs2600119@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600119@2026"
+      },
+      {
+        "uid": "8c04f513-f746-43b4-a433-c63dc60fd5a6",
+        "studentCode": "LHP_HS2600120",
+        "userName": "lhp_hs_lhp_hs2600120",
+        "fullName": "Trần Diệu Tiên",
+        "email": "lhp_hs_lhp_hs2600120@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@185"
+      },
+      {
+        "uid": "65620539-4edb-4594-90ed-4a8eefc9cc88",
+        "studentCode": "LHP_HS2600121",
+        "userName": "lhp_hs_lhp_hs2600121",
+        "fullName": "Đào Hoàng Thắng",
+        "email": "lhp_hs_lhp_hs2600121@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@614"
+      },
+      {
+        "uid": "41a690db-c22e-42a8-b83e-61e08ef87f66",
+        "studentCode": "LHP_HS2600122",
+        "userName": "lhp_hs_lhp_hs2600122",
+        "fullName": "Đỗ Phương Ánh",
+        "email": "lhp_hs_lhp_hs2600122@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@949"
+      },
+      {
+        "uid": "8628e417-07fe-4aa6-a5ca-6d386e17bac2",
+        "studentCode": "LHP_HS2600123",
+        "userName": "lhp_hs_lhp_hs2600123",
+        "fullName": "Lý Quỳnh Anh",
+        "email": "lhp_hs_lhp_hs2600123@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600123@2026"
+      },
+      {
+        "uid": "b12fcf53-1392-436d-8e89-c51ab85ce1dd",
+        "studentCode": "LHP_HS2600124",
+        "userName": "lhp_hs_lhp_hs2600124",
+        "fullName": "Trần Đức Tâm",
+        "email": "lhp_hs_lhp_hs2600124@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600124@2026"
+      },
+      {
+        "uid": "5f8f3fe3-6a35-4d6d-b009-5fa2cb7af5a5",
+        "studentCode": "LHP_HS2600125",
+        "userName": "lhp_hs_lhp_hs2600125",
+        "fullName": "Đặng Thùy Anh",
+        "email": "lhp_hs_lhp_hs2600125@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "StudentPass@469"
+      },
+      {
+        "uid": "6807d559-9ee1-4b87-b4b5-5bdf258834c6",
+        "studentCode": "LHP_HS2600126",
+        "userName": "lhp_hs_lhp_hs2600126",
+        "fullName": "Trần Diệu Oanh",
+        "email": "oanh.tran201018@gmail.com",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600126@2026"
+      },
+      {
+        "uid": "a5d3f073-98f0-4c03-b6d4-d16e3812c651",
+        "studentCode": "LHP_HS2600127",
+        "userName": "lhp_hs_lhp_hs2600127",
+        "fullName": "Đỗ Hải Phúc",
+        "email": "lhp_hs_lhp_hs2600127@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 11000,
+        "initialPassword": "LHP_HS2600127@2026"
+      },
+      {
+        "uid": "a14573db-99c5-4c9b-b61e-a495f4dff332",
+        "studentCode": "LHP_HS2600128",
+        "userName": "lhp_hs_lhp_hs2600128",
+        "fullName": "Trần Trọng Khoa",
+        "email": "lhp_hs_lhp_hs2600128@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600128@2026"
+      },
+      {
+        "uid": "06daed36-50b1-4269-8d36-67f14732e579",
+        "studentCode": "LHP_HS2600129",
+        "userName": "lhp_hs_lhp_hs2600129",
+        "fullName": "Trần Anh Phúc",
+        "email": "lhp_hs_lhp_hs2600129@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600129@2026"
+      },
+      {
+        "uid": "641e80cf-cf70-4e3a-99de-4bafabbe8ead",
+        "studentCode": "LHP_HS2600130",
+        "userName": "lhp_hs_lhp_hs2600130",
+        "fullName": "Huỳnh Đình Trí",
+        "email": "lhp_hs_lhp_hs2600130@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@716"
+      },
+      {
+        "uid": "51c5f8a5-ee0a-4ccd-8b4f-9bae1f4a8d7e",
+        "studentCode": "LHP_HS2600131",
+        "userName": "lhp_hs_lhp_hs2600131",
+        "fullName": "Bùi Mai Diệp",
+        "email": "lhp_hs_lhp_hs2600131@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600131@2026"
+      },
+      {
+        "uid": "23f6e838-6164-48bd-b4da-7fc43c1ab07b",
+        "studentCode": "LHP_HS2600132",
+        "userName": "lhp_hs_lhp_hs2600132",
+        "fullName": "Đỗ Quốc Thắng",
+        "email": "lhp_hs_lhp_hs2600132@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600132@2026"
+      },
+      {
+        "uid": "9060a8fc-30e0-4659-8461-8157d5c57c41",
+        "studentCode": "LHP_HS2600133",
+        "userName": "lhp_hs_lhp_hs2600133",
+        "fullName": "Hoàng Kim Thu",
+        "email": "lhp_hs_lhp_hs2600133@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600133@2026"
+      },
+      {
+        "uid": "81defced-9f7b-4e88-bcac-cfb737073afa",
+        "studentCode": "LHP_HS2600134",
+        "userName": "lhp_hs_lhp_hs2600134",
+        "fullName": "Dương Thu Nhung",
+        "email": "nhung.duong201156@gmail.com",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 3000,
+        "initialPassword": "LHP_HS2600134@2026"
+      },
+      {
+        "uid": "a2518f2f-e21d-49bc-b18d-ab09ee7a6d59",
+        "studentCode": "LHP_HS2600135",
+        "userName": "lhp_hs_lhp_hs2600135",
+        "fullName": "Đoàn Minh Nam",
+        "email": "lhp_hs_lhp_hs2600135@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600135@2026"
+      },
+      {
+        "uid": "4229f97c-29b2-4a4e-a1e2-732e73077c21",
+        "studentCode": "LHP_HS2600136",
+        "userName": "lhp_hs_lhp_hs2600136",
+        "fullName": "Lê Đình Khang",
+        "email": "lhp_hs_lhp_hs2600136@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600136@2026"
+      },
+      {
+        "uid": "3d96e314-cec4-4a71-8281-e2db52bceedc",
+        "studentCode": "LHP_HS2600137",
+        "userName": "lhp_hs_lhp_hs2600137",
+        "fullName": "Đặng Khánh Hạnh",
+        "email": "lhp_hs_lhp_hs2600137@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600137@2026"
+      },
+      {
+        "uid": "97b43165-152f-49d6-9c16-5beeef514130",
+        "studentCode": "LHP_HS2600138",
+        "userName": "lhp_hs_lhp_hs2600138",
+        "fullName": "Đoàn Quốc Sang",
+        "email": "lhp_hs_lhp_hs2600138@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600138@2026"
+      },
+      {
+        "uid": "226d07aa-dbe6-435b-bf55-a877145c4d92",
+        "studentCode": "LHP_HS2600139",
+        "userName": "lhp_hs_lhp_hs2600139",
+        "fullName": "Ngô Quốc Đạt",
+        "email": "dat.ngo200969@gmail.com",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600139@2026"
+      },
+      {
+        "uid": "e4cd548c-36c7-4b2b-a3b7-4daa00e73dea",
+        "studentCode": "LHP_HS2600140",
+        "userName": "lhp_hs_lhp_hs2600140",
+        "fullName": "Huỳnh Ngọc Thảo",
+        "email": "lhp_hs_lhp_hs2600140@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600140@2026"
+      },
+      {
+        "uid": "39912358-210d-48fc-8e40-26614a3216c3",
+        "studentCode": "LHP_HS2600141",
+        "userName": "lhp_hs_lhp_hs2600141",
+        "fullName": "Võ Phương Vân",
+        "email": "lhp_hs_lhp_hs2600141@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 3000,
+        "initialPassword": "LHP_HS2600141@2026"
+      },
+      {
+        "uid": "1d1aee78-2ead-40f3-ae76-79ef97a47cd2",
+        "studentCode": "LHP_HS2600142",
+        "userName": "lhp_hs_lhp_hs2600142",
+        "fullName": "Bùi Kim Bích",
+        "email": "lhp_hs_lhp_hs2600142@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600142@2026"
+      },
+      {
+        "uid": "0e96f159-70df-41b3-af76-c5a2d98706f2",
+        "studentCode": "LHP_HS2600143",
+        "userName": "lhp_hs_lhp_hs2600143",
+        "fullName": "Nguyễn Quỳnh Uyên",
+        "email": "lhp_hs_lhp_hs2600143@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600143@2026"
+      },
+      {
+        "uid": "b79e9d12-cdeb-4022-aaf9-ffd2a6f0eef1",
+        "studentCode": "LHP_HS2600144",
+        "userName": "lhp_hs_lhp_hs2600144",
+        "fullName": "Huỳnh Quỳnh Quỳnh",
+        "email": "lhp_hs_lhp_hs2600144@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600144@2026"
+      },
+      {
+        "uid": "ad155f38-0434-489c-a4bc-57f671a4d14e",
+        "studentCode": "LHP_HS2600145",
+        "userName": "lhp_hs_lhp_hs2600145",
+        "fullName": "Đỗ Hải Tùng",
+        "email": "lhp_hs_lhp_hs2600145@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@397"
+      },
+      {
+        "uid": "cc837c71-e650-4a6d-9074-26426c4a3a60",
+        "studentCode": "LHP_HS2600146",
+        "userName": "lhp_hs_lhp_hs2600146",
+        "fullName": "Huỳnh Tuấn Việt",
+        "email": "lhp_hs_lhp_hs2600146@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600146@2026"
+      },
+      {
+        "uid": "c90e6296-7291-437b-8119-45a3e9933707",
+        "studentCode": "LHP_HS2600147",
+        "userName": "lhp_hs_lhp_hs2600147",
+        "fullName": "Hồ Hải Tiến",
+        "email": "lhp_hs_lhp_hs2600147@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "LHP_HS2600147@2026"
+      },
+      {
+        "uid": "a69be5fe-f7e8-4240-9638-0c2c3bc17b4d",
+        "studentCode": "LHP_HS2600148",
+        "userName": "lhp_hs_lhp_hs2600148",
+        "fullName": "Võ Tiến Sang",
+        "email": "lhp_hs_lhp_hs2600148@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600148@2026"
+      },
+      {
+        "uid": "f05c7961-a483-4493-ad7e-afa23711c2ce",
+        "studentCode": "LHP_HS2600149",
+        "userName": "lhp_hs_lhp_hs2600149",
+        "fullName": "Dương Trọng Tùng",
+        "email": "lhp_hs_lhp_hs2600149@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600149@2026"
+      },
+      {
+        "uid": "77c9bce4-2a5b-4f9f-bbcd-4a52e0e0f888",
+        "studentCode": "LHP_HS2600150",
+        "userName": "lhp_hs_lhp_hs2600150",
+        "fullName": "Hoàng Phương Yến",
+        "email": "yen.hoang201127@gmail.com",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600150@2026"
+      },
+      {
+        "uid": "646e8030-0a3d-4cd6-907b-5a3ce16b8206",
+        "studentCode": "LHP_HS2600151",
+        "userName": "lhp_hs_lhp_hs2600151",
+        "fullName": "Đào Ngọc Nga",
+        "email": "lhp_hs_lhp_hs2600151@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600151@2026"
+      },
+      {
+        "uid": "8902d7cd-5ce1-4235-a82e-4245f0453b9d",
+        "studentCode": "LHP_HS2600152",
+        "userName": "lhp_hs_lhp_hs2600152",
+        "fullName": "Lâm Khánh Tiên",
+        "email": "lhp_hs_lhp_hs2600152@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600152@2026"
+      },
+      {
+        "uid": "529eb4df-8452-4811-86ac-9b91c510b10a",
+        "studentCode": "LHP_HS2600153",
+        "userName": "lhp_hs_lhp_hs2600153",
+        "fullName": "Võ Diệu Xuân",
+        "email": "lhp_hs_lhp_hs2600153@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@797"
+      },
+      {
+        "uid": "111e6f55-a685-4132-8437-71b156c52ca2",
+        "studentCode": "LHP_HS2600154",
+        "userName": "lhp_hs_lhp_hs2600154",
+        "fullName": "Dương Tuấn Tâm",
+        "email": "lhp_hs_lhp_hs2600154@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600154@2026"
+      },
+      {
+        "uid": "a9503ccf-f7ea-4ff4-89f8-da9a02a11a73",
+        "studentCode": "LHP_HS2600155",
+        "userName": "lhp_hs_lhp_hs2600155",
+        "fullName": "Đào Phương Vân",
+        "email": "lhp_hs_lhp_hs2600155@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600155@2026"
+      },
+      {
+        "uid": "73a9cbd7-c229-4f56-b62f-1b1d6fa046dc",
+        "studentCode": "LHP_HS2600156",
+        "userName": "lhp_hs_lhp_hs2600156",
+        "fullName": "Võ Kim Tiên",
+        "email": "lhp_hs_lhp_hs2600156@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600156@2026"
+      },
+      {
+        "uid": "de8a6c55-4c82-4676-b8c9-7a882973f262",
+        "studentCode": "LHP_HS2600157",
+        "userName": "lhp_hs_lhp_hs2600157",
+        "fullName": "Đỗ Hải Nghĩa",
+        "email": "lhp_hs_lhp_hs2600157@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600157@2026"
+      },
+      {
+        "uid": "946e7ed2-753d-428e-ba96-92cbcdfa1503",
+        "studentCode": "LHP_HS2600158",
+        "userName": "lhp_hs_lhp_hs2600158",
+        "fullName": "Lê Tuấn Thịnh",
+        "email": "lhp_hs_lhp_hs2600158@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600158@2026"
+      },
+      {
+        "uid": "6921b3df-c091-47a9-a24b-2f6fcd0860aa",
+        "studentCode": "LHP_HS2600159",
+        "userName": "lhp_hs_lhp_hs2600159",
+        "fullName": "Lâm Đức Minh",
+        "email": "lhp_hs_lhp_hs2600159@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600159@2026"
+      },
+      {
+        "uid": "54b8387f-04ec-45a2-b9fa-312490e1b6ef",
+        "studentCode": "LHP_HS2600160",
+        "userName": "lhp_hs_lhp_hs2600160",
+        "fullName": "Đoàn Hoàng Tâm",
+        "email": "lhp_hs_lhp_hs2600160@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600160@2026"
+      },
+      {
+        "uid": "cfdf20db-9e35-4b02-a018-edd4304ba6b2",
+        "studentCode": "LHP_HS2600161",
+        "userName": "lhp_hs_lhp_hs2600161",
+        "fullName": "Vũ Thanh Bích",
+        "email": "lhp_hs_lhp_hs2600161@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600161@2026"
+      },
+      {
+        "uid": "74907f63-46a3-4382-a320-b422e4e26d7c",
+        "studentCode": "LHP_HS2600162",
+        "userName": "lhp_hs_lhp_hs2600162",
+        "fullName": "Đặng Văn An",
+        "email": "an.dang201052@gmail.com",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600162@2026"
+      },
+      {
+        "uid": "44f0372e-74aa-4b90-9e7d-4906f5ebf7ae",
+        "studentCode": "LHP_HS2600163",
+        "userName": "lhp_hs_lhp_hs2600163",
+        "fullName": "Phan Trọng Hiếu",
+        "email": "lhp_hs_lhp_hs2600163@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600163@2026"
+      },
+      {
+        "uid": "556582b4-959c-4ec0-aa0d-1d5eb70bff0d",
+        "studentCode": "LHP_HS2600164",
+        "userName": "lhp_hs_lhp_hs2600164",
+        "fullName": "Hồ Hữu Trung",
+        "email": "lhp_hs_lhp_hs2600164@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600164@2026"
+      },
+      {
+        "uid": "360fb975-0bce-4ea0-b042-bf30176faf03",
+        "studentCode": "LHP_HS2600165",
+        "userName": "lhp_hs_lhp_hs2600165",
+        "fullName": "Dương Trọng Nghĩa",
+        "email": "lhp_hs_lhp_hs2600165@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "LHP_HS2600165@2026"
+      },
+      {
+        "uid": "ca40b454-508a-431b-a65e-411779a42ef5",
+        "studentCode": "LHP_HS2600166",
+        "userName": "lhp_hs_lhp_hs2600166",
+        "fullName": "Hồ Anh Trung",
+        "email": "lhp_hs_lhp_hs2600166@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600166@2026"
+      },
+      {
+        "uid": "d6056cd7-6acf-45bc-9c32-3cc3e4e49895",
+        "studentCode": "LHP_HS2600167",
+        "userName": "lhp_hs_lhp_hs2600167",
+        "fullName": "Dương Tiến Sang",
+        "email": "lhp_hs_lhp_hs2600167@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600167@2026"
+      },
+      {
+        "uid": "26910a32-4977-43ba-865b-487489f9ccca",
+        "studentCode": "LHP_HS2600168",
+        "userName": "lhp_hs_lhp_hs2600168",
+        "fullName": "Lê Thanh Thu",
+        "email": "thu.le201080@gmail.com",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600168@2026"
+      },
+      {
+        "uid": "0e9cb89c-b571-40e5-ae18-511ea798cc7d",
+        "studentCode": "LHP_HS2600169",
+        "userName": "lhp_hs_lhp_hs2600169",
+        "fullName": "Đào Đình Hiếu",
+        "email": "lhp_hs_lhp_hs2600169@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 3000,
+        "initialPassword": "LHP_HS2600169@2026"
+      },
+      {
+        "uid": "89c0333a-6385-4dec-b2e7-ea8318f0eb21",
+        "studentCode": "LHP_HS2600170",
+        "userName": "lhp_hs_lhp_hs2600170",
+        "fullName": "Lâm Văn Tùng",
+        "email": "lhp_hs_lhp_hs2600170@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600170@2026"
+      },
+      {
+        "uid": "ef491182-5526-406e-99c8-33ad8c7cfbdc",
+        "studentCode": "LHP_HS2600171",
+        "userName": "lhp_hs_lhp_hs2600171",
+        "fullName": "Lê Hải Dũng",
+        "email": "lhp_hs_lhp_hs2600171@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600171@2026"
+      },
+      {
+        "uid": "b0c1f39b-1772-45aa-8886-4faaf5516aff",
+        "studentCode": "LHP_HS2600172",
+        "userName": "lhp_hs_lhp_hs2600172",
+        "fullName": "Hồ Thùy Diệp",
+        "email": "lhp_hs_lhp_hs2600172@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600172@2026"
+      },
+      {
+        "uid": "d055d6a1-6ed4-416a-82ca-aef894c1b83c",
+        "studentCode": "LHP_HS2600173",
+        "userName": "lhp_hs_lhp_hs2600173",
+        "fullName": "Nguyễn Khánh Thủy",
+        "email": "lhp_hs_lhp_hs2600173@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600173@2026"
+      },
+      {
+        "uid": "3fdcaad2-4335-4daf-b0ed-161c56c8793a",
+        "studentCode": "LHP_HS2600174",
+        "userName": "lhp_hs_lhp_hs2600174",
+        "fullName": "Ngô Quốc Bảo",
+        "email": "bao.ngo200914@gmail.com",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600174@2026"
+      },
+      {
+        "uid": "893a0f27-4383-4109-b014-95a319574be7",
+        "studentCode": "LHP_HS2600175",
+        "userName": "lhp_hs_lhp_hs2600175",
+        "fullName": "Hồ Quỳnh Huyền",
+        "email": "lhp_hs_lhp_hs2600175@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600175@2026"
+      },
+      {
+        "uid": "c2e59293-2588-43ff-a6b2-7ed5c620852e",
+        "studentCode": "LHP_HS2600176",
+        "userName": "lhp_hs_lhp_hs2600176",
+        "fullName": "Hoàng Anh Tú",
+        "email": "lhp_hs_lhp_hs2600176@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600176@2026"
+      },
+      {
+        "uid": "ae486381-664e-4759-87c9-ee0b4f682b36",
+        "studentCode": "LHP_HS2600177",
+        "userName": "lhp_hs_lhp_hs2600177",
+        "fullName": "Ngô Thanh Trang",
+        "email": "lhp_hs_lhp_hs2600177@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600177@2026"
+      },
+      {
+        "uid": "60c7843f-b743-4b35-bd37-9b610ade44a8",
+        "studentCode": "LHP_HS2600178",
+        "userName": "lhp_hs_lhp_hs2600178",
+        "fullName": "Huỳnh Trọng Tuấn",
+        "email": "lhp_hs_lhp_hs2600178@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@574"
+      },
+      {
+        "uid": "c39c99d1-2fda-4181-bc75-1ca04ae06f84",
+        "studentCode": "LHP_HS2600179",
+        "userName": "lhp_hs_lhp_hs2600179",
+        "fullName": "Ngô Hải Tú",
+        "email": "lhp_hs_lhp_hs2600179@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 3000,
+        "initialPassword": "LHP_HS2600179@2026"
+      },
+      {
+        "uid": "723dbeb4-49f0-4103-a63e-13fd17898ce1",
+        "studentCode": "LHP_HS2600180",
+        "userName": "lhp_hs_lhp_hs2600180",
+        "fullName": "Trần Minh Khoa",
+        "email": "lhp_hs_lhp_hs2600180@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600180@2026"
+      },
+      {
+        "uid": "76d750d7-73b7-4ce2-9783-4408d78eb309",
+        "studentCode": "LHP_HS2600181",
+        "userName": "lhp_hs_lhp_hs2600181",
+        "fullName": "Lý Phương Yến",
+        "email": "lhp_hs_lhp_hs2600181@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600181@2026"
+      },
+      {
+        "uid": "3e580da3-7906-4d62-94fa-60c1c7bd7c3d",
+        "studentCode": "LHP_HS2600182",
+        "userName": "lhp_hs_lhp_hs2600182",
+        "fullName": "Đỗ Hải Trí",
+        "email": "lhp_hs_lhp_hs2600182@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600182@2026"
+      },
+      {
+        "uid": "3bfcc407-060b-4c99-8c02-9fbc2b8d8157",
+        "studentCode": "LHP_HS2600183",
+        "userName": "lhp_hs_lhp_hs2600183",
+        "fullName": "Trần Quốc Long",
+        "email": "lhp_hs_lhp_hs2600183@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600183@2026"
+      },
+      {
+        "uid": "915e1955-5864-481c-aae1-bf6a51170eb4",
+        "studentCode": "LHP_HS2600184",
+        "userName": "lhp_hs_lhp_hs2600184",
+        "fullName": "Hồ Quốc Minh",
+        "email": "lhp_hs_lhp_hs2600184@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600184@2026"
+      },
+      {
+        "uid": "e0460922-dfe9-4f2f-9528-f35ac3588c6d",
+        "studentCode": "LHP_HS2600185",
+        "userName": "lhp_hs_lhp_hs2600185",
+        "fullName": "Đỗ Hoàng Hoàng",
+        "email": "lhp_hs_lhp_hs2600185@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600185@2026"
+      },
+      {
+        "uid": "d529b920-2aae-4b96-bee6-bd20afe68e07",
+        "studentCode": "LHP_HS2600186",
+        "userName": "lhp_hs_lhp_hs2600186",
+        "fullName": "Trần Thị Quỳnh",
+        "email": "quynh.tran200929@gmail.com",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600186@2026"
+      },
+      {
+        "uid": "fdfd6e7a-06a6-405f-977b-a6f2a8e586ed",
+        "studentCode": "LHP_HS2600187",
+        "userName": "lhp_hs_lhp_hs2600187",
+        "fullName": "Nguyễn Thị Uyên",
+        "email": "lhp_hs_lhp_hs2600187@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600187@2026"
+      },
+      {
+        "uid": "7c63d9c8-e847-4d95-9e3b-7c7ca2ee5404",
+        "studentCode": "LHP_HS2600188",
+        "userName": "lhp_hs_lhp_hs2600188",
+        "fullName": "Huỳnh Mai Dung",
+        "email": "lhp_hs_lhp_hs2600188@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 11000,
+        "initialPassword": "LHP_HS2600188@2026"
+      },
+      {
+        "uid": "4f2102fc-b0b9-4096-9d84-37f84bcb0c25",
+        "studentCode": "LHP_HS2600189",
+        "userName": "lhp_hs_lhp_hs2600189",
+        "fullName": "Vũ Khánh Diệp",
+        "email": "lhp_hs_lhp_hs2600189@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@109"
+      },
+      {
+        "uid": "dbcd1f6c-a1f2-4948-bc02-c4dc700eedda",
+        "studentCode": "LHP_HS2600190",
+        "userName": "lhp_hs_lhp_hs2600190",
+        "fullName": "Ngô Anh Phúc",
+        "email": "lhp_hs_lhp_hs2600190@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600190@2026"
+      },
+      {
+        "uid": "c4004b9e-c8e5-44fb-adfa-ef2eac47acbf",
+        "studentCode": "LHP_HS2600191",
+        "userName": "lhp_hs_lhp_hs2600191",
+        "fullName": "Lê Anh Nghĩa",
+        "email": "lhp_hs_lhp_hs2600191@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600191@2026"
+      },
+      {
+        "uid": "8d16181d-5c06-4790-b721-5ca85e619b94",
+        "studentCode": "LHP_HS2600192",
+        "userName": "lhp_hs_lhp_hs2600192",
+        "fullName": "Đặng Ngọc Vy",
+        "email": "lhp_hs_lhp_hs2600192@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600192@2026"
+      },
+      {
+        "uid": "10af69ce-9681-4004-a8b2-924a91ed738b",
+        "studentCode": "LHP_HS2600193",
+        "userName": "lhp_hs_lhp_hs2600193",
+        "fullName": "Lê Thanh Ngọc",
+        "email": "lhp_hs_lhp_hs2600193@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600193@2026"
+      },
+      {
+        "uid": "f334f2a9-0ca1-4cb0-a907-5f799eeaec2c",
+        "studentCode": "LHP_HS2600194",
+        "userName": "lhp_hs_lhp_hs2600194",
+        "fullName": "Dương Quỳnh Huyền",
+        "email": "lhp_hs_lhp_hs2600194@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "LHP_HS2600194@2026"
+      },
+      {
+        "uid": "9a5b9c8c-a68c-43ee-9176-3b83857f5118",
+        "studentCode": "LHP_HS2600195",
+        "userName": "lhp_hs_lhp_hs2600195",
+        "fullName": "Lê Khánh Hà",
+        "email": "lhp_hs_lhp_hs2600195@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "LHP_HS2600195@2026"
+      },
+      {
+        "uid": "6b6f379f-c4b9-43ca-b389-c597c99a866f",
+        "studentCode": "LHP_HS2600196",
+        "userName": "lhp_hs_lhp_hs2600196",
+        "fullName": "Võ Minh Hoàng",
+        "email": "lhp_hs_lhp_hs2600196@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "LHP_HS2600196@2026"
+      },
+      {
+        "uid": "a2534374-a58b-46a9-a19c-64d9f7c139a2",
+        "studentCode": "LHP_HS2600197",
+        "userName": "lhp_hs_lhp_hs2600197",
+        "fullName": "Bùi Hữu An",
+        "email": "lhp_hs_lhp_hs2600197@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600197@2026"
+      },
+      {
+        "uid": "e3890a75-8deb-40c1-9f24-0002965b808a",
+        "studentCode": "LHP_HS2600198",
+        "userName": "lhp_hs_lhp_hs2600198",
+        "fullName": "Huỳnh Diệu Oanh",
+        "email": "lhp_hs_lhp_hs2600198@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@545"
+      },
+      {
+        "uid": "dff19a36-fbc8-47b6-adb3-cb925f5f60bd",
+        "studentCode": "LHP_HS2600199",
+        "userName": "lhp_hs_lhp_hs2600199",
+        "fullName": "Lê Tuấn Nam",
+        "email": "lhp_hs_lhp_hs2600199@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "LHP_HS2600199@2026"
+      },
+      {
+        "uid": "e51ac719-134e-4806-9c9f-bafe1436f6b7",
+        "studentCode": "LHP_HS2600200",
+        "userName": "lhp_hs_lhp_hs2600200",
+        "fullName": "Hồ Trọng Phúc",
+        "email": "lhp_hs_lhp_hs2600200@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "LHP_HS2600200@2026"
+      },
+      {
+        "uid": "94f37d2b-af97-446b-b47c-5f231dd94edf",
+        "studentCode": "LHP_HS2600201",
+        "userName": "lhp_hs_lhp_hs2600201",
+        "fullName": "Huỳnh Hữu Phong",
+        "email": "lhp_hs_lhp_hs2600201@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600201@2026"
+      },
+      {
+        "uid": "790ccb1e-e44b-45e3-97ee-e6d7556f9d6f",
+        "studentCode": "LHP_HS2600202",
+        "userName": "lhp_hs_lhp_hs2600202",
+        "fullName": "Hồ Thu Duyên",
+        "email": "lhp_hs_lhp_hs2600202@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@844"
+      },
+      {
+        "uid": "ae9e1fe1-3247-4350-a850-9868e6f33cde",
+        "studentCode": "LHP_HS2600203",
+        "userName": "lhp_hs_lhp_hs2600203",
+        "fullName": "Đặng Tiến Đạt",
+        "email": "dat.dang201148@gmail.com",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600203@2026"
+      },
+      {
+        "uid": "b764918e-0e70-44ed-8db9-3e0b0703357e",
+        "studentCode": "LHP_HS2600204",
+        "userName": "lhp_hs_lhp_hs2600204",
+        "fullName": "Lý Quốc Tài",
+        "email": "lhp_hs_lhp_hs2600204@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@354"
+      },
+      {
+        "uid": "ae2934e1-eca0-472c-b21a-782d8f8065f9",
+        "studentCode": "LHP_HS2600205",
+        "userName": "lhp_hs_lhp_hs2600205",
+        "fullName": "Trần Quốc Tài",
+        "email": "tai.tran201043@gmail.com",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600205@2026"
+      },
+      {
+        "uid": "5b05f449-83f5-4534-b2bf-48e0c42e9cae",
+        "studentCode": "LHP_HS2600206",
+        "userName": "lhp_hs_lhp_hs2600206",
+        "fullName": "Hồ Đình Vinh",
+        "email": "lhp_hs_lhp_hs2600206@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600206@2026"
+      },
+      {
+        "uid": "979b1ff9-79b6-468a-983a-085792dd5eec",
+        "studentCode": "LHP_HS2600207",
+        "userName": "lhp_hs_lhp_hs2600207",
+        "fullName": "Dương Trọng Kiên",
+        "email": "kien.duong201199@gmail.com",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@145"
+      },
+      {
+        "uid": "efe5c955-bfb1-4210-835d-2b4fb78654f8",
+        "studentCode": "LHP_HS2600208",
+        "userName": "lhp_hs_lhp_hs2600208",
+        "fullName": "Bùi Anh Hải",
+        "email": "lhp_hs_lhp_hs2600208@saas.historytalk.vn",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600208@2026"
+      },
+      {
+        "uid": "de987aca-3165-4fc3-b751-f8fb14942e1d",
+        "studentCode": "LHP_HS2600209",
+        "userName": "lhp_hs_lhp_hs2600209",
+        "fullName": "Hồ Anh Khang",
+        "email": "lhp_hs_lhp_hs2600209@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600209@2026"
+      },
+      {
+        "uid": "1bf40aff-68a8-4c62-b042-810a25a10bdf",
+        "studentCode": "LHP_HS2600210",
+        "userName": "lhp_hs_lhp_hs2600210",
+        "fullName": "Phan Khánh Chi",
+        "email": "lhp_hs_lhp_hs2600210@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600210@2026"
+      },
+      {
+        "uid": "9b368339-7ef1-4e90-9545-27164bc09c71",
+        "studentCode": "LHP_HS2600211",
+        "userName": "lhp_hs_lhp_hs2600211",
+        "fullName": "Hồ Kim Duyên",
+        "email": "lhp_hs_lhp_hs2600211@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600211@2026"
+      },
+      {
+        "uid": "6888b823-2a08-46ed-9dcb-868a55a999e7",
+        "studentCode": "LHP_HS2600212",
+        "userName": "lhp_hs_lhp_hs2600212",
+        "fullName": "Vũ Quang Hiếu",
+        "email": "hieu.vu200959@gmail.com",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@492"
+      },
+      {
+        "uid": "c1341af5-ff11-45b3-9226-59a4d8fe4b78",
+        "studentCode": "LHP_HS2600213",
+        "userName": "lhp_hs_lhp_hs2600213",
+        "fullName": "Huỳnh Thanh Hạnh",
+        "email": "lhp_hs_lhp_hs2600213@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600213@2026"
+      },
+      {
+        "uid": "7fde6d80-d340-4b03-a99c-32e2f5fbdc56",
+        "studentCode": "LHP_HS2600214",
+        "userName": "lhp_hs_lhp_hs2600214",
+        "fullName": "Phan Hữu Tùng",
+        "email": "lhp_hs_lhp_hs2600214@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "LHP_HS2600214@2026"
+      },
+      {
+        "uid": "b00abfdd-46af-41db-a552-5f712c6e19e5",
+        "studentCode": "LHP_HS2600215",
+        "userName": "lhp_hs_lhp_hs2600215",
+        "fullName": "Võ Đức Tuấn",
+        "email": "lhp_hs_lhp_hs2600215@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600215@2026"
+      },
+      {
+        "uid": "fc55e11c-78db-4389-ad1d-bb6a5ffb21ab",
+        "studentCode": "LHP_HS2600216",
+        "userName": "lhp_hs_lhp_hs2600216",
+        "fullName": "Võ Thanh Nhung",
+        "email": "lhp_hs_lhp_hs2600216@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@949"
+      },
+      {
+        "uid": "58443a6e-1c01-4440-a74a-815734a59f4f",
+        "studentCode": "LHP_HS2600217",
+        "userName": "lhp_hs_lhp_hs2600217",
+        "fullName": "Trần Đình Nam",
+        "email": "lhp_hs_lhp_hs2600217@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600217@2026"
+      },
+      {
+        "uid": "5db04174-b1fd-4504-bd75-1cf6822b2bcf",
+        "studentCode": "LHP_HS2600218",
+        "userName": "lhp_hs_lhp_hs2600218",
+        "fullName": "Ngô Ngọc Giang",
+        "email": "giang.ngo200954@gmail.com",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "LHP_HS2600218@2026"
+      },
+      {
+        "uid": "aba4b02e-5020-4275-b3da-0b26abbdf360",
+        "studentCode": "LHP_HS2600219",
+        "userName": "lhp_hs_lhp_hs2600219",
+        "fullName": "Đào Diệu Dung",
+        "email": "lhp_hs_lhp_hs2600219@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 3000,
+        "initialPassword": "StudentPass@986"
+      },
+      {
+        "uid": "7c89203b-b7d8-401e-9466-42f11e82afd4",
+        "studentCode": "LHP_HS2600220",
+        "userName": "lhp_hs_lhp_hs2600220",
+        "fullName": "Hồ Quỳnh Hà",
+        "email": "lhp_hs_lhp_hs2600220@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600220@2026"
+      },
+      {
+        "uid": "69c5cd79-6dd5-43c6-87fd-dda59dbef24b",
+        "studentCode": "LHP_HS2600221",
+        "userName": "lhp_hs_lhp_hs2600221",
+        "fullName": "Lý Tuấn Vinh",
+        "email": "lhp_hs_lhp_hs2600221@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600221@2026"
+      },
+      {
+        "uid": "4b0dea7e-66bc-435b-99da-3fee20ae9896",
+        "studentCode": "LHP_HS2600222",
+        "userName": "lhp_hs_lhp_hs2600222",
+        "fullName": "Hồ Phương Thảo",
+        "email": "lhp_hs_lhp_hs2600222@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600222@2026"
+      },
+      {
+        "uid": "0c5a5c83-8302-4bb7-b86e-a33d58ddb252",
+        "studentCode": "LHP_HS2600223",
+        "userName": "lhp_hs_lhp_hs2600223",
+        "fullName": "Trần Thị Dung",
+        "email": "lhp_hs_lhp_hs2600223@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600223@2026"
+      },
+      {
+        "uid": "5c158540-c70e-4564-94da-4409bb982735",
+        "studentCode": "LHP_HS2600224",
+        "userName": "lhp_hs_lhp_hs2600224",
+        "fullName": "Đặng Ngọc Ly",
+        "email": "lhp_hs_lhp_hs2600224@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@740"
+      },
+      {
+        "uid": "26fc733f-881e-4f71-baf6-c6fbf1b57dfd",
+        "studentCode": "LHP_HS2600225",
+        "userName": "lhp_hs_lhp_hs2600225",
+        "fullName": "Lê Tiến Hải",
+        "email": "hai.le200885@gmail.com",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@812"
+      },
+      {
+        "uid": "d1c34c09-c893-403f-9b91-9c621b45c5b8",
+        "studentCode": "LHP_HS2600226",
+        "userName": "lhp_hs_lhp_hs2600226",
+        "fullName": "Ngô Tuyết Giang",
+        "email": "lhp_hs_lhp_hs2600226@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@420"
+      },
+      {
+        "uid": "c16df31f-a6d5-4858-87ef-6169bbc73d2e",
+        "studentCode": "LHP_HS2600227",
+        "userName": "lhp_hs_lhp_hs2600227",
+        "fullName": "Hoàng Anh Hưng",
+        "email": "hung.hoang200893@gmail.com",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 11000,
+        "initialPassword": "LHP_HS2600227@2026"
+      },
+      {
+        "uid": "25df87bd-19e1-41e2-beba-8011113e6ae7",
+        "studentCode": "LHP_HS2600228",
+        "userName": "lhp_hs_lhp_hs2600228",
+        "fullName": "Lê Mai Giang",
+        "email": "lhp_hs_lhp_hs2600228@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "LHP_HS2600228@2026"
+      },
+      {
+        "uid": "1867510e-610d-4d18-a613-c154264c3042",
+        "studentCode": "LHP_HS2600229",
+        "userName": "lhp_hs_lhp_hs2600229",
+        "fullName": "Đặng Trọng Bảo",
+        "email": "lhp_hs_lhp_hs2600229@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600229@2026"
+      },
+      {
+        "uid": "4dfe2949-9b63-49ac-9191-5f8b02fc52f5",
+        "studentCode": "LHP_HS2600230",
+        "userName": "lhp_hs_lhp_hs2600230",
+        "fullName": "Phạm Đức Trí",
+        "email": "lhp_hs_lhp_hs2600230@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@981"
+      },
+      {
+        "uid": "5584feb9-a77c-41db-90a3-9ece12d67a35",
+        "studentCode": "LHP_HS2600231",
+        "userName": "lhp_hs_lhp_hs2600231",
+        "fullName": "Huỳnh Trọng Toàn",
+        "email": "toan.huynh200843@gmail.com",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600231@2026"
+      },
+      {
+        "uid": "a8ed312e-61d5-4b9e-923d-55c2132b18d1",
+        "studentCode": "LHP_HS2600232",
+        "userName": "lhp_hs_lhp_hs2600232",
+        "fullName": "Ngô Tuyết Phương",
+        "email": "lhp_hs_lhp_hs2600232@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@308"
+      },
+      {
+        "uid": "a1c07da6-86af-43ac-93bc-555c62543a92",
+        "studentCode": "LHP_HS2600233",
+        "userName": "lhp_hs_lhp_hs2600233",
+        "fullName": "Hồ Kim Chi",
+        "email": "lhp_hs_lhp_hs2600233@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@188"
+      },
+      {
+        "uid": "789e46bd-e8a7-4101-bcc1-883755b5dc83",
+        "studentCode": "LHP_HS2600234",
+        "userName": "lhp_hs_lhp_hs2600234",
+        "fullName": "Trần Quang Khang",
+        "email": "khang.tran200811@gmail.com",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600234@2026"
+      },
+      {
+        "uid": "2cfc7956-27c4-4f3e-896d-b4b634006425",
+        "studentCode": "LHP_HS2600235",
+        "userName": "lhp_hs_lhp_hs2600235",
+        "fullName": "Hoàng Tiến Nghĩa",
+        "email": "lhp_hs_lhp_hs2600235@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600235@2026"
+      },
+      {
+        "uid": "59293e8d-b8a5-4b1e-a640-e7484bd62f97",
+        "studentCode": "LHP_HS2600236",
+        "userName": "lhp_hs_lhp_hs2600236",
+        "fullName": "Đào Tuấn Dũng",
+        "email": "lhp_hs_lhp_hs2600236@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600236@2026"
+      },
+      {
+        "uid": "a49c2281-2c5a-4e29-be58-00e405a9a51d",
+        "studentCode": "LHP_HS2600237",
+        "userName": "lhp_hs_lhp_hs2600237",
+        "fullName": "Nguyễn Phương Bích",
+        "email": "lhp_hs_lhp_hs2600237@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600237@2026"
+      },
+      {
+        "uid": "edf28f56-86e5-4ae5-aa14-9eb1e62851f2",
+        "studentCode": "LHP_HS2600238",
+        "userName": "lhp_hs_lhp_hs2600238",
+        "fullName": "Vũ Hữu Phong",
+        "email": "lhp_hs_lhp_hs2600238@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 2000,
+        "initialPassword": "LHP_HS2600238@2026"
+      },
+      {
+        "uid": "9dd54356-efec-4a66-8321-725fe1f5723a",
+        "studentCode": "LHP_HS2600239",
+        "userName": "lhp_hs_lhp_hs2600239",
+        "fullName": "Dương Quang Phát",
+        "email": "lhp_hs_lhp_hs2600239@saas.historytalk.vn",
+        "classCode": "HIS11B2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600239@2026"
+      },
+      {
+        "uid": "bd7e395e-95dd-4e40-83eb-8f75021bcc6f",
+        "studentCode": "LHP_HS2600240",
+        "userName": "lhp_hs_lhp_hs2600240",
+        "fullName": "Lý Phương Uyên",
+        "email": "lhp_hs_lhp_hs2600240@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600240@2026"
+      },
+      {
+        "uid": "3d515c0e-3078-408a-aef4-56444cc2136b",
+        "studentCode": "LHP_HS2600241",
+        "userName": "lhp_hs_lhp_hs2600241",
+        "fullName": "Nguyễn Diệu Oanh",
+        "email": "lhp_hs_lhp_hs2600241@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "LHP_HS2600241@2026"
+      },
+      {
+        "uid": "5301ea7c-6489-479e-b195-5ef722ac100b",
+        "studentCode": "LHP_HS2600242",
+        "userName": "lhp_hs_lhp_hs2600242",
+        "fullName": "Vũ Hải Tâm",
+        "email": "tam.vu201022@gmail.com",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600242@2026"
+      },
+      {
+        "uid": "4a8ef476-d044-4f72-9602-be651913a792",
+        "studentCode": "LHP_HS2600243",
+        "userName": "lhp_hs_lhp_hs2600243",
+        "fullName": "Hoàng Đức Nhân",
+        "email": "lhp_hs_lhp_hs2600243@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600243@2026"
+      },
+      {
+        "uid": "fcc55170-ca98-426a-b004-ced2d94df70c",
+        "studentCode": "LHP_HS2600244",
+        "userName": "lhp_hs_lhp_hs2600244",
+        "fullName": "Phan Hoàng Vinh",
+        "email": "lhp_hs_lhp_hs2600244@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600244@2026"
+      },
+      {
+        "uid": "c0254109-3d39-4b6b-829f-2e447d44380e",
+        "studentCode": "LHP_HS2600245",
+        "userName": "lhp_hs_lhp_hs2600245",
+        "fullName": "Dương Quang Hiếu",
+        "email": "lhp_hs_lhp_hs2600245@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 6000,
+        "initialPassword": "LHP_HS2600245@2026"
+      },
+      {
+        "uid": "8f6c54a6-973d-44b6-bbb4-3a84a64f9ff2",
+        "studentCode": "LHP_HS2600246",
+        "userName": "lhp_hs_lhp_hs2600246",
+        "fullName": "Vũ Tuấn Tài",
+        "email": "lhp_hs_lhp_hs2600246@saas.historytalk.vn",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@514"
+      },
+      {
+        "uid": "42510b2c-7989-4700-aadf-e0154de46b63",
+        "studentCode": "LHP_HS2600247",
+        "userName": "lhp_hs_lhp_hs2600247",
+        "fullName": "Vũ Mai Thủy",
+        "email": "thuy.vu200838@gmail.com",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600247@2026"
+      },
+      {
+        "uid": "af4ba41a-4442-491e-9dcf-a560d3e6ade3",
+        "studentCode": "LHP_HS2600248",
+        "userName": "lhp_hs_lhp_hs2600248",
+        "fullName": "Võ Mai Ánh",
+        "email": "lhp_hs_lhp_hs2600248@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 11000,
+        "initialPassword": "StudentPass@572"
+      },
+      {
+        "uid": "f023adae-0ff1-4b47-8f50-03a6f2cd867e",
+        "studentCode": "LHP_HS2600249",
+        "userName": "lhp_hs_lhp_hs2600249",
+        "fullName": "Hồ Anh Thắng",
+        "email": "lhp_hs_lhp_hs2600249@saas.historytalk.vn",
+        "classCode": "HIS11B1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "StudentPass@734"
+      },
+      {
+        "uid": "84ab10d8-f998-4432-984d-bd83bc408c67",
+        "studentCode": "LHP_HS2600250",
+        "userName": "lhp_hs_lhp_hs2600250",
+        "fullName": "Đoàn Đình Dũng",
+        "email": "dung.doan200835@gmail.com",
+        "classCode": "HIS12C2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600250@2026"
+      },
+      {
+        "uid": "c2c7fd8b-143d-4244-b27d-33591e6c823f",
+        "studentCode": "LHP_HS2600251",
+        "userName": "lhp_hs_lhp_hs2600251",
+        "fullName": "Hồ Tuyết Ngọc",
+        "email": "lhp_hs_lhp_hs2600251@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600251@2026"
+      },
+      {
+        "uid": "af74e5b2-81f5-43fa-8042-d6b17e582362",
+        "studentCode": "LHP_HS2600252",
+        "userName": "lhp_hs_lhp_hs2600252",
+        "fullName": "Vũ Văn Nghĩa",
+        "email": "lhp_hs_lhp_hs2600252@saas.historytalk.vn",
+        "classCode": "HIS10A4-2026",
+        "allocatedToken": 3000,
+        "initialPassword": "LHP_HS2600252@2026"
+      },
+      {
+        "uid": "2df5bc00-ff84-4713-a154-3892964c21a1",
+        "studentCode": "LHP_HS2600253",
+        "userName": "lhp_hs_lhp_hs2600253",
+        "fullName": "Trần Trọng Long",
+        "email": "lhp_hs_lhp_hs2600253@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600253@2026"
+      },
+      {
+        "uid": "0ba59512-cbb0-40c1-8845-6580e76a3af5",
+        "studentCode": "LHP_HS2600254",
+        "userName": "lhp_hs_lhp_hs2600254",
+        "fullName": "Đỗ Kim Vy",
+        "email": "lhp_hs_lhp_hs2600254@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600254@2026"
+      },
+      {
+        "uid": "e293cc1f-85b0-4766-8453-530e6c6800b3",
+        "studentCode": "LHP_HS2600255",
+        "userName": "lhp_hs_lhp_hs2600255",
+        "fullName": "Lê Văn Long",
+        "email": "lhp_hs_lhp_hs2600255@saas.historytalk.vn",
+        "classCode": "HIS10A3-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600255@2026"
+      },
+      {
+        "uid": "2a380ef1-2987-4d34-bf93-bf795df21c29",
+        "studentCode": "LHP_HS2600256",
+        "userName": "lhp_hs_lhp_hs2600256",
+        "fullName": "Bùi Thị Ánh",
+        "email": "lhp_hs_lhp_hs2600256@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600256@2026"
+      },
+      {
+        "uid": "929e34f3-06e1-452b-aed8-11103fa6f3b2",
+        "studentCode": "LHP_HS2600257",
+        "userName": "lhp_hs_lhp_hs2600257",
+        "fullName": "Hồ Quốc Hải",
+        "email": "hai.ho201030@gmail.com",
+        "classCode": "HIS12C1-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600257@2026"
+      },
+      {
+        "uid": "8cd3a4b8-6c83-43b6-9100-4cb497e4a147",
+        "studentCode": "LHP_HS2600258",
+        "userName": "lhp_hs_lhp_hs2600258",
+        "fullName": "Huỳnh Tuyết Vân",
+        "email": "lhp_hs_lhp_hs2600258@saas.historytalk.vn",
+        "classCode": "HIS10A1-2026",
+        "allocatedToken": 11000,
+        "initialPassword": "StudentPass@846"
+      },
+      {
+        "uid": "9d4ab1ea-0ecd-40b0-aa14-ad44a022fd2a",
+        "studentCode": "LHP_HS2600259",
+        "userName": "lhp_hs_lhp_hs2600259",
+        "fullName": "Bùi Trọng Long",
+        "email": "lhp_hs_lhp_hs2600259@saas.historytalk.vn",
+        "classCode": "HIS10A2-2026",
+        "allocatedToken": 1000,
+        "initialPassword": "LHP_HS2600259@2026"
+      },
+      {
+        "uid": "1b1d1d19-c897-4e96-b264-8d1affe2a24d",
+        "studentCode": "LHP_HS2600260",
+        "userName": "lhp_hs_lhp_hs2600260",
+        "fullName": "Bùi Quỳnh Anh",
+        "email": "lhp_hs_lhp_hs2600260@saas.historytalk.vn",
+        "classCode": "HIS11B3-2026",
+        "allocatedToken": 11000,
+        "initialPassword": "LHP_HS2600260@2026"
+      }
+    ]
+  },
+  "timestamp": "2026-10-09T13:59:27.5735632",
+  "errorCode": null
+}

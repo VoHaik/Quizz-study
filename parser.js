@@ -149,10 +149,13 @@ function parseInputToQuestions(inputText) {
       if (Array.isArray(jsonArr) && jsonArr.length > 0 && jsonArr[0].question && jsonArr[0].options) {
         return jsonArr.map((q, idx) => ({
           id: q.id || idx + 1,
+          type: q.type || (q.correctAnswers && q.correctAnswers.length > 1 ? 'multiple' : 'single'),
           question: q.question,
           options: q.options,
           correctAnswers: q.correctAnswers || ['A'],
-          rawAnswer: q.rawAnswer || (q.correctAnswers ? q.correctAnswers.join(',') : 'A')
+          rawAnswer: q.rawAnswer || (q.correctAnswers ? q.correctAnswers.join(',') : 'A'),
+          explanation: q.explanation || '',
+          imageSource: q.imageSource || ''
         }));
       }
     } catch (e) {

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Python & Caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OCR Traineddata
+*.traineddata
+
+# Checkpoints & scratch dumps
+checkpoint_*.json
+hcm202_checkpoint.json
+all_issues_report.json
+*.png
+!HCM202/*.png
+
+# Python scratch scripts
+*.py

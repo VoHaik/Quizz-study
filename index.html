@@ -3,57 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ôn Thi Kinh Tế Chính Trị Mác - Lênin (MLN122) - Học Thuộc Lòng Siêu Tốc 496 Câu</title>
-  <meta name="description" content="Ứng dụng web ôn thi trắc nghiệm học thuộc lòng 496 câu hỏi môn Kinh tế chính trị Mác - Lênin (MLN122) siêu tốc cho sinh viên.">
+  <title>Ôn Thi Tư Tưởng Hồ Chí Minh (HCM202) - Đề Thi Final Exam 415 Câu 100% Chuẩn</title>
+  <meta name="description" content="Ứng dụng web ôn thi trắc nghiệm 415 câu hỏi môn Tư tưởng Hồ Chí Minh (HCM202) Final Exam chính xác 100% chuẩn Giáo trình 2021.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="app">
     <!-- Header Navbar -->
-    <header>
-      <div class="brand">
-        <div class="brand-icon">⚡</div>
-        <div>
-          <h1 class="brand-title">MLN122 - Ôn Thi Siêu Tốc</h1>
-          <div class="brand-subtitle">Học thuộc lòng 496 câu trắc nghiệm Kinh tế chính trị</div>
+    <header class="app-header">
+      <!-- Top Row: Brand & Quick Action Controls -->
+      <div class="header-top">
+        <div class="brand">
+          <div class="brand-icon">⚡</div>
+          <div class="brand-info">
+            <div class="brand-title-wrap">
+              <h1 class="brand-title" id="mainBrandTitle">HCM202 - Tư Tưởng Hồ Chí Minh</h1>
+              <span class="subject-badge" id="activeSubjectBadge">HCM202</span>
+            </div>
+            <div class="brand-subtitle" id="subjectSubtitle">Học thuộc lòng 415 câu trắc nghiệm Final Exam SP2025 (Chính xác 100%)</div>
+          </div>
+        </div>
+
+        <div class="header-tools">
+          <button class="btn-action btn-ocr-trigger" id="ocrModalBtn" title="Trích xuất bộ câu hỏi từ ảnh đề thi không giới hạn bằng OCR">
+            📸 OCR Đề Thi
+          </button>
+          <button class="btn-action btn-primary" id="importModalBtn" title="Chuyển đổi môn học hoặc import file bộ đề mới">
+            📁 Đổi Môn / Import
+          </button>
+          <button class="btn-action btn-secondary" id="shuffleToggle" title="Bật/Tắt xáo trộn câu hỏi và đáp án">
+            🔀 <span id="shuffleStatus">Xáo trộn: TẮT</span>
+          </button>
+          <button class="btn-icon" id="soundToggle" title="Bật/Tắt âm thanh">🔊</button>
+          <button class="btn-icon" id="resetBtn" title="Reset tiến độ học">🔄</button>
         </div>
       </div>
 
-      <nav class="nav-modes">
-        <button class="mode-tab active" data-mode="quick" id="tab-quick">⚡ Luyện Siêu Tốc</button>
-        <button class="mode-tab" data-mode="flashcard" id="tab-flashcard">🧠 Flashcards</button>
-        <button class="mode-tab" data-mode="mistakes" id="tab-mistakes">🎯 Câu Sai & Khó</button>
-        <button class="mode-tab" data-mode="exam" id="tab-exam">📝 Thi Thử (40 câu)</button>
-        <button class="mode-tab" data-mode="bank" id="tab-bank">🔍 Ngân Hàng Câu Hỏi</button>
-      </nav>
-
-      <div class="header-actions">
-        <select class="select-range" id="rangeSelect" title="Chọn dải câu hỏi để học">
-          <option value="all">Toàn bộ 496 câu</option>
-        </select>
-
-        <button class="btn-action btn-primary" id="multiSelectBtn" style="padding: 0.4rem 0.85rem; font-size: 0.85rem; background: linear-gradient(135deg, #10b981, #059669); border: none; font-weight: 700;" title="Lọc riêng các câu hỏi chọn 2 đáp án để học thuộc nhanh">
-          ✌️ Ôn 68 câu chọn 2 đáp án
-        </button>
-
-        <div class="custom-range-box" id="customRangeBox" style="display: none; align-items: center; gap: 0.4rem; background: rgba(15, 23, 42, 0.8); padding: 0.25rem 0.6rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-          <span style="font-size: 0.8rem; color: var(--text-muted);">Từ:</span>
-          <input type="number" id="customStart" value="1" min="1" max="496" style="width: 55px; background: rgba(255,255,255,0.08); border: 1px solid var(--border-subtle); border-radius: 4px; padding: 3px 6px; font-size: 0.85rem; text-align: center; color: #fff;">
-          <span style="font-size: 0.8rem; color: var(--text-muted);">Đến:</span>
-          <input type="number" id="customEnd" value="150" min="1" max="496" style="width: 55px; background: rgba(255,255,255,0.08); border: 1px solid var(--border-subtle); border-radius: 4px; padding: 3px 6px; font-size: 0.85rem; text-align: center; color: #fff;">
-          <button class="btn-action btn-primary" id="applyCustomRangeBtn" style="padding: 0.3rem 0.7rem; font-size: 0.8rem; border-radius: 4px;">Áp dụng</button>
+      <!-- Quick Subject Switcher Row -->
+      <div class="header-subject-bar">
+        <span class="subject-bar-lbl">Môn học:</span>
+        <div class="quick-subject-switcher">
+          <button class="sub-pill active" data-subject="hcm202_fe" id="pillHcm202Fe" title="415 câu trắc nghiệm FE SP2025 FUOverflow (Chính xác 100%)">🔥 HCM202 - Final Exam (415 câu chuẩn 100%)</button>
+          <button class="sub-pill" data-subject="hcm202" id="pillHcm202" title="100 câu trắc nghiệm Assignment & SEB">⭐ HCM202 (100 câu Assignment)</button>
+          <button class="sub-pill" data-subject="mln122" id="pillMln122" title="496 câu trắc nghiệm Kinh tế chính trị">🇻🇳 MLN122 (496 câu)</button>
+          <button class="sub-pill" data-subject="ite302c" id="pillIte302c" title="394 câu trắc nghiệm Ethics in AI">🤖 ITE302c (394 câu)</button>
         </div>
+      </div>
 
-        <button class="btn-action btn-primary" id="importModalBtn" style="padding: 0.4rem 0.85rem; font-size: 0.85rem; background: linear-gradient(135deg, var(--primary), var(--accent-purple)); border: none;" title="Chuyển đổi môn học hoặc import file bộ đề mới">
-          📁 Import / Đổi môn
-        </button>
+      <!-- Bottom Row: Navigation Modes & Study Scope Filters -->
+      <div class="header-nav-bar">
+        <nav class="nav-modes">
+          <button class="mode-tab active" data-mode="quick" id="tab-quick">⚡ Luyện Siêu Tốc</button>
+          <button class="mode-tab" data-mode="flashcard" id="tab-flashcard">🧠 Flashcards</button>
+          <button class="mode-tab" data-mode="mistakes" id="tab-mistakes">🎯 Câu Sai & Khó</button>
+          <button class="mode-tab" data-mode="exam" id="tab-exam">📝 Thi Thử</button>
+          <button class="mode-tab" data-mode="bank" id="tab-bank">🔍 Ngân Hàng Câu Hỏi</button>
+        </nav>
 
-        <button class="btn-action btn-secondary" id="shuffleToggle" style="padding: 0.4rem 0.85rem; font-size: 0.85rem;" title="Bật/Tắt xáo trộn câu hỏi và đáp án">
-          🔀 <span id="shuffleStatus">Xáo trộn: TẮT</span>
-        </button>
+        <div class="header-filters">
+          <select class="select-range" id="rangeSelect" title="Chọn dải câu hỏi để học">
+            <option value="all">Toàn bộ 496 câu</option>
+          </select>
 
-        <button class="btn-icon" id="soundToggle" title="Bật/Tắt âm thanh">🔊</button>
-        <button class="btn-icon" id="resetBtn" title="Reset tiến độ học">🔄</button>
+          <button class="btn-action btn-multi-select" id="multiSelectBtn" title="Lọc riêng các câu hỏi chọn 2 đáp án để học thuộc nhanh">
+            ✌️ Ôn câu 2 đáp án
+          </button>
+
+          <div class="custom-range-box" id="customRangeBox" style="display: none;">
+            <span class="range-lbl">Từ:</span>
+            <input type="number" id="customStart" value="1" min="1" max="496">
+            <span class="range-lbl">Đến:</span>
+            <input type="number" id="customEnd" value="150" min="1" max="496">
+            <button class="btn-action btn-primary btn-range-apply" id="applyCustomRangeBtn">Lọc</button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -159,23 +182,181 @@
     </main>
   </div>
 
-  <!-- Import / Subject Switcher Modal -->
+  <!-- Import & OCR Switcher Modal -->
   <div class="modal-backdrop" id="importModal" style="display: none;">
-    <div class="modal-content">
+    <div class="modal-content modal-large">
       <div class="modal-header">
         <div>
-          <h3 style="font-size: 1.25rem; font-weight: 700; font-family: var(--font-heading);">📁 Quản Lý Bộ Đề & Import Dữ Liệu</h3>
-          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Chọn bộ đề sẵn có hoặc tải lên file Markdown / JSON mới</p>
+          <h3 class="modal-title">📁 Quản Lý Bộ Đề & OCR Trích Xuất Ảnh</h3>
+          <p class="modal-desc">Trích xuất câu hỏi từ ảnh đề thi hoặc chuyển đổi bộ đề môn học</p>
         </div>
         <button class="modal-close" id="closeImportModalBtn">&times;</button>
       </div>
-      
+
+      <!-- Navigation Tabs inside Modal -->
+      <div class="modal-tabs-bar">
+        <button class="modal-nav-tab active" data-tab="tab-ocr-content" id="modalTabOcr">
+          📸 OCR Ảnh Đề Thi <span class="badge-tag">Không Giới Hạn</span>
+        </button>
+        <button class="modal-nav-tab" data-tab="tab-presets-content" id="modalTabPresets">
+          📚 Bộ Đề Có Sẵn
+        </button>
+        <button class="modal-nav-tab" data-tab="tab-file-content" id="modalTabFile">
+          📤 Tải File (.md, .txt, .json)
+        </button>
+        <button class="modal-nav-tab" data-tab="tab-paste-content" id="modalTabPaste">
+          📝 Dán Text / JSON
+        </button>
+      </div>
+
       <div class="modal-body">
-        <!-- Section 1: Presets -->
-        <div class="import-section">
-          <label class="section-label">📚 Bộ Đề Tích Hợp Sẵn:</label>
+        <!-- Tab 1: OCR Unlimited Images -->
+        <div class="modal-tab-content active" id="tab-ocr-content">
+          <div class="ocr-workflow-steps">
+            <div class="step-item"><span class="step-num">1</span> Kéo thả nhiều ảnh đề thi</div>
+            <div class="step-item"><span class="step-num">2</span> OCR tự động trích xuất JSON</div>
+            <div class="step-item"><span class="step-num">3</span> 1-Click Copy gửi AI giải & học ngay</div>
+          </div>
+
+          <div class="drop-zone ocr-drop-zone" id="ocrDropZone">
+            <div class="drop-zone-icon">🖼️</div>
+            <div class="drop-zone-text" id="ocrDropText">
+              Kéo thả thư mục ảnh hoặc <b>click để chọn nhiều ảnh</b> (.webp, .png, .jpg)<br>
+              <small style="color: var(--accent-cyan);">Hỗ trợ chọn không giới hạn số lượng ảnh • Tự động xếp theo số thứ tự câu</small>
+            </div>
+            <input type="file" id="ocrFileInput" accept="image/*,.webp" multiple style="display: none;">
+          </div>
+
+          <!-- Selected Files Config Card -->
+          <div class="ocr-config-card" id="ocrFilesCard" style="display: none;">
+            <div class="ocr-files-summary">
+              <span class="ocr-summary-icon">📁</span>
+              <div>
+                <strong id="ocrFilesCount">Đã chọn 0 ảnh</strong>
+                <div class="ocr-files-detail" id="ocrFilesDetail"></div>
+              </div>
+            </div>
+            
+            <div class="ocr-options-row">
+              <label class="ocr-checkbox-label">
+                <input type="checkbox" id="ocrSplitCheck" checked>
+                <span>Tự động tối ưu dạng 2 cột (Kizspy / FUOverflow - bỏ watermark bên trái)</span>
+              </label>
+              <div class="ocr-lang-select-box">
+                <label for="ocrLangSelect">Ngôn ngữ:</label>
+                <select id="ocrLangSelect" class="ocr-lang-select">
+                  <option value="vie+eng" selected>Tiếng Việt + Tiếng Anh</option>
+                  <option value="vie">Chỉ Tiếng Việt</option>
+                  <option value="eng">Chỉ Tiếng Anh</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- OCR Engine Selector (Gemini AI vs Tesseract) -->
+            <div class="ocr-engine-row" style="margin: 0.8rem 0; padding: 0.85rem 1rem; background: rgba(255,255,255,0.04); border-radius: 12px; border: 1px solid rgba(255,255,255,0.12);">
+              <div style="display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap; margin-bottom: 0.6rem;">
+                <div style="display: flex; align-items: center; gap: 0.4rem;">
+                  <span style="font-weight: 700; color: var(--accent-cyan); font-size: 0.95rem;">Công nghệ OCR:</span>
+                  <select id="ocrEngineSelect" class="ocr-lang-select" style="font-weight: 700; color: #fff; background: rgba(30, 41, 59, 0.9); border: 1px solid var(--accent-cyan); padding: 0.4rem 0.75rem;">
+                    <option value="gemini" selected>🤖 Gemini 2.5 Flash Vision (Khuyên Dùng - Chuẩn 100%)</option>
+                    <option value="tesseract">⚡ Tesseract.js (Offline - Không cần mạng)</option>
+                  </select>
+                </div>
+
+                <label class="ocr-checkbox-label" id="ocrAutoSolveLabel" style="font-weight: 600; color: var(--success); cursor: pointer;">
+                  <input type="checkbox" id="ocrAutoSolveCheck" checked>
+                  <span>🧠 Tự giải luôn đáp án đúng & trích dẫn giáo trình</span>
+                </label>
+              </div>
+
+              <div id="geminiKeyBox" style="display: flex; gap: 0.6rem; align-items: center; font-size: 0.88rem;">
+                <span style="color: var(--text-muted); white-space: nowrap;">Gemini API Key:</span>
+                <input type="password" id="geminiApiKeyInput" value="" placeholder="Dán Gemini API Key vào đây..." style="flex: 1; padding: 0.35rem 0.6rem; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; color: #38bdf8; font-family: monospace; font-size: 0.85rem;">
+                <button type="button" class="btn-action btn-secondary btn-sm" id="toggleKeyVisibility" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">👁️ Hiện</button>
+              </div>
+            </div>
+
+            <div class="ocr-actions-row">
+              <button class="btn-action btn-ocr-start" id="startOcrBtn">
+                ⚡ Bắt Đầu Trích Xuất OCR
+              </button>
+              <button class="btn-action btn-secondary" id="clearOcrFilesBtn">
+                Chọn lại ảnh
+              </button>
+            </div>
+          </div>
+
+          <!-- OCR Progress Card -->
+          <div class="ocr-progress-card" id="ocrProgressCard" style="display: none;">
+            <div class="ocr-progress-header">
+              <span id="ocrProgressTitle">Đang khởi tạo OCR worker...</span>
+              <span id="ocrProgressPercent">0%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" id="ocrProgressBar" style="width: 0%;"></div>
+            </div>
+            <div class="ocr-progress-footer">
+              <span class="ocr-current-file" id="ocrCurrentFile">Vui lòng chờ giây lát...</span>
+              <button class="btn-action btn-secondary btn-sm" id="cancelOcrBtn">Dừng lại</button>
+            </div>
+          </div>
+
+          <!-- OCR Results Card -->
+          <div class="ocr-result-card" id="ocrResultCard" style="display: none;">
+            <div class="ocr-result-header">
+              <div class="ocr-result-badge" id="ocrResultBadge">
+                ✅ Đã trích xuất thành công 0 câu hỏi vào JSON
+              </div>
+            </div>
+
+            <div class="ocr-result-buttons">
+              <button class="btn-action btn-prompt-copy" id="copyAiPromptBtn" title="Copy toàn bộ câu hỏi kèm lời nhắc mẫu để gửi thẳng cho ChatGPT / Claude / Gemini giải">
+                📋 Copy Prompt + JSON cho AI giải
+              </button>
+              <button class="btn-action btn-secondary" id="downloadJsonBtn" title="Lưu file questions_extracted.json về máy tính">
+                💾 Tải file JSON
+              </button>
+              <button class="btn-action btn-success" id="loadDirectToAppBtn" title="Nạp trực tiếp vào ứng dụng với đáp án tạm để học ngay">
+                ⚡ Nạp Vào App Học Tạm
+              </button>
+            </div>
+
+            <div class="ocr-json-box">
+              <label class="ocr-box-lbl">Dữ liệu JSON câu hỏi vừa trích xuất:</label>
+              <textarea id="ocrJsonPreview" readonly class="ocr-json-textarea"></textarea>
+            </div>
+
+            <div class="ocr-ai-return-box">
+              <label class="ocr-box-lbl">📥 Sau khi AI giải xong, dán JSON kết quả (có correctAnswers) vào đây:</label>
+              <textarea id="ocrAiResultInput" class="import-textarea" style="height: 100px;" placeholder='Dán JSON từ AI vào đây... Ví dụ:
+[
+  {
+    "id": 60,
+    "question": "Hồ Chí Minh khẳng định...",
+    "options": [...],
+    "correctAnswers": ["C"]
+  }
+]'></textarea>
+              <button class="btn-action btn-primary" id="applyAiJsonBtn" style="margin-top: 0.6rem; align-self: flex-start; background: linear-gradient(135deg, var(--success), #059669); font-weight: 700;">
+                🚀 Nạp JSON Có Đáp Án & Bắt Đầu Học
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Presets -->
+        <div class="modal-tab-content" id="tab-presets-content" style="display: none;">
+          <label class="section-label">📚 Chọn bộ đề ôn thi tích hợp sẵn:</label>
           <div class="preset-buttons">
-            <button class="preset-btn active" data-preset="mln122" id="presetMln122">
+            <button class="preset-btn active" data-preset="hcm202_fe" id="presetHcm202Fe">
+              <span class="preset-title">🔥 HCM202 - Đề Thi Final Exam SP2025</span>
+              <span class="preset-sub">Bộ đề trắc nghiệm FE từ FUOverflow (Có đáp án & giải thích chi tiết)</span>
+            </button>
+            <button class="preset-btn" data-preset="hcm202" id="presetHcm202">
+              <span class="preset-title">⭐ HCM202 - Tư Tưởng Hồ Chí Minh</span>
+              <span class="preset-sub">100 câu trắc nghiệm Assignment & SEB (Chuẩn Bộ GD&ĐT 2021)</span>
+            </button>
+            <button class="preset-btn" data-preset="mln122" id="presetMln122">
               <span class="preset-title">🇻🇳 MLN122 - Kinh Tế Chính Trị</span>
               <span class="preset-sub">496 câu trắc nghiệm Mác - Lênin</span>
             </button>
@@ -186,8 +367,8 @@
           </div>
         </div>
 
-        <!-- Section 2: Drag & Drop File Upload -->
-        <div class="import-section">
+        <!-- Tab 3: Drag & Drop File Upload -->
+        <div class="modal-tab-content" id="tab-file-content" style="display: none;">
           <label class="section-label">📤 Tải Lên File Bộ Đề Mới (.md, .txt, .json):</label>
           <div class="drop-zone" id="dropZone">
             <div class="drop-zone-icon">📄</div>
@@ -196,8 +377,8 @@
           </div>
         </div>
 
-        <!-- Section 3: Paste Text -->
-        <div class="import-section">
+        <!-- Tab 4: Paste Text -->
+        <div class="modal-tab-content" id="tab-paste-content" style="display: none;">
           <label class="section-label">📝 Hoặc Dán Trực Tiếp Nội Dung Markdown / Quizlet / JSON:</label>
           <textarea id="importTextarea" class="import-textarea" placeholder="Ví dụ Markdown:
 ### Câu 1
@@ -209,14 +390,23 @@
       </div>
 
       <div class="modal-footer">
-        <button class="btn-action btn-secondary" id="cancelImportBtn">Hủy</button>
+        <button class="btn-action btn-secondary" id="cancelImportBtn">Đóng</button>
         <button class="btn-action btn-primary" id="confirmImportBtn" style="background: linear-gradient(135deg, var(--primary), var(--accent-cyan));">⚡ Nhập & Học Ngay</button>
       </div>
     </div>
   </div>
 
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="toast-popup" style="display: none;">
+    <span id="toastIcon">✅</span>
+    <span id="toastMessage">Thông báo</span>
+  </div>
+
   <!-- Scripts -->
-  <script src="parser.js"></script>
-  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="ocr_engine.js?v=20261009_final"></script>
+  <script src="hcm202_fe_data.js?v=20261009_final"></script>
+  <script src="parser.js?v=20261009_final"></script>
+  <script src="app.js?v=20261009_final"></script>
 </body>
 </html>

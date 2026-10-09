@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "message": "School Admin account created successfully",
+  "data": {
+    "uid": "c1d53690-35a1-424b-bae7-ef25ee70d064",
+    "userName": "lhp_admin",
+    "email": "schooladmin_test@gmail.com",
+    "fullName": "schoolAdmin_test",
+    "phoneNumber": "016924557894",
+    "role": "SCHOOL_ADMIN",
+    "schoolId": "3b2e8e3d-2c00-49a8-a363-89abedceeedc",
+    "schoolName": "Chuyên Lê Hồng Phong",
+    "initialPassword": "Ht@KyLZBGU",
+    "createdAt": null
+  },
+  "timestamp": "2026-10-09T11:39:58.6125304",
+  "errorCode": null
+}
+
+{
+  "success": true,
+  "message": "Teacher account created successfully",
+  "data": {
+    "uid": "f75e1236-49bd-4756-a591-7044b0c7e683",
+    "userName": "lhp_gv_7153",
+    "fullName": "teacherTest",
+    "email": "teachertest@gmail.com",
+    "phoneNumber": "016924557862",
+    "subjectDepartment": "Lịch sử",
+    "active": true,
+    "initialPassword": "Ht@nAScTPY",
+    "createdAt": null
+  },
+  "timestamp": "2026-10-09T13:43:23.4166089",
+  "errorCode": null
+}

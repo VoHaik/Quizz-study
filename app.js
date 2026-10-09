@@ -123,21 +123,33 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Subject Presets & Multi-Subject State
   const SUBJECT_PRESETS = {
+    hcm202_fe: {
+      key: 'hcm202_fe',
+      title: 'HCM202 - Tư Tưởng Hồ Chí Minh',
+      subtitle: 'Đề Thi Final Exam SP2025 (415 câu chính xác 100% chuẩn Giáo trình 2021)',
+      file: 'HCM202_dataset.json'
+    },
+    hcm202: {
+      key: 'hcm202',
+      title: 'HCM202 - Tư Tưởng Hồ Chí Minh',
+      subtitle: '100 câu trắc nghiệm Assignment & SEB (Chuẩn Bộ GD&ĐT 2021)',
+      file: 'hcm202_data.md'
+    },
     mln122: {
       key: 'mln122',
-      title: 'MLN122 - Ôn Thi Siêu Tốc',
-      subtitle: 'Học thuộc lòng câu hỏi trắc nghiệm Kinh tế chính trị',
+      title: 'MLN122 - Kinh Tế Chính Trị Mác - Lênin',
+      subtitle: '496 câu trắc nghiệm học thuộc lòng siêu tốc',
       file: 'data.md'
     },
     ite302c: {
       key: 'ite302c',
       title: 'ITE302c - Ethics in AI & Data Science',
-      subtitle: 'Học thuộc lòng câu hỏi trắc nghiệm (Chuẩn Nhung Hoàng)',
+      subtitle: '394 câu trắc nghiệm đạo đức AI (Chuẩn Nhung Hoàng)',
       file: 'ite302c_data.md'
     }
   };
 
-  let currentSubjectKey = localStorage.getItem('CURRENT_SUBJECT_KEY') || 'mln122';
+  let currentSubjectKey = localStorage.getItem('CURRENT_SUBJECT_KEY') || 'hcm202_fe';
 
   function loadProgress() {
     try {
@@ -209,15 +221,31 @@ document.addEventListener('DOMContentLoaded', async () => {
       localStorage.setItem('CURRENT_SUBJECT_KEY', key);
 
       let textToParse = rawContent;
-      let title = "MLN122 - Ôn Thi Siêu Tốc";
-      let subtitle = "Học thuộc lòng câu hỏi trắc nghiệm Kinh tế chính trị";
+      let title = "HCM202 - Tư Tưởng Hồ Chí Minh";
+      let subtitle = "Đề Thi Final Exam SP2025 (415 câu chuẩn 100%)";
 
       if (SUBJECT_PRESETS[key]) {
         title = SUBJECT_PRESETS[key].title;
         subtitle = SUBJECT_PRESETS[key].subtitle;
-        const resp = await fetch(SUBJECT_PRESETS[key].file);
-        if (!resp.ok) throw new Error(`Could not load ${SUBJECT_PRESETS[key].file}`);
-        textToParse = await resp.text();
+
+        // Optimized instant loading if preloaded in window (handles file:// without CORS issues)
+        if (key === 'hcm202_fe' && window.PRESET_DATA_HCM202_FE && Array.isArray(window.PRESET_DATA_HCM202_FE)) {
+          allQuestions = window.PRESET_DATA_HCM202_FE;
+          textToParse = null;
+        } else {
+          try {
+            const resp = await fetch(SUBJECT_PRESETS[key].file + '?v=' + Date.now());
+            if (!resp.ok) throw new Error(`Could not load ${SUBJECT_PRESETS[key].file}`);
+            textToParse = await resp.text();
+          } catch (fetchErr) {
+            if (key === 'hcm202_fe' && window.PRESET_DATA_HCM202_FE && Array.isArray(window.PRESET_DATA_HCM202_FE)) {
+              allQuestions = window.PRESET_DATA_HCM202_FE;
+              textToParse = null;
+            } else {
+              throw fetchErr;
+            }
+          }
+        }
       } else if (key === 'custom') {
         if (!textToParse) {
           textToParse = localStorage.getItem('CUSTOM_SUBJECT_RAW') || '';
@@ -231,23 +259,34 @@ document.addEventListener('DOMContentLoaded', async () => {
         subtitle = "Học thuộc lòng câu hỏi trắc nghiệm đã import";
       }
 
-      if (!textToParse) {
+      if (textToParse) {
+        const parsed = parseInputToQuestions(textToParse);
+        if (!parsed || parsed.length === 0) {
+          throw new Error("Không tìm thấy câu hỏi hợp lệ trong dữ liệu!");
+        }
+        allQuestions = parsed;
+      }
+
+      if (!allQuestions || allQuestions.length === 0) {
         throw new Error("Chưa có dữ liệu bộ đề để nạp. Hãy chọn hoặc import file mới!");
       }
 
-      const parsed = parseInputToQuestions(textToParse);
-      if (!parsed || parsed.length === 0) {
-        throw new Error("Không tìm thấy câu hỏi hợp lệ trong dữ liệu!");
-      }
+      // Update Header Titles & Subject Badge
+      const titleEl = document.getElementById('mainBrandTitle') || document.querySelector('.brand-title');
+      const subEl = document.getElementById('subjectSubtitle') || document.querySelector('.brand-subtitle');
+      const badgeEl = document.getElementById('activeSubjectBadge');
+      const examTitleEl = document.getElementById('examSubjectTitle');
 
-      allQuestions = parsed;
-
-      // Update Header Titles
-      const titleEl = document.querySelector('.brand-title');
-      const subEl = document.querySelector('.brand-subtitle');
+      if (badgeEl) badgeEl.textContent = key === 'hcm202_fe' ? 'HCM202 FE' : key.toUpperCase();
       if (titleEl) titleEl.textContent = title;
       if (subEl) subEl.textContent = `${subtitle} (${allQuestions.length} câu)`;
+      if (examTitleEl) examTitleEl.textContent = `Đề Thi Thử ${title} (40 Câu - 40 Phút)`;
       document.title = `${title} - Ôn Thi Siêu Tốc`;
+
+      // Update quick subject pills in header
+      document.querySelectorAll('.sub-pill').forEach(pill => {
+        pill.classList.toggle('active', pill.dataset.subject === key);
+      });
 
       loadProgress();
       populateRangeSelector();
@@ -285,11 +324,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     const multiSelectCount = allQuestions.filter(q => (q.correctAnswers && q.correctAnswers.length >= 2) || q.question.toLowerCase().includes('select two') || q.question.toLowerCase().includes('select 2')).length;
+    const multiSelectBtn = document.getElementById('multiSelectBtn');
     if (multiSelectCount > 0) {
       const multiOpt = document.createElement('option');
       multiOpt.value = 'multi_select';
       multiOpt.textContent = `✌️ Câu hỏi chọn 2 đáp án (${multiSelectCount} câu)`;
       sel.appendChild(multiOpt);
+      if (multiSelectBtn) {
+        multiSelectBtn.style.display = 'inline-flex';
+        multiSelectBtn.innerHTML = `✌️ Ôn ${multiSelectCount} câu chọn 2 đáp án`;
+      }
+    } else {
+      if (multiSelectBtn) {
+        multiSelectBtn.style.display = 'none';
+      }
     }
 
     const customOpt = document.createElement('option');
@@ -306,7 +354,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     };
 
-    const multiSelectBtn = document.getElementById('multiSelectBtn');
     if (multiSelectBtn) {
       multiSelectBtn.onclick = () => {
         if (sel) {
@@ -519,7 +566,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         <div class="explanation-box" id="explanationBox">
           <div class="explanation-title" id="expTitle"></div>
-          <div id="expBody">Đáp án chính xác: <strong style="color: var(--success); font-size: 1.1rem;">${q.correctAnswers.join(', ')}</strong></div>
+          <div id="expBody">
+            <div>Đáp án chính xác: <strong style="color: var(--success); font-size: 1.1rem;">${q.correctAnswers.join(', ')}</strong></div>
+            ${q.explanation ? `<div class="exp-detail" style="margin-top: 0.6rem; font-size: 0.95rem; color: #cbd5e1; line-height: 1.6; border-top: 1px dashed rgba(255,255,255,0.15); padding-top: 0.5rem; text-align: left;">💡 <b>Căn cứ giáo trình:</b> ${q.explanation}</div>` : ''}
+          </div>
         </div>
 
         <div class="quiz-footer">
@@ -696,6 +746,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               <div style="font-size: 1.4rem; font-weight: 800; color: var(--success); margin-bottom: 0.8rem;">Đáp án đúng: ${q.correctAnswers.join(', ')}</div>
               <div style="font-size: 1.05rem; text-align: left; background: rgba(255,255,255,0.05); padding: 1rem 1.25rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
                 ${correctText}
+                ${q.explanation ? `<div style="margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px dashed rgba(255,255,255,0.15); font-size: 0.95rem; color: #cbd5e1; line-height: 1.5;">💡 <b>Căn cứ giáo trình:</b> ${q.explanation}</div>` : ''}
               </div>
             </div>
             <div class="card-hint">💡 Nhấn vào thẻ để quay lại câu hỏi</div>
@@ -764,6 +815,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               </div>`;
             }).join('')}
           </div>
+          ${q.explanation ? `<div style="margin-top: 0.65rem; font-size: 0.88rem; color: #cbd5e1; background: rgba(16, 185, 129, 0.08); padding: 0.5rem 0.85rem; border-radius: 8px; border-left: 3px solid var(--success); text-align: left;">💡 <b>Căn cứ giáo trình:</b> ${q.explanation}</div>` : ''}
         </div>
       `).join('');
     }
@@ -983,17 +1035,106 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   };
 
-  // Modal & Import Handling Logic
+  // Toast Notification Helper
+  function showToast(message, icon = '✅', duration = 3500) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    const toastIco = document.getElementById('toastIcon');
+    if (!toast) return;
+    if (toastMsg) toastMsg.textContent = message;
+    if (toastIco) toastIco.textContent = icon;
+    toast.style.display = 'flex';
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => {
+      toast.style.display = 'none';
+    }, duration);
+  }
+
+  // Modal & Import Handling Logic (Multi-Tab + Unlimited OCR)
   function setupImportModal() {
     const modal = document.getElementById('importModal');
     const modalBtn = document.getElementById('importModalBtn');
+    const ocrTriggerBtn = document.getElementById('ocrModalBtn');
     const closeBtn = document.getElementById('closeImportModalBtn');
     const cancelBtn = document.getElementById('cancelImportBtn');
     const confirmBtn = document.getElementById('confirmImportBtn');
+
+    // Modal Tabs
+    const navTabs = document.querySelectorAll('.modal-nav-tab');
+    const tabContents = document.querySelectorAll('.modal-tab-content');
+
+    // OCR Elements
+    const ocrDropZone = document.getElementById('ocrDropZone');
+    const ocrFileInput = document.getElementById('ocrFileInput');
+    const ocrDropText = document.getElementById('ocrDropText');
+    const ocrFilesCard = document.getElementById('ocrFilesCard');
+    const ocrFilesCount = document.getElementById('ocrFilesCount');
+    const ocrFilesDetail = document.getElementById('ocrFilesDetail');
+    const ocrSplitCheck = document.getElementById('ocrSplitCheck');
+    const ocrLangSelect = document.getElementById('ocrLangSelect');
+    const ocrEngineSelect = document.getElementById('ocrEngineSelect');
+    const ocrAutoSolveCheck = document.getElementById('ocrAutoSolveCheck');
+    const geminiApiKeyInput = document.getElementById('geminiApiKeyInput');
+    const toggleKeyVisibility = document.getElementById('toggleKeyVisibility');
+    const geminiKeyBox = document.getElementById('geminiKeyBox');
+    const startOcrBtn = document.getElementById('startOcrBtn');
+    const clearOcrFilesBtn = document.getElementById('clearOcrFilesBtn');
+
+    // Restore saved API Key
+    if (geminiApiKeyInput) {
+      const savedKey = localStorage.getItem('GEMINI_API_KEY');
+      if (savedKey) geminiApiKeyInput.value = savedKey;
+      geminiApiKeyInput.addEventListener('change', () => {
+        localStorage.setItem('GEMINI_API_KEY', geminiApiKeyInput.value.trim());
+      });
+    }
+
+    if (toggleKeyVisibility && geminiApiKeyInput) {
+      toggleKeyVisibility.onclick = () => {
+        if (geminiApiKeyInput.type === 'password') {
+          geminiApiKeyInput.type = 'text';
+          toggleKeyVisibility.textContent = '🔒 Ẩn';
+        } else {
+          geminiApiKeyInput.type = 'password';
+          toggleKeyVisibility.textContent = '👁️ Hiện';
+        }
+      };
+    }
+
+    if (ocrEngineSelect) {
+      ocrEngineSelect.onchange = () => {
+        const isGemini = ocrEngineSelect.value === 'gemini';
+        if (geminiKeyBox) geminiKeyBox.style.display = isGemini ? 'flex' : 'none';
+        const solveLbl = document.getElementById('ocrAutoSolveLabel');
+        if (solveLbl) solveLbl.style.display = isGemini ? 'flex' : 'none';
+      };
+    }
+
+    // OCR Progress
+    const ocrProgressCard = document.getElementById('ocrProgressCard');
+    const ocrProgressTitle = document.getElementById('ocrProgressTitle');
+    const ocrProgressPercent = document.getElementById('ocrProgressPercent');
+    const ocrProgressBar = document.getElementById('ocrProgressBar');
+    const ocrCurrentFile = document.getElementById('ocrCurrentFile');
+    const cancelOcrBtn = document.getElementById('cancelOcrBtn');
+
+    // OCR Result
+    const ocrResultCard = document.getElementById('ocrResultCard');
+    const ocrResultBadge = document.getElementById('ocrResultBadge');
+    const ocrJsonPreview = document.getElementById('ocrJsonPreview');
+    const copyAiPromptBtn = document.getElementById('copyAiPromptBtn');
+    const downloadJsonBtn = document.getElementById('downloadJsonBtn');
+    const loadDirectToAppBtn = document.getElementById('loadDirectToAppBtn');
+    const ocrAiResultInput = document.getElementById('ocrAiResultInput');
+    const applyAiJsonBtn = document.getElementById('applyAiJsonBtn');
+
+    // Presets & File Elements
     const textarea = document.getElementById('importTextarea');
     const dropZone = document.getElementById('dropZone');
     const fileInput = document.getElementById('fileInput');
     const dropText = document.getElementById('dropZoneText');
+    const presetHcmFe = document.getElementById('presetHcm202Fe');
+    const presetHcm = document.getElementById('presetHcm202');
     const presetMln = document.getElementById('presetMln122');
     const presetIte = document.getElementById('presetIte302c');
 
@@ -1001,16 +1142,40 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let pendingContent = null;
     let selectedPresetKey = currentSubjectKey;
+    let selectedOcrFiles = [];
+    let lastExtractedQuestions = [];
 
-    function openModal() {
+    // Switch Modal Tabs
+    function switchModalTab(tabId) {
+      navTabs.forEach(t => {
+        t.classList.toggle('active', t.dataset.tab === tabId);
+      });
+      tabContents.forEach(c => {
+        if (c.id === tabId) {
+          c.style.display = 'flex';
+        } else {
+          c.style.display = 'none';
+        }
+      });
+    }
+
+    navTabs.forEach(tab => {
+      tab.onclick = () => switchModalTab(tab.dataset.tab);
+    });
+
+    function openModal(defaultTab = 'tab-presets-content') {
       pendingContent = null;
       selectedPresetKey = currentSubjectKey;
 
+      if (presetHcmFe) presetHcmFe.classList.toggle('active', currentSubjectKey === 'hcm202_fe');
+      if (presetHcm) presetHcm.classList.toggle('active', currentSubjectKey === 'hcm202');
       if (presetMln) presetMln.classList.toggle('active', currentSubjectKey === 'mln122');
       if (presetIte) presetIte.classList.toggle('active', currentSubjectKey === 'ite302c');
 
       if (textarea) textarea.value = '';
       if (dropText) dropText.innerHTML = 'Kéo thả file <b>.md / .txt / .json</b> vào đây hoặc <span style="color: var(--primary); text-decoration: underline; cursor: pointer;">click để chọn file</span>';
+
+      switchModalTab(defaultTab);
       modal.style.display = 'flex';
     }
 
@@ -1018,15 +1183,17 @@ document.addEventListener('DOMContentLoaded', async () => {
       modal.style.display = 'none';
     }
 
-    if (modalBtn) modalBtn.onclick = openModal;
+    if (modalBtn) modalBtn.onclick = () => openModal('tab-presets-content');
+    if (ocrTriggerBtn) ocrTriggerBtn.onclick = () => openModal('tab-ocr-content');
     if (closeBtn) closeBtn.onclick = closeModal;
     if (cancelBtn) cancelBtn.onclick = closeModal;
 
     // Preset Selection
-    [presetMln, presetIte].forEach(btn => {
+    const presetButtons = [presetHcmFe, presetHcm, presetMln, presetIte];
+    presetButtons.forEach(btn => {
       if (btn) {
         btn.onclick = () => {
-          [presetMln, presetIte].forEach(b => b && b.classList.remove('active'));
+          presetButtons.forEach(b => b && b.classList.remove('active'));
           btn.classList.add('active');
           selectedPresetKey = btn.dataset.preset;
           pendingContent = null;
@@ -1035,7 +1202,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     });
 
-    // File Drag & Drop + File Selector
+    // File Drag & Drop + File Selector (Text/JSON/MD)
     if (dropZone && fileInput) {
       dropZone.onclick = () => fileInput.click();
 
@@ -1068,13 +1235,274 @@ document.addEventListener('DOMContentLoaded', async () => {
       reader.onload = (evt) => {
         pendingContent = evt.target.result;
         selectedPresetKey = 'custom';
-        [presetMln, presetIte].forEach(b => b && b.classList.remove('active'));
+        presetButtons.forEach(b => b && b.classList.remove('active'));
         if (dropText) dropText.innerHTML = `✅ Đã chọn file: <b>${file.name}</b> (${(file.size / 1024).toFixed(1)} KB)`;
       };
       reader.readAsText(file, 'utf-8');
     }
 
-    // Confirm Import
+    // ==========================================
+    // OCR Image Processing (Unlimited Files)
+    // ==========================================
+    if (ocrDropZone && ocrFileInput) {
+      ocrDropZone.onclick = () => ocrFileInput.click();
+
+      ocrDropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        ocrDropZone.classList.add('drag-over');
+      });
+
+      ocrDropZone.addEventListener('dragleave', () => {
+        ocrDropZone.classList.remove('drag-over');
+      });
+
+      ocrDropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        ocrDropZone.classList.remove('drag-over');
+        if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+          handleOcrFiles(e.dataTransfer.files);
+        }
+      });
+
+      ocrFileInput.onchange = (e) => {
+        if (e.target.files && e.target.files.length > 0) {
+          handleOcrFiles(e.target.files);
+        }
+      };
+    }
+
+    function handleOcrFiles(fileList) {
+      const files = Array.from(fileList).filter(f => {
+        const type = f.type || '';
+        const name = f.name.toLowerCase();
+        return type.startsWith('image/') || name.endsWith('.webp') || name.endsWith('.png') || name.endsWith('.jpg') || name.endsWith('.jpeg');
+      });
+
+      if (files.length === 0) {
+        alert("Vui lòng chọn các file ảnh (.webp, .png, .jpg)!");
+        return;
+      }
+
+      selectedOcrFiles = files;
+      if (ocrFilesCard) ocrFilesCard.style.display = 'flex';
+      if (ocrFilesCount) ocrFilesCount.textContent = `Đã chọn ${files.length} file ảnh đề thi`;
+      
+      const first = files[0].name;
+      const last = files[files.length - 1].name;
+      const detailStr = files.length > 1 ? `Từ "${first}" ... đến "${last}"` : `Tệp: ${first}`;
+      if (ocrFilesDetail) ocrFilesDetail.textContent = detailStr;
+
+      if (ocrDropText) {
+        ocrDropText.innerHTML = `✅ Đã chọn <b>${files.length} ảnh</b>. Sẵn sàng trích xuất OCR!`;
+      }
+    }
+
+    if (clearOcrFilesBtn) {
+      clearOcrFilesBtn.onclick = () => {
+        selectedOcrFiles = [];
+        if (ocrFilesCard) ocrFilesCard.style.display = 'none';
+        if (ocrProgressCard) ocrProgressCard.style.display = 'none';
+        if (ocrResultCard) ocrResultCard.style.display = 'none';
+        if (ocrFileInput) ocrFileInput.value = '';
+        if (ocrDropText) {
+          ocrDropText.innerHTML = 'Kéo thả thư mục ảnh hoặc <b>click để chọn nhiều ảnh</b> (.webp, .png, .jpg)<br><small style="color: var(--accent-cyan);">Hỗ trợ chọn không giới hạn số lượng ảnh • Tự động xếp theo số thứ tự câu</small>';
+        }
+      };
+    }
+
+    // Start Batch OCR
+    if (startOcrBtn) {
+      startOcrBtn.onclick = async () => {
+        if (!selectedOcrFiles || selectedOcrFiles.length === 0) {
+          alert("Chưa có ảnh nào được chọn!");
+          return;
+        }
+
+        if (!window.OcrEngine) {
+          alert("Engine OCR chưa sẵn sàng. Hãy kiểm tra kết nối mạng để tải thư viện!");
+          return;
+        }
+
+        if (ocrFilesCard) ocrFilesCard.style.display = 'none';
+        if (ocrResultCard) ocrResultCard.style.display = 'none';
+        if (ocrProgressCard) ocrProgressCard.style.display = 'flex';
+
+        const engine = ocrEngineSelect ? ocrEngineSelect.value : 'gemini';
+        let result = null;
+
+        try {
+          if (engine === 'gemini') {
+            const apiKey = geminiApiKeyInput ? geminiApiKeyInput.value.trim() : '';
+            if (!apiKey) {
+              alert("Vui lòng nhập Gemini API Key để quét!");
+              if (ocrProgressCard) ocrProgressCard.style.display = 'none';
+              if (ocrFilesCard) ocrFilesCard.style.display = 'flex';
+              return;
+            }
+            localStorage.setItem('GEMINI_API_KEY', apiKey);
+            const autoSolve = ocrAutoSolveCheck ? ocrAutoSolveCheck.checked : true;
+
+            result = await window.OcrEngine.processWithGeminiVision(
+              selectedOcrFiles,
+              { apiKey, autoSolve, batchSize: 4 },
+              (p) => {
+                if (ocrProgressTitle) ocrProgressTitle.textContent = `Đang quét bằng Gemini AI (${p.current}/${p.total})...`;
+                if (ocrProgressPercent) ocrProgressPercent.textContent = `${p.percent}%`;
+                if (ocrProgressBar) ocrProgressBar.style.width = `${p.percent}%`;
+                if (ocrCurrentFile) ocrCurrentFile.textContent = p.status || p.currentFileName;
+              },
+              (logMsg) => {
+                console.log("[Gemini AI Log]:", logMsg);
+              }
+            );
+          } else {
+            const splitLayout = ocrSplitCheck ? ocrSplitCheck.checked : true;
+            const lang = ocrLangSelect ? ocrLangSelect.value : 'vie+eng';
+
+            result = await window.OcrEngine.batchProcessImages(
+              selectedOcrFiles,
+              { splitLayout, lang },
+              (p) => {
+                if (ocrProgressTitle) ocrProgressTitle.textContent = `Đang quét OCR (${p.current}/${p.total})...`;
+                if (ocrProgressPercent) ocrProgressPercent.textContent = `${p.percent}%`;
+                if (ocrProgressBar) ocrProgressBar.style.width = `${p.percent}%`;
+                if (ocrCurrentFile) ocrCurrentFile.textContent = `${p.currentFileName}`;
+              },
+              (logMsg) => {
+                console.log("[Tesseract OCR Log]:", logMsg);
+              }
+            );
+          }
+
+          if (ocrProgressCard) ocrProgressCard.style.display = 'none';
+
+          if (result && result.questions && result.questions.length > 0) {
+            lastExtractedQuestions = result.questions;
+            if (ocrResultCard) ocrResultCard.style.display = 'flex';
+            if (ocrResultBadge) {
+              ocrResultBadge.textContent = `✅ Đã trích xuất thành công ${result.questions.length} / ${result.totalInput} câu hỏi vào JSON`;
+            }
+            if (ocrJsonPreview) {
+              ocrJsonPreview.value = JSON.stringify(result.questions, null, 2);
+            }
+            showToast(`Trích xuất hoàn tất ${result.questions.length} câu hỏi!`, "🎉");
+          } else {
+            alert("Không tìm thấy nội dung câu hỏi nào trong các ảnh đã chọn.");
+            if (ocrFilesCard) ocrFilesCard.style.display = 'flex';
+          }
+        } catch (err) {
+          console.error("OCR batch error:", err);
+          alert("Lỗi OCR: " + err.message);
+          if (ocrProgressCard) ocrProgressCard.style.display = 'none';
+          if (ocrFilesCard) ocrFilesCard.style.display = 'flex';
+        }
+      };
+    }
+
+    // Cancel OCR
+    if (cancelOcrBtn) {
+      cancelOcrBtn.onclick = () => {
+        if (window.OcrEngine) {
+          window.OcrEngine.cancelBatch();
+        }
+      };
+    }
+
+    // Copy AI Prompt
+    if (copyAiPromptBtn) {
+      copyAiPromptBtn.onclick = async () => {
+        if (!lastExtractedQuestions || lastExtractedQuestions.length === 0) {
+          alert("Chưa có câu hỏi nào để copy!");
+          return;
+        }
+
+        const promptText = window.OcrEngine.generateAiPrompt(lastExtractedQuestions, "Tư tưởng Hồ Chí Minh (HCM202)");
+        try {
+          await navigator.clipboard.writeText(promptText);
+          showToast("Đã copy Prompt + JSON vào Clipboard! Hãy dán vào AI để giải đáp án.", "📋", 4500);
+        } catch (e) {
+          if (ocrJsonPreview) {
+            ocrJsonPreview.value = promptText;
+            ocrJsonPreview.select();
+            document.execCommand('copy');
+            showToast("Đã copy Prompt + JSON!", "📋");
+          }
+        }
+      };
+    }
+
+    // Download JSON
+    if (downloadJsonBtn) {
+      downloadJsonBtn.onclick = () => {
+        if (!lastExtractedQuestions || lastExtractedQuestions.length === 0) {
+          alert("Chưa có dữ liệu để tải về!");
+          return;
+        }
+
+        const jsonStr = JSON.stringify(lastExtractedQuestions, null, 2);
+        const blob = new Blob([jsonStr], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `questions_extracted_${Date.now()}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+        showToast("Đã tải file questions_extracted.json về máy!", "💾");
+      };
+    }
+
+    // Load direct to app with temporary answer
+    if (loadDirectToAppBtn) {
+      loadDirectToAppBtn.onclick = async () => {
+        if (!lastExtractedQuestions || lastExtractedQuestions.length === 0) return;
+        
+        // Add temporary correctAnswers if missing so user can view/learn
+        const readyQuestions = lastExtractedQuestions.map(q => ({
+          ...q,
+          correctAnswers: (q.correctAnswers && q.correctAnswers.length > 0) ? q.correctAnswers : ["A"]
+        }));
+
+        await loadSubjectData('custom', JSON.stringify(readyQuestions), "Đề Thi OCR (Chưa Có Đáp Án AI)");
+        closeModal();
+        showToast(`Đã nạp ${readyQuestions.length} câu hỏi vào app để xem trước!`, "⚡");
+      };
+    }
+
+    // Apply AI Result JSON
+    if (applyAiJsonBtn && ocrAiResultInput) {
+      applyAiJsonBtn.onclick = async () => {
+        let text = ocrAiResultInput.value.trim();
+        if (!text) {
+          alert("Vui lòng dán mã JSON mà AI đã trả lời vào ô!");
+          return;
+        }
+
+        // Clean markdown code blocks if present
+        text = text.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/```$/i, '').trim();
+
+        try {
+          const parsed = JSON.parse(text);
+          if (!Array.isArray(parsed) || parsed.length === 0) {
+            throw new Error("Dữ liệu JSON phải là một mảng câu hỏi!");
+          }
+
+          // Ensure options and correctAnswers exist
+          parsed.forEach((q, idx) => {
+            if (!q.correctAnswers || !Array.isArray(q.correctAnswers)) {
+              q.correctAnswers = ["A"];
+            }
+          });
+
+          await loadSubjectData('custom', JSON.stringify(parsed), "Bộ Đề OCR (Đã Có Đáp Án AI)");
+          closeModal();
+          showToast(`Đã nạp thành công ${parsed.length} câu hỏi có đáp án từ AI!`, "🚀", 4000);
+        } catch (e) {
+          alert("Lỗi định dạng JSON: " + e.message + "\nHãy kiểm tra lại đoạn JSON copy từ AI.");
+        }
+      };
+    }
+
+    // Confirm Import from Text / Presets
     if (confirmBtn) {
       confirmBtn.onclick = async () => {
         const pastedText = textarea ? textarea.value.trim() : '';
@@ -1085,8 +1513,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (selectedPresetKey === 'custom' && pendingContent) {
           await loadSubjectData('custom', pendingContent, "Bộ Đề Import Tùy Chỉnh");
+          showToast("Đã nạp bộ đề tùy chỉnh thành công!", "📁");
         } else {
           await loadSubjectData(selectedPresetKey);
+          showToast("Đã đổi sang môn học thành công!", "📚");
         }
 
         closeModal();
@@ -1094,9 +1524,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
+  // Quick Header Subject Switcher Pills
+  document.querySelectorAll('.sub-pill').forEach(pill => {
+    pill.addEventListener('click', async () => {
+      const subKey = pill.dataset.subject;
+      if (subKey && subKey !== currentSubjectKey) {
+        await loadSubjectData(subKey);
+        const title = SUBJECT_PRESETS[subKey]?.title || subKey;
+        showToast(`Đã chuyển sang: ${title}`, '⚡');
+      }
+    });
+  });
+
   // Run modal setup
   setupImportModal();
 
   // Run initialization
   initData();
 });
+
