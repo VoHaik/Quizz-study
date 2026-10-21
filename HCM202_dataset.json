@@ -5326,7 +5326,7 @@
   {
     "id": 197,
     "type": "multiple",
-    "question": "Theo Hồ Chí Minh, tại sao phải đoàn kết quốc tế?",
+    "question": "Theo Hồ Chí Minh, tại sao phải đoàn kết quốc tế? Lựa chọn 2 đáp án.",
     "options": [
       {
         "key": "A",
@@ -5346,9 +5346,10 @@
       }
     ],
     "correctAnswers": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "Nhằm kết hợp sức mạnh dân tộc và sức mạnh thời đại, tạo sức mạnh tổng hợp.",
+    "explanation": "Theo Hồ Chí Minh, thực hiện đoàn kết quốc tế xuất phát từ 2 lý do: (1) Nhằm kết hợp sức mạnh dân tộc và sức mạnh thời đại, tạo sức mạnh tổng hợp cho cách mạng; (2) Góp phần cùng nhân dân thế giới thực hiện các mục tiêu cách mạng.",
     "imageSource": "HCM202_SP2025_FE_21 (6).webp"
   },
   {

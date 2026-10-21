@@ -1,0 +1,2644 @@
+[
+  {
+    "cluster_key": "nghiquyethoinghitrunguong5khoaxiithang52017dakhangdinhnhandinhnaovekinhtetunhan",
+    "canonical_question": "Nghị quyết Hội nghị Trung ương 5 khóa XII (tháng 5/2017) đã khẳng định nhận định nào về kinh tế tư nhân?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Kinh tế tư nhân đã phát triển rộng khắp trong cả nước, đóng góp quan trọng vào phát triển kinh tế"
+      },
+      {
+        "key": "B",
+        "text": "Kinh tế nhà nước đã phát triển rộng khắp trong cả nước, đóng góp quan trọng vào phát triển kinh tế"
+      },
+      {
+        "key": "C",
+        "text": "Sự lãnh đạo của Đảng quyết định sự phát triển của kinh tế đất nước"
+      },
+      {
+        "key": "D",
+        "text": "Chủ nghĩa Mác - Lênin, tư tưởng Hồ Chí Minh ngày càng giữ vai trò chủ đạo"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      776
+    ]
+  },
+  {
+    "cluster_key": "tunam1954dennam1975mydathuchienmayloaihinhchienluocchientranhomiennam",
+    "canonical_question": "Từ năm 1954 đến năm 1975, Mỹ đã thực hiện mấy loại hình chiến lược chiến tranh ở miền Nam?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "2 loại hình chiến lược"
+      },
+      {
+        "key": "B",
+        "text": "3 loại hình chiến lược"
+      },
+      {
+        "key": "C",
+        "text": "4 loại hình chiến lược"
+      },
+      {
+        "key": "D",
+        "text": "5 loại hình chiến lược"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      777,
+      846,
+      862,
+      1500
+    ]
+  },
+  {
+    "cluster_key": "tongketthanhtuu10namthuchienduongloidoimoidaihoiviiicuadang1996khangdinh",
+    "canonical_question": "Tổng kết thành tựu 10 năm thực hiện đường lối đổi mới, Đại hội VIII của Đảng (1996) khẳng định:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đất nước ta chưa bao giờ giàu mạnh như ngày nay"
+      },
+      {
+        "key": "B",
+        "text": "Đất nước ta đã cơ bản hoàn thành sự nghiệp công nghiệp hóa, hiện đại hóa"
+      },
+      {
+        "key": "C",
+        "text": "Nước ta đã ra khỏi khủng hoảng kinh tế - xã hội, tuy còn một số mặt chưa vững chắc nhưng đã cho phép chuyển sang thời kỳ phát triển mới"
+      },
+      {
+        "key": "D",
+        "text": "Đất nước ta đã trở thành một nước công nghiệp hiện đại theo định hướng xã hội chủ nghĩa"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      778
+    ]
+  },
+  {
+    "cluster_key": "nguyenaiquocdathanhlaphoivietnamcachmangthanhnienodau",
+    "canonical_question": "Nguyễn Ái Quốc đã thành lập Hội Việt Nam cách mạng thanh niên ở đâu?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Hương Cảng (Trung Quốc)"
+      },
+      {
+        "key": "B",
+        "text": "Quảng Châu (Trung Quốc)"
+      },
+      {
+        "key": "C",
+        "text": "Thượng Hải (Trung Quốc)"
+      },
+      {
+        "key": "D",
+        "text": "Cao Bằng (Việt Nam)"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      779,
+      1416
+    ]
+  },
+  {
+    "cluster_key": "daunam1953nhamcuuvantinhthengaycangsalayvasasutcuaquandoivienchinhphapchinhphuphapvamydaduamotvientuongphapsanglamtongchihuyquandoivienchinhphapodongduongvarakehoachquansunao",
+    "canonical_question": "Đầu năm 1953, nhằm cứu vãn tình thế ngày càng sa lầy và sa sút của quân đội viễn chinh Pháp, Chính phủ Pháp và Mỹ đã đưa một viên tướng Pháp sang làm Tổng chỉ huy quân đội viễn chinh Pháp ở Đông Dương và ra kế hoạch quân sự nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Nava"
+      },
+      {
+        "key": "B",
+        "text": "Đờ Lát đơ Tátxinhi"
+      },
+      {
+        "key": "C",
+        "text": "Rơve"
+      },
+      {
+        "key": "D",
+        "text": "Bôlae"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      782
+    ]
+  },
+  {
+    "cluster_key": "phongtraodongkhoilamthatbailoaihinhchienluocchientranhnaocuamy",
+    "canonical_question": "Phong trào Đồng Khởi làm thất bại loại hình chiến lược chiến tranh nào của Mỹ?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Chiến tranh đơn phương"
+      },
+      {
+        "key": "B",
+        "text": "Chiến tranh đặc biệt"
+      },
+      {
+        "key": "C",
+        "text": "Chiến tranh cục bộ"
+      },
+      {
+        "key": "D",
+        "text": "Việt Nam hóa chiến tranh"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      784
+    ]
+  },
+  {
+    "cluster_key": "trongphongtraodanchu19361939nhandanvietnamthuchienmottrongnhungnhiemvutructieptruocmatladautranh",
+    "canonical_question": "Trong phong trào dân chủ 1936 - 1939, nhân dân Việt Nam thực hiện một trong những nhiệm vụ trực tiếp, trước mắt là đấu tranh:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Chống chế độ phản động thuộc địa"
+      },
+      {
+        "key": "B",
+        "text": "Chống đế quốc và chế độ phong kiến"
+      },
+      {
+        "key": "C",
+        "text": "Chống tư sản và địa chủ"
+      },
+      {
+        "key": "D",
+        "text": "Chống đế quốc và tư sản"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      785,
+      1006
+    ]
+  },
+  {
+    "cluster_key": "trongquatrinhdoimoidatnuocdangcongsanvietnamdongvaitrola",
+    "canonical_question": "Trong quá trình đổi mới đất nước, Đảng Cộng sản Việt Nam đóng vai trò là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Không tham gia trong hệ thống chính trị"
+      },
+      {
+        "key": "B",
+        "text": "Đóng vai trò then chốt"
+      },
+      {
+        "key": "C",
+        "text": "Hạt nhân lãnh đạo toàn diện trong hệ thống chính trị"
+      },
+      {
+        "key": "D",
+        "text": "Đóng vai trò thứ yếu"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      789
+    ]
+  },
+  {
+    "cluster_key": "daihoidaibieutoanquoclanthuivcuadanghoptu1420121976taihanoidaquyetdinhdoitendangthanh",
+    "canonical_question": "Đại hội đại biểu toàn quốc lần thứ IV của Đảng họp từ 14 - 20/12/1976 tại Hà Nội đã quyết định đổi tên Đảng thành:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đảng Lao động Việt Nam"
+      },
+      {
+        "key": "B",
+        "text": "Đảng Cộng sản Đông Dương"
+      },
+      {
+        "key": "C",
+        "text": "Đảng Cộng sản Việt Nam"
+      },
+      {
+        "key": "D",
+        "text": "Đảng Cộng sản Hồ Chí Minh"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      791,
+      881,
+      1170
+    ]
+  },
+  {
+    "cluster_key": "hoinghinaocuabanchaphanhtrunguongdangsaudaynhanmanhgiaiphongdantoclanhiemvubucthietnhat",
+    "canonical_question": "Hội nghị nào của Ban Chấp hành Trung ương Đảng sau đây nhấn mạnh giải phóng dân tộc là nhiệm vụ bức thiết nhất?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Hội nghị Trung ương I (tháng 10/1930)"
+      },
+      {
+        "key": "B",
+        "text": "Hội nghị Trung ương V (tháng 11/1939)"
+      },
+      {
+        "key": "C",
+        "text": "Hội nghị Trung ương VI (tháng 11/1939)"
+      },
+      {
+        "key": "D",
+        "text": "Hội nghị Trung ương VIII (tháng 5/1941)"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      792
+    ]
+  },
+  {
+    "cluster_key": "mottrongnhungnoidungcuadaihoidaibieutoanquoclanthuivcuadang121976la",
+    "canonical_question": "Một trong những nội dung của Đại hội đại biểu toàn quốc lần thứ IV của Đảng (12/1976) là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Kế hoạch nhà nước 5 năm 1976 - 1980"
+      },
+      {
+        "key": "B",
+        "text": "Phương hướng đổi mới đất nước"
+      },
+      {
+        "key": "C",
+        "text": "Tổng kết 10 năm đổi mới đất nước"
+      },
+      {
+        "key": "D",
+        "text": "Hàn gắn vết thương chiến tranh"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      793,
+      934,
+      1283,
+      1397
+    ]
+  },
+  {
+    "cluster_key": "ngay711979quandoinuocnaodasangdanhdochedoponpotgiupgiaiphongdatnuoccampuchia",
+    "canonical_question": "Ngày 7/1/1979, quân đội nước nào đã sang đánh đổ chế độ Pôn Pốt giúp giải phóng đất nước Campuchia?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Mỹ"
+      },
+      {
+        "key": "B",
+        "text": "Khơ-me Đỏ"
+      },
+      {
+        "key": "C",
+        "text": "Trung Quốc"
+      },
+      {
+        "key": "D",
+        "text": "Việt Nam"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      795,
+      883
+    ]
+  },
+  {
+    "cluster_key": "nhiemvucapbachdautiensaucachmangthangtamnam1945lagi",
+    "canonical_question": "Nhiệm vụ cấp bách đầu tiên sau Cách mạng Tháng Tám năm 1945 là gì?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Xóa bỏ hoàn toàn các chế độ thực dân cũ, các tàn dư phong kiến, phát triển sản xuất, giải quyết các quan hệ kinh tế"
+      },
+      {
+        "key": "B",
+        "text": "Phát triển các đoàn thể, củng cố quy chế chuẩn mực về kinh tế"
+      },
+      {
+        "key": "C",
+        "text": "Thống nhất đất nước về mặt nhà nước"
+      },
+      {
+        "key": "D",
+        "text": "Khắc phục nạn đói và giặc dốt"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      796
+    ]
+  },
+  {
+    "cluster_key": "tuthang91945dentruocthang31946tachutruong",
+    "canonical_question": "Từ tháng 9-1945 đến trước tháng 3-1946 ta chủ trương:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Hòa với Tưởng"
+      },
+      {
+        "key": "B",
+        "text": "Hòa với Pháp"
+      },
+      {
+        "key": "C",
+        "text": "Đánh Tưởng"
+      },
+      {
+        "key": "D",
+        "text": "Đánh Pháp"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      798,
+      837,
+      1135,
+      1247
+    ]
+  },
+  {
+    "cluster_key": "trongduongloichienluocphattrienkinhtexahoi20012010chungtachutrongphattrienvandenaosauday",
+    "canonical_question": "Trong Đường lối Chiến lược phát triển kinh tế - xã hội 2001 - 2010 chúng ta chú trọng phát triển vấn đề nào sau đây?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Phát triển công nghiệp hóa xã hội chủ nghĩa, xây dựng cơ sở vật chất - kỹ thuật của chủ nghĩa xã hội"
+      },
+      {
+        "key": "B",
+        "text": "Phát triển công nghiệp hóa hiện đại hóa nông nghiệp nông thôn"
+      },
+      {
+        "key": "C",
+        "text": "Đẩy mạnh công nghiệp hóa xã hội chủ nghĩa, xây dựng cơ sở vật chất - kỹ thuật của chủ nghĩa xã hội, đưa nền kinh tế nước ta từ sản xuất nhỏ lên sản xuất lớn xã hội chủ nghĩa"
+      },
+      {
+        "key": "D",
+        "text": "Phát triển nhanh nguồn nhân lực, nhất là nguồn nhân lực chất lượng cao"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      799,
+      885
+    ]
+  },
+  {
+    "cluster_key": "noidungnaotronghiepdinhsobo631946taodieukienchotacothoigiandechuanbilucluongkhangchienvoiphap",
+    "canonical_question": "Nội dung nào trong Hiệp định Sơ bộ 6-3-1946 tạo điều kiện cho ta có thời gian để chuẩn bị lực lượng kháng chiến với Pháp?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Pháp công nhận Việt Nam là một quốc gia tự do trong khối Liên hiệp Pháp"
+      },
+      {
+        "key": "B",
+        "text": "Pháp được đưa 15 ngàn quân ra miền Bắc thay thế quân Tưởng"
+      },
+      {
+        "key": "C",
+        "text": "Hai bên ngừng bắn ở Nam Bộ"
+      },
+      {
+        "key": "D",
+        "text": "Hai bên thực hiện đàm phán, chuyển quân"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      800,
+      845
+    ]
+  },
+  {
+    "cluster_key": "mattranduocxaydungtrongthoikycachmang19361939goitenla",
+    "canonical_question": "Mặt trận được xây dựng trong thời kỳ cách mạng 1936 - 1939 gọi tên là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Mặt trận Nhân dân phản đế Đông Dương"
+      },
+      {
+        "key": "B",
+        "text": "Mặt trận Dân chủ Đông Dương"
+      },
+      {
+        "key": "C",
+        "text": "Hội phản đế Đông Dương"
+      },
+      {
+        "key": "D",
+        "text": "Mặt trận Dân tộc thống nhất phản đế Đông Dương"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      801,
+      1181
+    ]
+  },
+  {
+    "cluster_key": "mottrongnhungmuctieucutheduocneutrongdaihoilanthuxiicuadang2016ladennam2020nolucphandautaotiendedesomduanuoctacobantrothanhmotnuoccongnghieptheohuonghiendaivuotquamucthunhap",
+    "canonical_question": "Một trong những mục tiêu cụ thể được nêu trong Đại hội lần thứ XII của Đảng (2016) là: “Đến năm 2020, nỗ lực phấn đấu tạo tiền đề để sớm đưa nước ta cơ bản trở thành một nước công nghiệp theo hướng hiện đại; vượt qua mức thu nhập...”",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Trung bình thấp"
+      },
+      {
+        "key": "B",
+        "text": "Trung bình cao"
+      },
+      {
+        "key": "C",
+        "text": "Trung bình"
+      },
+      {
+        "key": "D",
+        "text": "Trung bình kém phát triển"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      804,
+      856
+    ]
+  },
+  {
+    "cluster_key": "cuockhangchienchongmycuunuoccuanhandantalamotcuocxungdotlichsuvi",
+    "canonical_question": "Cuộc kháng chiến chống Mỹ, cứu nước của nhân dân ta là một cuộc xung đột lịch sử vì:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đây là cuộc đấu tranh của một dân tộc nhược tiểu chống lại một đế quốc số một thế giới"
+      },
+      {
+        "key": "B",
+        "text": "Đây là một cuộc chiến tranh xâm lược, phi nghĩa mang vỏ bọc bảo vệ tự do dân chủ của chủ nghĩa đế quốc"
+      },
+      {
+        "key": "C",
+        "text": "Đây là một cuộc chiến phản ánh tập trung những mâu thuẫn cơ bản của thời đại"
+      },
+      {
+        "key": "D",
+        "text": "Đây là một cuộc chiến tranh chống chủ nghĩa thực dân mới của Mỹ, thực hiện giải phóng dân tộc, thống nhất đất nước, đầu tàu phong trào giải phóng..."
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      805
+    ]
+  },
+  {
+    "cluster_key": "lucluongcachmangduocneuratrongluancuongchinhtrithang101930cuadangcongsandongduongla",
+    "canonical_question": "Lực lượng cách mạng được nêu ra trong Luận cương chính trị (tháng 10/1930) của Đảng Cộng sản Đông Dương là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Công nhân, nông dân và tư sản"
+      },
+      {
+        "key": "B",
+        "text": "Nông dân và tiểu tư sản"
+      },
+      {
+        "key": "C",
+        "text": "Công nhân, nông dân"
+      },
+      {
+        "key": "D",
+        "text": "Công nhân, nông dân và trí thức"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      806,
+      1411
+    ]
+  },
+  {
+    "cluster_key": "thang61925ganvoisuradoicuatochucnao",
+    "canonical_question": "Tháng 6/1925 gắn với sự ra đời của tổ chức nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Hội Việt Nam cách mạng thanh niên"
+      },
+      {
+        "key": "B",
+        "text": "Đông Dương Cộng sản Đảng"
+      },
+      {
+        "key": "C",
+        "text": "Quốc dân Đảng"
+      },
+      {
+        "key": "D",
+        "text": "Đảng Cộng sản Việt Nam"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      807,
+      1008
+    ]
+  },
+  {
+    "cluster_key": "noidungnaokhongdungtrongdactrungchuyeucuaduongloicongnghiephoathoikytruocdoimoi",
+    "canonical_question": "Nội dung nào không đúng trong đặc trưng chủ yếu của đường lối công nghiệp hóa thời kỳ trước đổi mới?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Nóng vội, giản đơn, duy ý chí, ham làm nhanh, làm lớn, không quan tâm đến hiệu quả kinh tế - xã hội"
+      },
+      {
+        "key": "B",
+        "text": "Công nghiệp hóa theo mô hình nền kinh tế khép kín, hướng nội và thiên về phát triển công nghiệp nặng"
+      },
+      {
+        "key": "C",
+        "text": "Chủ lực thực hiện công nghiệp hóa là Nhà nước và các doanh nghiệp nhà nước"
+      },
+      {
+        "key": "D",
+        "text": "Công nghiệp hóa được thực hiện thông qua cơ chế thị trường định hướng xã hội chủ nghĩa"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      808,
+      1084
+    ]
+  },
+  {
+    "cluster_key": "cuockhangchienchongmycuunuoccuanhandanvietnam19541975ketthucthangloisauchiendichnao",
+    "canonical_question": "Cuộc kháng chiến chống Mỹ, cứu nước của nhân dân Việt Nam (1954 - 1975) kết thúc thắng lợi sau chiến dịch nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Hồ Chí Minh"
+      },
+      {
+        "key": "B",
+        "text": "Tây Nguyên"
+      },
+      {
+        "key": "C",
+        "text": "Huế - Đà Nẵng"
+      },
+      {
+        "key": "D",
+        "text": "Quảng Trị - Phước Long"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      809
+    ]
+  },
+  {
+    "cluster_key": "visaotrongthoikydoimoidatnuocchungtavanphaitieptucxaydunggiaicapcongnhanvietnam",
+    "canonical_question": "Vì sao trong thời kỳ đổi mới đất nước chúng ta vẫn phải tiếp tục xây dựng giai cấp công nhân Việt Nam?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Giai cấp công nhân là động lực phát triển kinh tế"
+      },
+      {
+        "key": "B",
+        "text": "Giai cấp công nhân đại diện cho phương thức sản xuất hiện đại"
+      },
+      {
+        "key": "C",
+        "text": "Giai cấp lãnh đạo cách mạng thông qua đội tiền phong là Đảng Cộng sản Việt Nam, là giai cấp đại diện cho phương thức sản xuất tiến bộ"
+      },
+      {
+        "key": "D",
+        "text": "Giai cấp công nhân là giai cấp lãnh đạo cách mạng thông qua đội tiền phong là Đảng Cộng sản Việt Nam, là giai cấp đại diện cho phương thức sản xuất tiên tiến, tiên phong đi đầu trong sự nghiệp công nghiệp hóa - hiện đại hóa đất nước"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      811,
+      1237,
+      1296
+    ]
+  },
+  {
+    "cluster_key": "cachmangthangmuoinganam1917vaquoctecongsanradoi1919coynghia",
+    "canonical_question": "Cách mạng Tháng Mười Nga năm 1917 và Quốc tế Cộng sản ra đời (1919) có ý nghĩa:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đánh dấu sự thành công của cách mạng vô sản trên thế giới"
+      },
+      {
+        "key": "B",
+        "text": "Thúc đẩy phong trào đấu tranh của giai cấp công nhân ở các nước đế quốc"
+      },
+      {
+        "key": "C",
+        "text": "Thúc đẩy cuộc đấu tranh giành độc lập của các nước thuộc địa, phụ thuộc"
+      },
+      {
+        "key": "D",
+        "text": "Thức tỉnh phong trào đấu tranh giải phóng dân tộc ở các nước thuộc địa, phụ thuộc"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      812
+    ]
+  },
+  {
+    "cluster_key": "congnghiephoahiendaihoadatnuoclasunghiepcua",
+    "canonical_question": "Công nghiệp hóa - hiện đại hóa đất nước là sự nghiệp của:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Toàn dân"
+      },
+      {
+        "key": "B",
+        "text": "Đảng Cộng sản Việt Nam"
+      },
+      {
+        "key": "C",
+        "text": "Đội ngũ cán bộ công chức nhà nước"
+      },
+      {
+        "key": "D",
+        "text": "Nhà nước Việt Nam"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      813,
+      911,
+      1081,
+      1461
+    ]
+  },
+  {
+    "cluster_key": "ngay20111946ganvoisukienlichsunao",
+    "canonical_question": "Ngày 20-11-1946 gắn với sự kiện lịch sử nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Pháp mở rộng xâm lược nước ta lần thứ 2"
+      },
+      {
+        "key": "B",
+        "text": "Ban hành Lời kêu gọi toàn quốc kháng chiến"
+      },
+      {
+        "key": "C",
+        "text": "Nhật đảo chính Pháp độc chiếm Đông Dương"
+      },
+      {
+        "key": "D",
+        "text": "Hội nghị Quốc dân ở Tân Trào"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      814
+    ]
+  },
+  {
+    "cluster_key": "mottrongnhungbaihocdoimoidatnuoc19861996la",
+    "canonical_question": "Một trong những bài học đổi mới đất nước (1986 - 1996) là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Kết hợp chặt chẽ đổi mới kinh tế với đổi mới chính trị, lấy đổi mới kinh tế làm trọng tâm, từng bước đổi mới chính trị"
+      },
+      {
+        "key": "B",
+        "text": "Đổi mới tư duy và phương thức hoạt động của các bộ phận cấu thành hệ thống"
+      },
+      {
+        "key": "C",
+        "text": "Đổi mới nhận thức và phương thức hoạt động của các bộ phận cấu thành hệ thống"
+      },
+      {
+        "key": "D",
+        "text": "Đổi mới tư tưởng và phương thức hoạt động của các bộ phận cấu thành hệ thống"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      815,
+      851
+    ]
+  },
+  {
+    "cluster_key": "khinoivetrienvongcuacuockhangchienchongphapdangxacdinhtrongduongloikhangchienla",
+    "canonical_question": "Khi nói về triển vọng của cuộc kháng chiến chống Pháp, Đảng xác định trong Đường lối kháng chiến là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Mặc dù lâu dài, gian khổ, khó khăn song nhất định thắng lợi"
+      },
+      {
+        "key": "B",
+        "text": "Mặc dù phải hy sinh to lớn đến đâu nhưng nhất định sẽ thành công"
+      },
+      {
+        "key": "C",
+        "text": "Mặc dù tự lực cánh sinh và chưa được nước nào trên thế giới công nhận, song nhất định thắng lợi"
+      },
+      {
+        "key": "D",
+        "text": "Nhờ có sự hy sinh to lớn của dân tộc nên cuộc kháng chiến sẽ thành công"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      816
+    ]
+  },
+  {
+    "cluster_key": "phatxitnhatvaoxamluocnuoctavaongaythangnamnao",
+    "canonical_question": "Phát xít Nhật vào xâm lược nước ta vào ngày, tháng, năm nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Ngày 22 tháng 9 1940"
+      },
+      {
+        "key": "B",
+        "text": "Ngày 24 tháng 9 1940"
+      },
+      {
+        "key": "C",
+        "text": "Ngày 20 tháng 9 1940"
+      },
+      {
+        "key": "D",
+        "text": "Ngày 25 tháng 9 1940"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      817
+    ]
+  },
+  {
+    "cluster_key": "moicongvieccuadangnhanuocphaiquantrietsausaclaydanlamgocdanlamtrungtamluonluonthuchienphuongcham",
+    "canonical_question": "Mọi công việc của Đảng, Nhà nước phải quán triệt sâu sắc lấy dân làm gốc, dân làm trung tâm, luôn luôn thực hiện phương châm:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Dân biết, dân bàn, dân làm, dân kiểm tra, dân giám sát, dân thụ hưởng"
+      },
+      {
+        "key": "B",
+        "text": "Dân biết, dân bàn, dân làm, dân kiểm tra, dân giám sát"
+      },
+      {
+        "key": "C",
+        "text": "Dân biết, dân bàn, dân làm, dân kiểm tra"
+      },
+      {
+        "key": "D",
+        "text": "Của dân, do dân và vì dân"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      818
+    ]
+  },
+  {
+    "cluster_key": "khoinghiathangloiodiaphuongnaodamodaucuocquyetdinhphatdongkhoinghiagianhchinhquyentrencanuoctrongcachmangthangtam1945",
+    "canonical_question": "Khởi nghĩa thắng lợi ở địa phương nào đã mở đầu cuộc quyết định phát động khởi nghĩa giành chính quyền trên cả nước trong Cách mạng Tháng Tám (1945)?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Thái Nguyên"
+      },
+      {
+        "key": "B",
+        "text": "Hà Nội"
+      },
+      {
+        "key": "C",
+        "text": "Huế"
+      },
+      {
+        "key": "D",
+        "text": "Sài Gòn"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      819,
+      892
+    ]
+  },
+  {
+    "cluster_key": "vietnamgianhaptochucaseanvaonamnao",
+    "canonical_question": "Việt Nam gia nhập tổ chức ASEAN vào năm nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "1993"
+      },
+      {
+        "key": "B",
+        "text": "1994"
+      },
+      {
+        "key": "C",
+        "text": "1995"
+      },
+      {
+        "key": "D",
+        "text": "1997"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      820,
+      913
+    ]
+  },
+  {
+    "cluster_key": "tacgiacuabaitholichsunuoctathang02nam1942laai",
+    "canonical_question": "Tác giả của bài thơ Lịch sử nước ta (tháng 02 năm 1942) là ai?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Lê Duẩn"
+      },
+      {
+        "key": "B",
+        "text": "Trường Chinh"
+      },
+      {
+        "key": "C",
+        "text": "Phạm Hùng"
+      },
+      {
+        "key": "D",
+        "text": "Nguyễn Ái Quốc"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      821,
+      941
+    ]
+  },
+  {
+    "cluster_key": "nhiemvuchonggiacdotsaucachmangthangtam1945thehienquaphongtraonaosauday",
+    "canonical_question": "Nhiệm vụ chống giặc dốt sau Cách mạng Tháng Tám (1945) thể hiện qua phong trào nào sau đây?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Xoá nạn mù chữ"
+      },
+      {
+        "key": "B",
+        "text": "Toàn dân tham gia xoá nạn mù chữ"
+      },
+      {
+        "key": "C",
+        "text": "Bình dân học vụ"
+      },
+      {
+        "key": "D",
+        "text": "Duyên hải, khối ngô"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      822
+    ]
+  },
+  {
+    "cluster_key": "noidungnaophananhdiemtuongdongvenoidunggiuahiepdinhgionevonam1954vedongduongvahiepdinhparinam1973vevietnam",
+    "canonical_question": "Nội dung nào phản ánh điểm tương đồng về nội dung giữa Hiệp định Giơ-ne-vơ năm 1954 về Đông Dương và Hiệp định Pari năm 1973 về Việt Nam?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Hiệp định có sự tham gia của 5 cường quốc Hội đồng Bảo an Liên Hợp Quốc"
+      },
+      {
+        "key": "B",
+        "text": "Các bên thừa nhận miền Nam có 2 chính quyền, 2 quân đội, 2 vùng kiểm soát và 3 lực lượng chính trị"
+      },
+      {
+        "key": "C",
+        "text": "Các nước đều cam kết tôn trọng những quyền dân tộc cơ bản của nhân dân Việt Nam"
+      },
+      {
+        "key": "D",
+        "text": "Thỏa thuận việc ngừng bắn để thực hiện chuyển quân, tập kết, chuyển giao khu vực"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      823,
+      886
+    ]
+  },
+  {
+    "cluster_key": "hiepdinhparivechamdutchientranhlaplaihoabinhovietnamduockyket1973dacamket",
+    "canonical_question": "Hiệp định Pari về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam được ký kết (1973) đã cam kết:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Tôn trọng độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ của nước Việt Nam"
+      },
+      {
+        "key": "B",
+        "text": "Tôn trọng độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ của nước Việt Nam Dân chủ Cộng hòa"
+      },
+      {
+        "key": "C",
+        "text": "Tôn trọng độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ của nước Việt Nam Cộng hòa"
+      },
+      {
+        "key": "D",
+        "text": "Tôn trọng độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ của Cộng hòa Miền Nam Việt Nam"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      824,
+      864
+    ]
+  },
+  {
+    "cluster_key": "chithikhangchienkienquoccuatrunguongdangradoivaothoigiannao",
+    "canonical_question": "Chỉ thị Kháng chiến kiến quốc của Trung ương Đảng ra đời vào thời gian nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "15-12-1945"
+      },
+      {
+        "key": "B",
+        "text": "22-12-1945"
+      },
+      {
+        "key": "C",
+        "text": "2-9-1945"
+      },
+      {
+        "key": "D",
+        "text": "25-11-1945"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      825
+    ]
+  },
+  {
+    "cluster_key": "daihoilanthuiii91960danglaodongvietnamkhangdinhnhiemvucachmanggiuvaitroquyetdinhnhatdoivoisuphattriencachmangcanuocla",
+    "canonical_question": "Đại hội lần thứ III (9/1960), Đảng Lao động Việt Nam khẳng định nhiệm vụ cách mạng giữ vai trò quyết định nhất đối với sự phát triển cách mạng cả nước là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Cách mạng xã hội chủ nghĩa ở miền Bắc"
+      },
+      {
+        "key": "B",
+        "text": "Cách mạng dân tộc dân chủ nhân dân ở miền Nam"
+      },
+      {
+        "key": "C",
+        "text": "Cách mạng hai miền đều có vai trò như nhau"
+      },
+      {
+        "key": "D",
+        "text": "Các phương án kể trên đều sai"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      826,
+      921
+    ]
+  },
+  {
+    "cluster_key": "mottrongnhungkhokhancuanuoctatrongnhungnam19451946la",
+    "canonical_question": "Một trong những khó khăn của nước ta trong những năm 1945 - 1946 là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Chủ nghĩa đế quốc sụp đổ và phong kiến"
+      },
+      {
+        "key": "B",
+        "text": "Bọn tay sai theo Mỹ và phong kiến phản động"
+      },
+      {
+        "key": "C",
+        "text": "Đế quốc Pháp và phong kiến"
+      },
+      {
+        "key": "D",
+        "text": "Đế quốc Pháp và bọn can thiệp Mỹ"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      828
+    ]
+  },
+  {
+    "cluster_key": "sovoichiendichdienbienphu1954chiendichhochiminh1975cokhacgiveketquavaynghia",
+    "canonical_question": "So với chiến dịch Điện Biên Phủ 1954, chiến dịch Hồ Chí Minh 1975 có khác gì về kết quả và ý nghĩa?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đã đập tan hoàn toàn kế hoạch quân sự của địch, buộc địch phải kí kết hiệp định rút quân về nước"
+      },
+      {
+        "key": "B",
+        "text": "Giải phóng hoàn toàn miền Nam, tạo tiền đề hoàn thành cuộc cách mạng dân chủ nhân dân trong cả nước"
+      },
+      {
+        "key": "C",
+        "text": "Làm xoay chuyển cục diện chiến tranh, tạo điều kiện thuận lợi để giành thắng lợi cuối cùng"
+      },
+      {
+        "key": "D",
+        "text": "Là dấu mốc kết thúc cuộc chiến tranh giải phóng dân tộc, bảo vệ Tổ quốc, chấm dứt ách thống trị của thực dân đế quốc"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      830,
+      948,
+      1124
+    ]
+  },
+  {
+    "cluster_key": "vanmenhnuoctadungtruoctinhthengancantreosoitocvaothoigiannao",
+    "canonical_question": "Vận mệnh nước ta đứng trước tình thế “ngàn cân treo sợi tóc” vào thời gian nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Ngay sau cách mạng Tháng Tám 1945 thành công"
+      },
+      {
+        "key": "B",
+        "text": "Trước cách mạng Tháng Tám"
+      },
+      {
+        "key": "C",
+        "text": "Ngay sau cuộc kháng chiến chống Mỹ thắng lợi 1975"
+      },
+      {
+        "key": "D",
+        "text": "Ngay sau khi hiệp định Pari được ký kết 1973"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      831
+    ]
+  },
+  {
+    "cluster_key": "daulahanchecuadangtrongquatrinhlanhdaochidaocuoctongtiencongvanoidaymauthan1968",
+    "canonical_question": "Đâu là hạn chế của Đảng trong quá trình lãnh đạo chỉ đạo cuộc Tổng tiến công và nổi dậy Mậu Thân 1968?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Thiếu tính năng động, bất ngờ, táo bạo"
+      },
+      {
+        "key": "B",
+        "text": "Có biểu hiện chủ quan trong việc đánh giá tình hình, đề ra yêu cầu chưa sát với thực tế"
+      },
+      {
+        "key": "C",
+        "text": "Các trận đánh không có ý nghĩa chiến lược"
+      },
+      {
+        "key": "D",
+        "text": "Không buộc địch phải xuống thang chiến tranh"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      832,
+      863
+    ]
+  },
+  {
+    "cluster_key": "lucluongtaonendonglucchocachmangvietnamduocneuratrongchinhcuongcuadanglaodongvietnamla",
+    "canonical_question": "Lực lượng tạo nên động lực cho cách mạng Việt Nam được nêu ra trong Chính cương của Đảng Lao động Việt Nam là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Công nhân, nông dân, tiểu tư sản, tư sản dân tộc, địa chủ yêu nước"
+      },
+      {
+        "key": "B",
+        "text": "Công nhân, nông dân, lao động trí óc"
+      },
+      {
+        "key": "C",
+        "text": "Công nhân, trí thức, tư sản dân tộc"
+      },
+      {
+        "key": "D",
+        "text": "Địa chủ, tư sản dân tộc"
+      },
+      {
+        "key": "E",
+        "text": "Công nhân, nông dân, tiểu tư sản, tư sản dân tộc, địa chủ nhỏ"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      833,
+      1240
+    ]
+  },
+  {
+    "cluster_key": "sukiennaoduocxemlanguyenaiquocdanhgianochungtoranggiaicapvosantadatruongthanhvabatdaudivaoconduongcachmang",
+    "canonical_question": "Sự kiện nào được xem là Nguyễn Ái Quốc đánh giá “nó chứng tỏ rằng giai cấp vô sản ta đã trưởng thành và bắt đầu đi vào con đường cách mạng”?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Quốc tế Cộng sản ra đời (1919)"
+      },
+      {
+        "key": "B",
+        "text": "Hội Việt Nam Cách mạng Thanh niên ra đời (1925)"
+      },
+      {
+        "key": "C",
+        "text": "Bãi công của công nhân Ba Son (1925)"
+      },
+      {
+        "key": "D",
+        "text": "Đảng Cộng sản Việt Nam ra đời (1930)"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      834
+    ]
+  },
+  {
+    "cluster_key": "dienvaochotrongdem931945nhatdaochinhphapngay1231945darabanchithinhatphapbannhauvahanhdongcuachungta",
+    "canonical_question": "Điền vào chỗ trống: Đêm 9-3-1945, Nhật đảo chính Pháp, ngày 12-3-1945, ... đã ra Bản Chỉ thị “Nhật - Pháp bắn nhau và hành động của chúng ta”.",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Ban Thường vụ Trung ương Đảng"
+      },
+      {
+        "key": "B",
+        "text": "Trung ương Cục miền Nam"
+      },
+      {
+        "key": "C",
+        "text": "Quốc dân Đảng"
+      },
+      {
+        "key": "D",
+        "text": "Ban cán sự toàn quốc của Đảng"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      835
+    ]
+  },
+  {
+    "cluster_key": "nhiemvucuacachmangmienbacngaysaukhihiepdinhgionevonam1954vedongduongduockyketla",
+    "canonical_question": "Nhiệm vụ của cách mạng miền Bắc ngay sau khi Hiệp định Giơ-ne-vơ năm 1954 về Đông Dương được ký kết là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đấu tranh chống đế quốc Mỹ và chính quyền Ngô Đình Diệm"
+      },
+      {
+        "key": "B",
+        "text": "Xây dựng cơ sở vật chất kỹ thuật cho chủ nghĩa xã hội"
+      },
+      {
+        "key": "C",
+        "text": "Hoàn thành cuộc cách mạng dân tộc dân chủ nhân dân"
+      },
+      {
+        "key": "D",
+        "text": "Hàn gắn vết thương chiến tranh, khôi phục kinh tế"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      836,
+      923
+    ]
+  },
+  {
+    "cluster_key": "thangloiquansuvangdoinaocuaquandantadadaptankehoachnavavalamxoaychuyencucdienchientranh",
+    "canonical_question": "Thắng lợi quân sự vang dội nào của quân dân ta đã đập tan kế hoạch Nava và làm xoay chuyển cục diện chiến tranh?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Chiến dịch Biên giới Thu - Đông 1950"
+      },
+      {
+        "key": "B",
+        "text": "Chiến dịch Tây Bắc 1952"
+      },
+      {
+        "key": "C",
+        "text": "Chiến dịch Điện Biên Phủ 1954"
+      },
+      {
+        "key": "D",
+        "text": "Chiến dịch Thượng Lào 1953"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      839
+    ]
+  },
+  {
+    "cluster_key": "tronggiaidoan19471949cuockhangchienchongphapcuanhandanta",
+    "canonical_question": "Trong giai đoạn 1947 - 1949, cuộc kháng chiến chống Pháp của nhân dân ta:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Tuy gặp rất nhiều khó khăn nhưng vẫn phát triển"
+      },
+      {
+        "key": "B",
+        "text": "Tuy gặp rất nhiều khó khăn song vẫn không ngừng phát triển về mọi mặt"
+      },
+      {
+        "key": "C",
+        "text": "Có sự giúp đỡ của Liên Xô và Trung Quốc"
+      },
+      {
+        "key": "D",
+        "text": "Diễn ra trong thế bị bao vây cô lập"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      840
+    ]
+  },
+  {
+    "cluster_key": "ngay19121946banthuongvutrunguongdangdara",
+    "canonical_question": "Ngày 19-12-1946, Ban Thường vụ Trung ương Đảng đã ra:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Quân lệnh số 1"
+      },
+      {
+        "key": "B",
+        "text": "Lời kêu gọi Tổng khởi nghĩa"
+      },
+      {
+        "key": "C",
+        "text": "Chỉ thị Toàn dân kháng chiến"
+      },
+      {
+        "key": "D",
+        "text": "Lời kêu gọi Toàn quốc kháng chiến"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      841
+    ]
+  },
+  {
+    "cluster_key": "duongloikhangchienchongthucdanphapcuadang19461954la",
+    "canonical_question": "Đường lối kháng chiến chống thực dân Pháp của Đảng (1946 - 1954) là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Toàn dân, toàn diện, lâu dài và dựa vào sức mình là chính"
+      },
+      {
+        "key": "B",
+        "text": "Tự lực cánh sinh, dựa vào sức mình là chính"
+      },
+      {
+        "key": "C",
+        "text": "Chiến tranh nhân dân, toàn dân, toàn diện, tự lực cánh sinh"
+      },
+      {
+        "key": "D",
+        "text": "Chiến tranh nhân dân, toàn diện, lâu dài và tranh thủ viện trợ quốc tế"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      842
+    ]
+  },
+  {
+    "cluster_key": "thuchiencamkettronghiepdinhgionevovedongduongphapruthetquankhoinuoctavaonamnao",
+    "canonical_question": "Thực hiện cam kết trong Hiệp định Giơ-ne-vơ về Đông Dương, Pháp rút hết quân khỏi nước ta vào năm nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "1954"
+      },
+      {
+        "key": "B",
+        "text": "1955"
+      },
+      {
+        "key": "C",
+        "text": "1956"
+      },
+      {
+        "key": "D",
+        "text": "1957"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      843
+    ]
+  },
+  {
+    "cluster_key": "cacphongtraoyeunuocchongthucdanphapcuoithekyxixdauthekyxxdongdu19051908dongkinhnghiathuc1907duytan19061908lacacphongtraotheokhuynhhuongnao",
+    "canonical_question": "Các phong trào yêu nước chống thực dân Pháp cuối thế kỷ XIX, đầu thế kỷ XX: Đông Du (1905 - 1908), Đông Kinh nghĩa thục (1907), Duy Tân (1906 - 1908) là các phong trào theo khuynh hướng nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Khuynh hướng vô sản"
+      },
+      {
+        "key": "B",
+        "text": "Theo hệ tư tưởng phong kiến"
+      },
+      {
+        "key": "C",
+        "text": "Khuynh hướng dân chủ tư sản"
+      },
+      {
+        "key": "D",
+        "text": "Tuân theo chủ nghĩa Mác - Lênin"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      844
+    ]
+  },
+  {
+    "cluster_key": "daihoidaibieutoanquoclanthuxiicuadang2016deramuctieutongquatphattriendatnuoc5nam20162020la",
+    "canonical_question": "Đại hội đại biểu toàn quốc lần thứ XII của Đảng (2016) đề ra mục tiêu tổng quát phát triển đất nước 5 năm (2016 - 2020) là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đổi mới mô hình tăng trưởng"
+      },
+      {
+        "key": "B",
+        "text": "Đổi mới thể chế kinh tế thị trường"
+      },
+      {
+        "key": "C",
+        "text": "Đổi mới thể chế chính trị"
+      },
+      {
+        "key": "D",
+        "text": "Đưa nước ta cơ bản trở thành nước công nghiệp theo hướng hiện đại vào năm 2020"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      848
+    ]
+  },
+  {
+    "cluster_key": "noidungduongloiphattrienvanhoathoikydoimoigomco",
+    "canonical_question": "Nội dung đường lối phát triển văn hóa thời kỳ đổi mới gồm có:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Xây dựng hệ thống văn hóa tư tưởng đồng bộ, toàn diện và có quan hệ hữu cơ chặt chẽ"
+      },
+      {
+        "key": "B",
+        "text": "Đổi mới cơ quan, đồng thời từng bước đổi mới hệ thống chính trị"
+      },
+      {
+        "key": "C",
+        "text": "Đổi mới tư duy an ninh quốc phòng, đồng thời từng bước đổi mới hệ thống chính trị"
+      },
+      {
+        "key": "D",
+        "text": "Đổi mới chính sách xã hội, đồng thời từng bước đổi mới hệ thống chính trị"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      849
+    ]
+  },
+  {
+    "cluster_key": "hoinghitrunguonglanthu3cuadang1992dakhangdinh",
+    "canonical_question": "Hội nghị Trung ương lần thứ 3 của Đảng (1992) đã khẳng định:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đổi mới kinh tế là nguyên tắc gắn với nâng cao đời sống nhân dân, đổi mới chính trị nhằm phục vụ đắc lực cho đổi mới kinh tế"
+      },
+      {
+        "key": "B",
+        "text": "Đổi mới tổ chức và phương thức hoạt động của hệ thống chính trị nhằm phục vụ đắc lực nhiệm vụ xây dựng và phát triển kinh tế, đồng thời bảo đảm..."
+      },
+      {
+        "key": "C",
+        "text": "Đổi mới chính trị không phải là thay đổi toàn bộ hệ thống chính trị, mà là đổi mới phương thức lãnh đạo, nâng cao hiệu lực quản lý..."
+      },
+      {
+        "key": "D",
+        "text": "Đổi mới phương thức lãnh đạo của Đảng đối với Nhà nước là khâu then chốt của đổi mới hệ thống chính trị"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      850
+    ]
+  },
+  {
+    "cluster_key": "hoinghitrunguonglanthubacuadang61997dienrakhiailamtongbithu",
+    "canonical_question": "Hội nghị Trung ương lần thứ ba của Đảng (6/1997) diễn ra khi ai làm Tổng Bí thư?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Lê Khả Phiêu"
+      },
+      {
+        "key": "B",
+        "text": "Trường Chinh"
+      },
+      {
+        "key": "C",
+        "text": "Đỗ Mười"
+      },
+      {
+        "key": "D",
+        "text": "Nguyễn Văn Linh"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      852
+    ]
+  },
+  {
+    "cluster_key": "daihoinaocuadangduocdanhgialamoclichsumodaucongcuocdoimoitoandien",
+    "canonical_question": "Đại hội nào của Đảng được đánh giá là mốc lịch sử mở đầu công cuộc đổi mới toàn diện?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đại hội VI (1986)"
+      },
+      {
+        "key": "B",
+        "text": "Đại hội V (1982)"
+      },
+      {
+        "key": "C",
+        "text": "Đại hội VII (1991)"
+      },
+      {
+        "key": "D",
+        "text": "Đại hội VIII (1996)"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      853
+    ]
+  },
+  {
+    "cluster_key": "nghiquyetso10nqtwngay541988cuabochinhtrikhoan10khangdinhvandegi",
+    "canonical_question": "Nghị quyết số 10-NQ/TW ngày 5-4-1988 của Bộ Chính trị (Khoán 10) khẳng định vấn đề gì?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đổi mới quản lý kinh tế nông nghiệp"
+      },
+      {
+        "key": "B",
+        "text": "Đổi mới quản lý kinh tế công nghiệp"
+      },
+      {
+        "key": "C",
+        "text": "Đổi mới quản lý kinh tế dịch vụ"
+      },
+      {
+        "key": "D",
+        "text": "Đổi mới quản lý kinh tế tổng hợp"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      854
+    ]
+  },
+  {
+    "cluster_key": "hoinghitrunguong5khoaxii52017banhanhnghiquyetvephattrienkinhtetunhantrongdoxacdinh",
+    "canonical_question": "Hội nghị Trung ương 5 khóa XII (5/2017) ban hành nghị quyết về phát triển kinh tế tư nhân, trong đó xác định:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Kinh tế nhà nước là động lực quan trọng của nền kinh tế"
+      },
+      {
+        "key": "B",
+        "text": "Kinh tế tư nhân là động lực quan trọng của nền kinh tế"
+      },
+      {
+        "key": "C",
+        "text": "Kinh tế tư nhân là trụ cột của nền kinh tế"
+      },
+      {
+        "key": "D",
+        "text": "Kinh tế tư nhân giữ vai trò quyết định trong phát triển kinh tế"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      855
+    ]
+  },
+  {
+    "cluster_key": "quandiemnaosaudaylamsangtomoiquanhegiuahaimiennambactrongthoikychongmycuunuoc",
+    "canonical_question": "Quan điểm nào sau đây làm sáng tỏ mối quan hệ giữa hai miền Nam - Bắc trong thời kỳ chống Mỹ cứu nước?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Trong cuộc chiến tranh chống Mỹ của nhân dân cả nước, miền Nam là tiền tuyến lớn, miền Bắc là hậu phương lớn, bảo đảm cho thắng lợi của sự nghiệp giải phóng miền Nam, thống nhất Tổ quốc"
+      },
+      {
+        "key": "B",
+        "text": "Trong cuộc chiến tranh chống Mỹ của nhân dân cả nước, miền Nam là hậu phương lớn, miền Bắc là tiền tuyến lớn"
+      },
+      {
+        "key": "C",
+        "text": "Cả hai miền đều là tiền tuyến quyết định trực tiếp đến thắng lợi của chiến tranh"
+      },
+      {
+        "key": "D",
+        "text": "Miền Bắc chi viện một phần nhỏ, miền Nam phải tự lực cánh sinh hoàn toàn"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      859
+    ]
+  },
+  {
+    "cluster_key": "nghiquyethoinghibanchaphanhtrunguongdanglanthu1511959xacdinhconduongcobancuacachmangmiennamla",
+    "canonical_question": "Nghị quyết Hội nghị Ban Chấp hành Trung ương Đảng lần thứ 15 (1/1959) xác định con đường cơ bản của cách mạng miền Nam là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Con đường đấu tranh hòa bình"
+      },
+      {
+        "key": "B",
+        "text": "Khởi nghĩa giành chính quyền về tay nhân dân"
+      },
+      {
+        "key": "C",
+        "text": "Kết hợp đấu tranh chính trị với đấu tranh vũ trang"
+      },
+      {
+        "key": "D",
+        "text": "Đàm phán ngoại giao"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      860
+    ]
+  },
+  {
+    "cluster_key": "hinhthucphanphoichuyeutrongthoikytruocdoimoila",
+    "canonical_question": "Hình thức phân phối chủ yếu trong thời kỳ trước đổi mới là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Phân phối theo lao động"
+      },
+      {
+        "key": "B",
+        "text": "Phân phối theo vốn đóng góp"
+      },
+      {
+        "key": "C",
+        "text": "Phân phối theo nhu cầu"
+      },
+      {
+        "key": "D",
+        "text": "Phân phối cào bằng, bình quân thông qua tem phiếu"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      861
+    ]
+  },
+  {
+    "cluster_key": "trongphongtraodantocdanchu19361939muctieutruocmatcuacachmangla",
+    "canonical_question": "Trong phong trào dân tộc dân chủ (1936 - 1939), mục tiêu trước mắt của cách mạng là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Tịch thu ruộng đất của địa chủ chia cho dân cày"
+      },
+      {
+        "key": "B",
+        "text": "Đánh đổ đế quốc Pháp, giành độc lập dân tộc"
+      },
+      {
+        "key": "C",
+        "text": "Đòi tự do, dân chủ, cơm áo, hòa bình"
+      },
+      {
+        "key": "D",
+        "text": "Thành lập chính quyền công nông binh"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      872
+    ]
+  },
+  {
+    "cluster_key": "giaidoan19751985datnuoctabuocvaothoiky",
+    "canonical_question": "Giai đoạn 1975 - 1985 đất nước ta bước vào thời kỳ:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Quá độ lên chủ nghĩa xã hội trên phạm vi cả nước"
+      },
+      {
+        "key": "B",
+        "text": "Đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước"
+      },
+      {
+        "key": "C",
+        "text": "Phát triển kinh tế thị trường định hướng xã hội chủ nghĩa"
+      },
+      {
+        "key": "D",
+        "text": "Hoàn thành công nghiệp hóa nông nghiệp nông thôn"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      882
+    ]
+  },
+  {
+    "cluster_key": "tuthuctienquatrinhthuchiencongcuocdoimoithoiky19861996dangrutrabaihoc",
+    "canonical_question": "Từ thực tiễn quá trình thực hiện công cuộc đổi mới thời kỳ 1986 - 1996, Đảng rút ra bài học:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đổi mới phải vì lợi ích của nhân dân, dựa vào nhân dân, phát huy vai trò chủ động sáng tạo của nhân dân, phù hợp với thực tiễn"
+      },
+      {
+        "key": "B",
+        "text": "Trước hết đổi mới sự nghiệp giáo dục và xã hội chủ nghĩa"
+      },
+      {
+        "key": "C",
+        "text": "Chủ động khuyến khích mang tính dân chủ, sáng tạo của tập thể và cá nhân"
+      },
+      {
+        "key": "D",
+        "text": "Làm cho các tầng lớp nhân dân hoàn toàn tin tưởng vào đường lối đổi mới"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      884
+    ]
+  },
+  {
+    "cluster_key": "taisaocuoctongtiencongvanoidaytetmauthan1968laibuocmyphaixuongthangchientranhvangoivaobandamphan",
+    "canonical_question": "Tại sao cuộc Tổng tiến công và nổi dậy Tết Mậu Thân 1968 lại buộc Mỹ phải xuống thang chiến tranh và ngồi vào bàn đàm phán?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Chúng ta đã giáng đòn quyết định đánh bại ý chí xâm lược của chính quyền Mỹ"
+      },
+      {
+        "key": "B",
+        "text": "Chúng ta đã giáng đòn quyết định làm lung lay ý chí xâm lược của giới cầm quyền Mỹ"
+      },
+      {
+        "key": "C",
+        "text": "Cuộc Tổng tiến công và nổi dậy Tết Mậu Thân 1968 đã buộc Mỹ phải rút quân về nước"
+      },
+      {
+        "key": "D",
+        "text": "Mỹ hoàn toàn thất bại về quân sự"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      887
+    ]
+  },
+  {
+    "cluster_key": "trongthoikydoidaudongtaychientranhlanhquanhegiuahainuoclienxomylagiaidoan",
+    "canonical_question": "Trong thời kỳ đối đầu Đông - Tây (Chiến tranh Lạnh), quan hệ giữa hai nước (Liên Xô - Mỹ) là giai đoạn:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Chạy đua vũ trang, căng thẳng, nguy cơ chiến tranh thế giới"
+      },
+      {
+        "key": "B",
+        "text": "Phục hồi lại kinh tế để chuẩn bị chiến tranh"
+      },
+      {
+        "key": "C",
+        "text": "Đẩy mạnh phong trào đấu tranh"
+      },
+      {
+        "key": "D",
+        "text": "Hợp tác, đối thoại nhưng không nhân nhượng"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      890
+    ]
+  },
+  {
+    "cluster_key": "chientranhlanhketthucvaokhoangthoigiannao",
+    "canonical_question": "Chiến tranh Lạnh kết thúc vào khoảng thời gian nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "1987"
+      },
+      {
+        "key": "B",
+        "text": "1989"
+      },
+      {
+        "key": "C",
+        "text": "1991"
+      },
+      {
+        "key": "D",
+        "text": "1993"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      891
+    ]
+  },
+  {
+    "cluster_key": "ngay291945ganlienvoisukienlichsunao",
+    "canonical_question": "Ngày 2/9/1945 gắn liền với sự kiện lịch sử nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Pháp mở rộng xâm lược nước ta lần thứ 2"
+      },
+      {
+        "key": "B",
+        "text": "Ngày Toàn quốc kháng chiến"
+      },
+      {
+        "key": "C",
+        "text": "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập khai sinh nước Việt Nam Dân chủ Cộng hòa"
+      },
+      {
+        "key": "D",
+        "text": "Nước ta toàn quốc kháng chiến chống thực dân Pháp xâm lược"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      894
+    ]
+  },
+  {
+    "cluster_key": "nguyennhannaosaudaydandensuthangloicuacuockhangchienchongphapla",
+    "canonical_question": "Nguyên nhân nào sau đây dẫn đến sự thắng lợi của cuộc kháng chiến chống Pháp là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Có sự lãnh đạo đúng đắn với đường lối kháng chiến đúng đắn"
+      },
+      {
+        "key": "B",
+        "text": "Có lực lượng vũ trang gồm 3 thứ quân ngày càng lớn mạnh"
+      },
+      {
+        "key": "C",
+        "text": "Có chính quyền dân chủ nhân dân và hậu phương kháng chiến vững chắc về mọi mặt"
+      },
+      {
+        "key": "D",
+        "text": "Có tình đoàn kết chiến đấu của nhân dân Việt Nam, Lào, Campuchia và sự ủng hộ của các nước XHCN"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      898
+    ]
+  },
+  {
+    "cluster_key": "ngaysaukhicachmangthangtam1945thanhcongthucdanphapquaylai",
+    "canonical_question": "Ngay sau khi Cách mạng Tháng Tám 1945 thành công, thực dân Pháp quay lại:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Xâm lược miền Nam"
+      },
+      {
+        "key": "B",
+        "text": "Xâm lược miền Bắc"
+      },
+      {
+        "key": "C",
+        "text": "Xâm lược cả hai miền"
+      },
+      {
+        "key": "D",
+        "text": "Đặt ách cai trị trên phạm vi cả nước"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      899
+    ]
+  },
+  {
+    "cluster_key": "detranhdungdoquansuvoiphapdangchutruong",
+    "canonical_question": "Để tránh đụng độ quân sự với Pháp, Đảng chủ trương:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Hòa với quân Tưởng"
+      },
+      {
+        "key": "B",
+        "text": "Hòa với quân Pháp"
+      },
+      {
+        "key": "C",
+        "text": "Đánh cả hai kẻ thù"
+      },
+      {
+        "key": "D",
+        "text": "Đánh Pháp, hòa với Tưởng"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      900
+    ]
+  },
+  {
+    "cluster_key": "duongloitoanquockhangchienchongthucdanphapduocthehientrongcacvankienquantrongdola",
+    "canonical_question": "Đường lối toàn quốc kháng chiến chống thực dân Pháp được thể hiện trong các văn kiện quan trọng, đó là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Toàn dân kháng chiến, Lời kêu gọi toàn quốc kháng chiến, Kháng chiến nhất định thắng lợi"
+      },
+      {
+        "key": "B",
+        "text": "Kháng chiến kiến quốc, Lời kêu gọi toàn quốc kháng chiến"
+      },
+      {
+        "key": "C",
+        "text": "Cương lĩnh chính trị, Luận cương chính trị tháng 10/1930"
+      },
+      {
+        "key": "D",
+        "text": "Tuyên ngôn độc lập, Chỉ thị Kháng chiến kiến quốc"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      901
+    ]
+  },
+  {
+    "cluster_key": "saucachmangthangtamnam1945nuoctaphaidoimatvoikhokhannao",
+    "canonical_question": "Sau Cách mạng Tháng Tám năm 1945, nước ta phải đối mặt với khó khăn nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Giặc đói, giặc dốt, giặc ngoại xâm"
+      },
+      {
+        "key": "B",
+        "text": "Nạn đói, nạn dốt, khó khăn về tài chính"
+      },
+      {
+        "key": "C",
+        "text": "Ngoại xâm, nội phản"
+      },
+      {
+        "key": "D",
+        "text": "Nạn thất nghiệp, dịch bệnh"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      902
+    ]
+  },
+  {
+    "cluster_key": "thangloiquansulonnhatcuatatrongcuockhangchienchongphapla",
+    "canonical_question": "Thắng lợi quân sự lớn nhất của ta trong cuộc kháng chiến chống Pháp là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Hiệp định Sơ bộ 1946"
+      },
+      {
+        "key": "B",
+        "text": "Chiến dịch Việt Bắc 1947"
+      },
+      {
+        "key": "C",
+        "text": "Chiến dịch Biên giới 1950"
+      },
+      {
+        "key": "D",
+        "text": "Chiến dịch Điện Biên Phủ 1954"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      903
+    ]
+  },
+  {
+    "cluster_key": "chiendichnaocuaquanvadantaquyetdinhthangloicuacuockhangchienchongphap",
+    "canonical_question": "Chiến dịch nào của quân và dân ta quyết định thắng lợi của cuộc kháng chiến chống Pháp?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Chiến dịch Việt Bắc Thu - Đông 1947"
+      },
+      {
+        "key": "B",
+        "text": "Chiến dịch Biên giới Thu - Đông 1950"
+      },
+      {
+        "key": "C",
+        "text": "Chiến dịch Tây Bắc 1952"
+      },
+      {
+        "key": "D",
+        "text": "Chiến dịch Điện Biên Phủ 1954"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      904
+    ]
+  },
+  {
+    "cluster_key": "daibieuthamduhoinghigionevo1954doailamtruongdoan",
+    "canonical_question": "Đại biểu tham dự Hội nghị Giơnevơ (1954) do ai làm Trưởng đoàn?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Hồ Chí Minh"
+      },
+      {
+        "key": "B",
+        "text": "Lê Duẩn"
+      },
+      {
+        "key": "C",
+        "text": "Trường Chinh"
+      },
+      {
+        "key": "D",
+        "text": "Phạm Văn Đồng"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      905
+    ]
+  },
+  {
+    "cluster_key": "chiendichnaoduoccoiladontancongquyetdinhdaptanhoantoanychixamluoccuamyomiennam",
+    "canonical_question": "Chiến dịch nào được coi là đòn tấn công quyết định đập tan hoàn toàn ý chí xâm lược của Mỹ ở miền Nam?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Cuộc Tổng tiến công và nổi dậy Xuân Mậu Thân 1968"
+      },
+      {
+        "key": "B",
+        "text": "Chiến dịch Điện Biên Phủ trên không 1972"
+      },
+      {
+        "key": "C",
+        "text": "Chiến dịch giải phóng Tây Nguyên 1975"
+      },
+      {
+        "key": "D",
+        "text": "Chiến dịch Hồ Chí Minh 1975"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      906
+    ]
+  },
+  {
+    "cluster_key": "noidungnaosaudaykhongdungtrongdactrungchuyeucuaduongloicongnghiephoathoikytruocdoimoi",
+    "canonical_question": "Nội dung nào sau đây không đúng trong đặc trưng chủ yếu của đường lối công nghiệp hóa thời kỳ trước đổi mới?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Nóng vội, giản đơn, duy ý chí, ham làm nhanh, làm lớn, không quan tâm đến hiệu quả kinh tế - xã hội"
+      },
+      {
+        "key": "B",
+        "text": "Công nghiệp hóa theo mô hình nền kinh tế khép kín, hướng nội và thiên về phát triển công nghiệp nặng"
+      },
+      {
+        "key": "C",
+        "text": "Chủ lực thực hiện công nghiệp hóa là Nhà nước và các doanh nghiệp nhà nước"
+      },
+      {
+        "key": "D",
+        "text": "Công nghiệp hóa được thực hiện thông qua cơ chế thị trường định hướng xã hội chủ nghĩa"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      907
+    ]
+  },
+  {
+    "cluster_key": "duongloicongnghiephoathoikydoimoicuadangduocthongqualandautientaidaihoinao",
+    "canonical_question": "Đường lối công nghiệp hóa thời kỳ đổi mới của Đảng được thông qua lần đầu tiên tại Đại hội nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đại hội VI (1986)"
+      },
+      {
+        "key": "B",
+        "text": "Đại hội VII (1991)"
+      },
+      {
+        "key": "C",
+        "text": "Đại hội VIII (1996)"
+      },
+      {
+        "key": "D",
+        "text": "Đại hội IX (2001)"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      908
+    ]
+  },
+  {
+    "cluster_key": "doimoithechekinhteduocdangneurataidaihoilanthumay",
+    "canonical_question": "Đổi mới thể chế kinh tế được Đảng nêu ra tại Đại hội lần thứ mấy?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đại hội VI (1986)"
+      },
+      {
+        "key": "B",
+        "text": "Đại hội VII (1991)"
+      },
+      {
+        "key": "C",
+        "text": "Đại hội VIII (1996)"
+      },
+      {
+        "key": "D",
+        "text": "Đại hội IX (2001)"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      909
+    ]
+  },
+  {
+    "cluster_key": "mottrongcacdacdiemcuakinhtethitruongdinhhuongxhcnonuoctala",
+    "canonical_question": "Một trong các đặc điểm của kinh tế thị trường định hướng XHCN ở nước ta là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Có nhiều hình thức sở hữu, nhiều thành phần kinh tế"
+      },
+      {
+        "key": "B",
+        "text": "Chỉ có sở hữu nhà nước và sở hữu tập thể"
+      },
+      {
+        "key": "C",
+        "text": "Do thị trường quyết định hoàn toàn"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      910
+    ]
+  },
+  {
+    "cluster_key": "quandiemcuadangtavephattrienkinhtethitruongdinhhuongxhcnla",
+    "canonical_question": "Quan điểm của Đảng ta về phát triển kinh tế thị trường định hướng XHCN là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Coi kinh tế thị trường là mục đích cuối cùng của CNXH"
+      },
+      {
+        "key": "B",
+        "text": "Coi kinh tế thị trường là phương tiện để đạt mục tiêu CNXH"
+      },
+      {
+        "key": "C",
+        "text": "Xây dựng nền kinh tế khép kín, không quan hệ với bên ngoài"
+      },
+      {
+        "key": "D",
+        "text": "Thực hiện phân phối bình quân cào bằng"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      912
+    ]
+  },
+  {
+    "cluster_key": "sukiennaodanhdaubuocngoatduavietnamhoinhapsaurongvaocongdongquocte",
+    "canonical_question": "Sự kiện nào đánh dấu bước ngoặt đưa Việt Nam hội nhập sâu rộng vào cộng đồng quốc tế?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Bình thường hóa quan hệ với Trung Quốc"
+      },
+      {
+        "key": "B",
+        "text": "Bình thường hóa quan hệ với Mỹ"
+      },
+      {
+        "key": "C",
+        "text": "Tham gia vào ASEAN (1995)"
+      },
+      {
+        "key": "D",
+        "text": "Gia nhập Tổ chức Thương mại Thế giới (WTO - 2007)"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      915
+    ]
+  },
+  {
+    "cluster_key": "hoinghitrunguongnaocuadangkhoaxbanhanhnghiquyetso04nqtwvetangcuongsulanhdaocuadangdoivoicongtacphongchongthamnhunglangphi",
+    "canonical_question": "Hội nghị Trung ương nào của Đảng khóa X ban hành Nghị quyết số 04-NQ/TW về tăng cường sự lãnh đạo của Đảng đối với công tác phòng, chống tham nhũng, lãng phí?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Hội nghị Trung ương 3 (8/2006)"
+      },
+      {
+        "key": "B",
+        "text": "Hội nghị Trung ương 4 (1/2007)"
+      },
+      {
+        "key": "C",
+        "text": "Hội nghị Trung ương 5 (7/2007)"
+      },
+      {
+        "key": "D",
+        "text": "Hội nghị Trung ương 6 (1/2008)"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      916
+    ]
+  },
+  {
+    "cluster_key": "tronggiaidoan19611965omiennammydathuchienloaihinhchienluocchientranhnao",
+    "canonical_question": "Trong giai đoạn 1961 - 1965, ở miền Nam, Mỹ đã thực hiện loại hình chiến lược chiến tranh nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Chiến tranh đơn phương"
+      },
+      {
+        "key": "B",
+        "text": "Chiến tranh đặc biệt"
+      },
+      {
+        "key": "C",
+        "text": "Chiến tranh cục bộ"
+      },
+      {
+        "key": "D",
+        "text": "Việt Nam hóa chiến tranh"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      918
+    ]
+  },
+  {
+    "cluster_key": "motquandiemmoicuadangtavedinhhuongphattrienkinhteduocxacdinhtudaihoiixcuadangla",
+    "canonical_question": "Một quan điểm mới của Đảng ta về định hướng phát triển kinh tế được xác định từ Đại hội IX của Đảng là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Phát triển nền kinh tế nhiều thành phần định hướng XHCN"
+      },
+      {
+        "key": "B",
+        "text": "Xây dựng nền kinh tế thị trường tư bản chủ nghĩa"
+      },
+      {
+        "key": "C",
+        "text": "Hoàn thiện quan hệ sản xuất XHCN"
+      },
+      {
+        "key": "D",
+        "text": "Đẩy mạnh kinh tế tập trung"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      919
+    ]
+  },
+  {
+    "cluster_key": "nghiquyethoinghitrunguong1511959daxacdinhconduongcobancuacachmangmiennamla",
+    "canonical_question": "Nghị quyết Hội nghị Trung ương 15 (1/1959) đã xác định con đường cơ bản của cách mạng miền Nam là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Khởi nghĩa giành chính quyền về tay nhân dân"
+      },
+      {
+        "key": "B",
+        "text": "Đấu tranh hòa bình"
+      },
+      {
+        "key": "C",
+        "text": "Kết hợp đấu tranh chính trị với đấu tranh vũ trang"
+      },
+      {
+        "key": "D",
+        "text": "Đàm phán ngoại giao"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      920,
+      1148,
+      1372
+    ]
+  },
+  {
+    "cluster_key": "mottrongnhungbienphapbaodamtrattuanninhxahoila",
+    "canonical_question": "Một trong những biện pháp bảo đảm trật tự an ninh xã hội là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Ngăn ngừa tội phạm, giữ vững an ninh trật tự xã hội"
+      },
+      {
+        "key": "B",
+        "text": "Tăng cường phát triển kinh tế"
+      },
+      {
+        "key": "C",
+        "text": "Đẩy mạnh các hoạt động văn hóa"
+      },
+      {
+        "key": "D",
+        "text": "Đổi mới chính sách an sinh"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      922
+    ]
+  },
+  {
+    "cluster_key": "cochequanlykinhtethoikytruocdoimoimangdactrunggi",
+    "canonical_question": "Cơ chế quản lý kinh tế thời kỳ trước đổi mới mang đặc trưng gì?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Quản lý bằng mệnh lệnh hành chính, tập trung quan liêu, bao cấp"
+      },
+      {
+        "key": "B",
+        "text": "Quản lý theo quy luật cung cầu của thị trường"
+      },
+      {
+        "key": "C",
+        "text": "Tự do cạnh tranh"
+      },
+      {
+        "key": "D",
+        "text": "Tự chủ tài chính của các doanh nghiệp"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      924
+    ]
+  },
+  {
+    "cluster_key": "chienthangnaocuaquanvadanmiennamdadanhdausuphasancobancuachienluocchientranhdacbiet",
+    "canonical_question": "Chiến thắng nào của quân và dân miền Nam đã đánh dấu sự phá sản cơ bản của chiến lược Chiến tranh đặc biệt?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Chiến thắng Ấp Bắc (1/1963)"
+      },
+      {
+        "key": "B",
+        "text": "Chiến dịch Bình Giã (12/1964)"
+      },
+      {
+        "key": "C",
+        "text": "Chiến thắng Ba Gia (5/1965)"
+      },
+      {
+        "key": "D",
+        "text": "Chiến thắng Đồng Xoài (6/1965)"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      925,
+      1133,
+      1150
+    ]
+  },
+  {
+    "cluster_key": "mottrongnhungnoidungcuabaodamanninhquocgiala",
+    "canonical_question": "Một trong những nội dung của bảo đảm an ninh quốc gia là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Bảo vệ an ninh chính trị, an ninh kinh tế, an ninh văn hóa tư tưởng"
+      },
+      {
+        "key": "B",
+        "text": "Xây dựng các khu đô thị mới"
+      },
+      {
+        "key": "C",
+        "text": "Mở rộng hoạt động đối ngoại"
+      },
+      {
+        "key": "D",
+        "text": "Tăng cường thương mại quốc tế"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      926
+    ]
+  },
+  {
+    "cluster_key": "chutruongcuadangdoivoiphapvatuongsau1945la",
+    "canonical_question": "Chủ trương của Đảng đối với Pháp và Tưởng sau 1945 là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Tạm thời hòa hoãn với Tưởng để tập trung đánh Pháp"
+      },
+      {
+        "key": "B",
+        "text": "Hòa hoãn với Pháp để đuổi Tưởng"
+      },
+      {
+        "key": "C",
+        "text": "Đánh cả hai kẻ thù"
+      },
+      {
+        "key": "D",
+        "text": "Không nhân nhượng với bất kỳ kẻ thù nào"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      927
+    ]
+  },
+  {
+    "cluster_key": "tochucnaoduoidaykhongthamgiahoinghithanhlapdangdaunam1930",
+    "canonical_question": "Tổ chức nào dưới đây không tham gia Hội nghị thành lập Đảng đầu năm 1930?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đông Dương Cộng sản Liên đoàn"
+      },
+      {
+        "key": "B",
+        "text": "An Nam Cộng sản Đảng"
+      },
+      {
+        "key": "C",
+        "text": "Đông Dương Cộng sản Đảng"
+      },
+      {
+        "key": "D",
+        "text": "Quốc tế Cộng sản"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      928
+    ]
+  },
+  {
+    "cluster_key": "cuonglinhchinhtridautiencuadangxacdinhmuctieuchienluoccuacachmangvietnamlagi",
+    "canonical_question": "Cương lĩnh chính trị đầu tiên của Đảng xác định mục tiêu chiến lược của cách mạng Việt Nam là gì?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Xây dựng một nước Việt Nam độc lập, tự do, hạnh phúc"
+      },
+      {
+        "key": "B",
+        "text": "Làm tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản"
+      },
+      {
+        "key": "C",
+        "text": "Đánh đổ phong kiến, giành ruộng đất cho dân cày"
+      },
+      {
+        "key": "D",
+        "text": "Đánh đổ đế quốc Pháp, thành lập chính phủ công nông binh"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      929
+    ]
+  },
+  {
+    "cluster_key": "nhiemvucuacachmangvietnamduocneutrongluancuongchinhtrithang101930cuatranphula",
+    "canonical_question": "Nhiệm vụ của cách mạng Việt Nam được nêu trong Luận cương chính trị (tháng 10/1930) của Trần Phú là:",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đánh đổ phong kiến và đánh đổ đế quốc"
+      },
+      {
+        "key": "B",
+        "text": "Giải phóng dân tộc"
+      },
+      {
+        "key": "C",
+        "text": "Giành độc lập dân tộc"
+      },
+      {
+        "key": "D",
+        "text": "Đánh đổ phong kiến trước, đế quốc sau"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      930
+    ]
+  },
+  {
+    "cluster_key": "sukiennaoduoidaydanhdaunguyenaiquochoantoantimthayconduongcuunuocdungdanchodantoc",
+    "canonical_question": "Sự kiện nào dưới đây đánh dấu Nguyễn Ái Quốc hoàn toàn tìm thấy con đường cứu nước đúng đắn cho dân tộc?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Đọc Luận cương của Lênin về vấn đề dân tộc và thuộc địa (7/1920)"
+      },
+      {
+        "key": "B",
+        "text": "Bỏ phiếu tán thành gia nhập Quốc tế III (12/1920)"
+      },
+      {
+        "key": "C",
+        "text": "Thành lập Hội Việt Nam Cách mạng Thanh niên (1925)"
+      },
+      {
+        "key": "D",
+        "text": "Sáng lập Đảng Cộng sản Việt Nam (1930)"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      931
+    ]
+  },
+  {
+    "cluster_key": "lucluongnongcotcuahoivietnamcachmangthanhnienlatochucnao",
+    "canonical_question": "Lực lượng nòng cốt của Hội Việt Nam Cách mạng Thanh niên là tổ chức nào?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Tâm tâm xã"
+      },
+      {
+        "key": "B",
+        "text": "Tân Việt Cách mạng Đảng"
+      },
+      {
+        "key": "C",
+        "text": "Phục Việt"
+      },
+      {
+        "key": "D",
+        "text": "Việt Nam Nghĩa đoàn"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      932
+    ]
+  },
+  {
+    "cluster_key": "luandiemnaosaudaylacuanguyenaiquocvemoiquanhegiuacachmangvosanochinhquocvacachmangthuocdia",
+    "canonical_question": "Luận điểm nào sau đây là của Nguyễn Ái Quốc về mối quan hệ giữa cách mạng vô sản ở chính quốc và cách mạng thuộc địa?",
+    "canonical_options": [
+      {
+        "key": "A",
+        "text": "Cách mạng thuộc địa có thể bùng nổ và giành thắng lợi trước cách mạng ở chính quốc"
+      },
+      {
+        "key": "B",
+        "text": "Cách mạng thuộc địa phụ thuộc hoàn toàn vào cách mạng ở chính quốc"
+      },
+      {
+        "key": "C",
+        "text": "Cách mạng ở chính quốc là quyết định nhất"
+      },
+      {
+        "key": "D",
+        "text": "Cách mạng ở chính quốc và thuộc địa không có mối quan hệ gì"
+      }
+    ],
+    "type": "single",
+    "member_ids": [
+      933
+    ]
+  }
+]

@@ -123,6 +123,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Subject Presets & Multi-Subject State
   const SUBJECT_PRESETS = {
+    vnr202: {
+      key: 'vnr202',
+      title: 'VNR202 - Lịch Sử Đảng Cộng Sản Việt Nam',
+      subtitle: '27 Đề Thi Final Exam (1.550 câu trắc nghiệm chuẩn Bộ GD&ĐT)',
+      file: 'VNR202_dataset.json'
+    },
     hcm202_fe: {
       key: 'hcm202_fe',
       title: 'HCM202 - Tư Tưởng Hồ Chí Minh',
@@ -229,7 +235,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         subtitle = SUBJECT_PRESETS[key].subtitle;
 
         // Optimized instant loading if preloaded in window (handles file:// without CORS issues)
-        if (key === 'hcm202_fe' && window.PRESET_DATA_HCM202_FE && Array.isArray(window.PRESET_DATA_HCM202_FE)) {
+        if (key === 'vnr202' && window.PRESET_DATA_VNR202 && Array.isArray(window.PRESET_DATA_VNR202)) {
+          allQuestions = window.PRESET_DATA_VNR202;
+          textToParse = null;
+        } else if (key === 'hcm202_fe' && window.PRESET_DATA_HCM202_FE && Array.isArray(window.PRESET_DATA_HCM202_FE)) {
           allQuestions = window.PRESET_DATA_HCM202_FE;
           textToParse = null;
         } else {
@@ -238,7 +247,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (!resp.ok) throw new Error(`Could not load ${SUBJECT_PRESETS[key].file}`);
             textToParse = await resp.text();
           } catch (fetchErr) {
-            if (key === 'hcm202_fe' && window.PRESET_DATA_HCM202_FE && Array.isArray(window.PRESET_DATA_HCM202_FE)) {
+            if (key === 'vnr202' && window.PRESET_DATA_VNR202 && Array.isArray(window.PRESET_DATA_VNR202)) {
+              allQuestions = window.PRESET_DATA_VNR202;
+              textToParse = null;
+            } else if (key === 'hcm202_fe' && window.PRESET_DATA_HCM202_FE && Array.isArray(window.PRESET_DATA_HCM202_FE)) {
               allQuestions = window.PRESET_DATA_HCM202_FE;
               textToParse = null;
             } else {
@@ -277,7 +289,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const badgeEl = document.getElementById('activeSubjectBadge');
       const examTitleEl = document.getElementById('examSubjectTitle');
 
-      if (badgeEl) badgeEl.textContent = key === 'hcm202_fe' ? 'HCM202 FE' : key.toUpperCase();
+      if (badgeEl) badgeEl.textContent = key === 'vnr202' ? 'VNR202 FE' : (key === 'hcm202_fe' ? 'HCM202 FE' : key.toUpperCase());
       if (titleEl) titleEl.textContent = title;
       if (subEl) subEl.textContent = `${subtitle} (${allQuestions.length} câu)`;
       if (examTitleEl) examTitleEl.textContent = `Đề Thi Thử ${title} (40 Câu - 40 Phút)`;
@@ -1133,6 +1145,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const dropZone = document.getElementById('dropZone');
     const fileInput = document.getElementById('fileInput');
     const dropText = document.getElementById('dropZoneText');
+    const presetVnr = document.getElementById('presetVnr202');
     const presetHcmFe = document.getElementById('presetHcm202Fe');
     const presetHcm = document.getElementById('presetHcm202');
     const presetMln = document.getElementById('presetMln122');
@@ -1167,6 +1180,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       pendingContent = null;
       selectedPresetKey = currentSubjectKey;
 
+      if (presetVnr) presetVnr.classList.toggle('active', currentSubjectKey === 'vnr202');
       if (presetHcmFe) presetHcmFe.classList.toggle('active', currentSubjectKey === 'hcm202_fe');
       if (presetHcm) presetHcm.classList.toggle('active', currentSubjectKey === 'hcm202');
       if (presetMln) presetMln.classList.toggle('active', currentSubjectKey === 'mln122');
@@ -1189,7 +1203,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (cancelBtn) cancelBtn.onclick = closeModal;
 
     // Preset Selection
-    const presetButtons = [presetHcmFe, presetHcm, presetMln, presetIte];
+    const presetButtons = [presetVnr, presetHcmFe, presetHcm, presetMln, presetIte];
     presetButtons.forEach(btn => {
       if (btn) {
         btn.onclick = () => {
