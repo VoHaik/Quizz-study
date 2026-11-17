@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ôn Thi Tư Tưởng Hồ Chí Minh (HCM202) - Đề Thi Final Exam 415 Câu 100% Chuẩn</title>
   <meta name="description" content="Ứng dụng web ôn thi trắc nghiệm 415 câu hỏi môn Tư tưởng Hồ Chí Minh (HCM202) Final Exam chính xác 100% chuẩn Giáo trình 2021.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20261022_final">
 </head>
 <body>
   <div id="app">
@@ -43,7 +43,8 @@
       <div class="header-subject-bar">
         <span class="subject-bar-lbl">Môn học:</span>
         <div class="quick-subject-switcher">
-          <button class="sub-pill" data-subject="vnr202" id="pillVnr202" title="1.550 câu trắc nghiệm Lịch sử Đảng Cộng sản Việt Nam (27 đề thi FE)">🇻🇳 VNR202 - Lịch sử Đảng (1.550 câu)</button>
+          <button class="sub-pill" data-subject="mln131" id="pillMln131" title="Chủ nghĩa xã hội khoa học (Đã lọc sạch trùng lặp từ 22 đề thi FE)">📕 MLN131 - CNXHKH (Độc bản FE)</button>
+          <button class="sub-pill" data-subject="vnr202" id="pillVnr202" title="1.182 câu trắc nghiệm Lịch sử Đảng Cộng sản Việt Nam (Đã lọc sạch trùng lặp từ 27 đề thi FE)">🇻🇳 VNR202 - Lịch sử Đảng (1.182 câu độc bản)</button>
           <button class="sub-pill active" data-subject="hcm202_fe" id="pillHcm202Fe" title="415 câu trắc nghiệm FE SP2025 FUOverflow (Chính xác 100%)">🔥 HCM202 - Final Exam (415 câu chuẩn 100%)</button>
           <button class="sub-pill" data-subject="hcm202" id="pillHcm202" title="100 câu trắc nghiệm Assignment & SEB">⭐ HCM202 (100 câu Assignment)</button>
           <button class="sub-pill" data-subject="mln122" id="pillMln122" title="496 câu trắc nghiệm Kinh tế chính trị">🇻🇳 MLN122 (496 câu)</button>
@@ -62,6 +63,17 @@
         </nav>
 
         <div class="header-filters">
+          <div class="year-filter-bar" id="yearFilterBar" style="display: none;">
+            <span class="year-filter-lbl">📅 Năm:</span>
+            <div class="year-checkbox-group" id="yearCheckboxGroup"></div>
+            <span class="year-count-badge" id="yearCountBadge"></span>
+          </div>
+          <div class="vnr-quick-filters" id="vnrQuickFilters" style="display: none; align-items: center; gap: 0.4rem;">
+            <button class="btn-action" id="vnrBtnFocus" style="background: linear-gradient(135deg, #ff4d4f, #fa8c16); color: white; font-weight: 700; border: none; padding: 0.45rem 0.85rem;" title="Lọc riêng 236 câu hỏi xuất hiện từ 2 đến 8 lần trong các đề thi">🔥 236 Câu Tủ</button>
+            <button class="btn-action" id="vnrBtnSuperFocus" style="background: linear-gradient(135deg, #722ed1, #eb2f96); color: white; font-weight: 700; border: none; padding: 0.45rem 0.85rem;" title="Lọc riêng 80 câu hỏi xuất hiện từ 3 lần trở lên trong các đề thi">⭐ 80 Câu Siêu Tủ</button>
+            <button class="btn-action" id="vnrBtnAll" style="background: var(--bg-card); border: 1px solid var(--border-subtle); color: var(--text-main); padding: 0.45rem 0.85rem;" title="Luyện toàn bộ 1.182 câu độc bản">📚 1.182 Câu</button>
+          </div>
+
           <select class="select-range" id="rangeSelect" title="Chọn dải câu hỏi để học">
             <option value="all">Toàn bộ 496 câu</option>
           </select>
@@ -156,7 +168,7 @@
       <section class="view-section" id="view-exam">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; background: var(--bg-card); padding: 1rem 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
           <div>
-            <h2 style="font-size: 1.2rem; font-weight: 700;">Đề Thi Thử Kinh Tế Chính Trị (40 Câu - 40 Phút)</h2>
+            <h2 id="examSubjectTitle" style="font-size: 1.2rem; font-weight: 700;">Đề Thi Thử Kinh Tế Chính Trị (40 Câu - 40 Phút)</h2>
             <p style="font-size: 0.85rem; color: var(--text-muted);">Mô phỏng cấu trúc đề thi chính thức trên lớp.</p>
           </div>
           <div style="display: flex; align-items: center; gap: 1rem;">
@@ -351,7 +363,7 @@
           <div class="preset-buttons">
             <button class="preset-btn" data-preset="vnr202" id="presetVnr202">
               <span class="preset-title">🇻🇳 VNR202 - Lịch Sử Đảng Cộng Sản Việt Nam</span>
-              <span class="preset-sub">1.550 câu trắc nghiệm từ 27 đề thi Final Exam (Đáp án chuẩn & giải thích chi tiết)</span>
+              <span class="preset-sub">1.182 câu trắc nghiệm chuẩn Bộ GD&ĐT (Đã lọc sạch trùng lặp từ 27 đề thi FE)</span>
             </button>
             <button class="preset-btn active" data-preset="hcm202_fe" id="presetHcm202Fe">
               <span class="preset-title">🔥 HCM202 - Đề Thi Final Exam SP2025</span>
@@ -411,8 +423,9 @@
   <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
   <script src="ocr_engine.js?v=20261009_final"></script>
   <script src="hcm202_fe_data.js?v=20261009_final"></script>
-  <script src="vnr202_fe_data.js?v=20261021_final"></script>
+  <script src="vnr202_fe_data.js?v=20261022_dedup"></script>
+  <script src="mln131_fe_data.js?v=20261102_dedup"></script>
   <script src="parser.js?v=20261009_final"></script>
-  <script src="app.js?v=20261009_final"></script>
+  <script src="app.js?v=20261022_vnr_focus_final"></script>
 </body>
 </html>

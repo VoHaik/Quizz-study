@@ -1448,3 +1448,104 @@ main {
   }
 }
 
+
+/* Year Filter Bar */
+.year-filter-bar {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.35rem 0.65rem;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 10px;
+}
+
+.year-filter-lbl {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.year-checkbox-group {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.year-pill-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  background: rgba(30, 41, 59, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s ease;
+}
+
+.year-pill-label:hover {
+  border-color: rgba(99, 102, 241, 0.6);
+  color: #fff;
+}
+
+.year-pill-label input[type="checkbox"] {
+  accent-color: #6366f1;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.year-pill-label.is-checked {
+  background: rgba(99, 102, 241, 0.22);
+  border-color: rgba(99, 102, 241, 0.75);
+  color: #e0e7ff;
+}
+
+.year-btn-all {
+  padding: 0.22rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #a5b4fc;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  cursor: pointer;
+}
+
+.year-btn-all:hover {
+  background: rgba(99, 102, 241, 0.3);
+}
+
+.year-count-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #34d399;
+  padding-left: 0.2rem;
+  white-space: nowrap;
+}
+
+.bank-year-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+.bank-year-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.18);
+  color: #c7d2fe;
+  border: 1px solid rgba(99, 102, 241, 0.35);
+}
