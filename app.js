@@ -750,6 +750,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     currentIndex = savedIdx;
 
+    const statTotalEl = document.getElementById('statTotal');
+    if (statTotalEl) {
+      statTotalEl.textContent = activeQuestions.length;
+    }
+
     renderCurrentMode();
   }
 
