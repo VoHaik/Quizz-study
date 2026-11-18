@@ -1116,14 +1116,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         <span>📋 Đang hiển thị <strong style="color: #34d399;">${filtered.length}</strong> / ${allQuestions.length} câu theo bộ lọc hiện tại</span>
       </div>`;
 
-      container.innerHTML = summaryHtml + filtered.map(q => {
+      container.innerHTML = summaryHtml + filtered.map((q, idx) => {
         const qYears = getQuestionYears(q);
         const yearBadges = qYears.length > 0
           ? `<span class="bank-year-tags">${qYears.map(y => `<span class="bank-year-tag">${y}</span>`).join('')}</span>`
           : '';
         return `
         <div class="bank-item">
-          <div class="bank-q-title">Câu ${q.id}: ${q.question} ${yearBadges}</div>
+          <div class="bank-q-title"><span class="bank-seq-badge">#${idx + 1}/${filtered.length}</span> Câu ${q.id}: ${q.question} ${yearBadges}</div>
           <div class="bank-opt-list">
             ${q.options.map(o => {
               const isCorrect = q.correctAnswers.includes(o.key);
