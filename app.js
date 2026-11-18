@@ -344,11 +344,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     const years = new Set();
     const s = String(str);
     let m;
-    const reFull = /20(2[0-9])/g;
+    const reFull = /(?:^|[^0-9a-f])20(2[2-6])(?:$|[^0-9a-f])/gi;
     while ((m = reFull.exec(s)) !== null) {
       years.add('20' + m[1]);
     }
-    const reCode = /(?:SP|SU|FA|C1FA|C2FE|RE|FE)(2[0-9])/gi;
+    const reCode = /(?:^|[^a-z0-9])(?:SP|SU|FA|C1FA|C2FE|RE|FE)(2[2-6])(?:$|[^0-9])/gi;
     while ((m = reCode.exec(s)) !== null) {
       years.add('20' + m[1]);
     }
@@ -362,9 +362,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (Array.isArray(q.examOccurrences)) {
       q.examOccurrences.forEach(occ => extractYearsFromText(occ).forEach(y => years.add(y)));
     }
-    ['examFolder', 'examTitle', 'imageSource'].forEach(k => {
+    ['examFolder', 'examTitle'].forEach(k => {
       if (q[k]) extractYearsFromText(q[k]).forEach(y => years.add(y));
     });
+    if (years.size === 0 && q.imageSource) {
+      const imgSrc = String(q.imageSource);
+      const folderOrPrefix = imgSrc.includes('/') ? imgSrc.split('/')[0] : imgSrc;
+      extractYearsFromText(folderOrPrefix).forEach(y => years.add(y));
+    }
     q._years = Array.from(years).sort((a, b) => b.localeCompare(a));
     return q._years;
   }
@@ -632,9 +637,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
+  function syncQuickFilterButtons(val) {
+    const map = [
+      { id: 'vnrBtnFocus', match: 'vnr_focus_236' },
+      { id: 'vnrBtnSuperFocus', match: 'vnr_focus_80' },
+      { id: 'vnrBtnAll', match: 'all' },
+      { id: 'multiSelectBtn', match: 'multi_select' }
+    ];
+    map.forEach(item => {
+      const btn = document.getElementById(item.id);
+      if (!btn) return;
+      const isActive = val === item.match;
+      btn.style.boxShadow = isActive ? '0 0 0 2px #fff, 0 4px 12px rgba(99, 102, 241, 0.45)' : '';
+      btn.style.transform = isActive ? 'translateY(-1px)' : '';
+    });
+  }
+
   function filterActiveQuestions(resetIndex = false, forceReshuffle = false) {
     const sel = document.getElementById('rangeSelect');
     const val = sel ? sel.value : 'all';
+    syncQuickFilterButtons(val);
     const yearsKey = availableYears.length > 0 ? Array.from(selectedYears).sort().join(',') : 'all';
     let filterKey = `${currentMode}_${val}_${yearsKey}`;
 
@@ -693,7 +715,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       document.getElementById('customStart').value = cStart;
       document.getElementById('customEnd').value = cEnd;
 
-      filterKey = `${currentMode}_custom_${cStart}-${cEnd}`;
+      filterKey = `${currentMode}_custom_${cStart}-${cEnd}_${yearsKey}`;
       baseList = allQuestions.filter(q => q.id >= cStart && q.id <= cEnd);
     } else if (val !== 'all') {
       const [start, end] = val.split('-').map(n => parseInt(n, 10));
@@ -769,13 +791,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     document.getElementById(`view-${mode}`).classList.add('active');
 
-    if (mode === 'exam') {
-      initExamMode();
-    } else if (mode === 'bank') {
-      renderQuestionBank();
-    } else {
-      filterActiveQuestions(false, false);
-    }
+    filterActiveQuestions(false, false);
 
     saveProgress();
   }
@@ -785,6 +801,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       renderQuickQuiz();
     } else if (currentMode === 'flashcard') {
       renderFlashcard();
+    } else if (currentMode === 'bank') {
+      renderQuestionBank();
+    } else if (currentMode === 'exam') {
+      initExamMode();
     }
   }
 
@@ -1076,19 +1096,22 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function filterAndShow() {
       const term = input.value.toLowerCase().trim();
-      const yearPool = allQuestions.filter(questionMatchesSelectedYears);
-      const filtered = yearPool.filter(q => 
+      const filtered = activeQuestions.filter(q => 
         q.id.toString().includes(term) ||
         q.question.toLowerCase().includes(term) ||
         q.options.some(o => o.text.toLowerCase().includes(term))
       );
 
       if (filtered.length === 0) {
-        container.innerHTML = `<div style="text-align:center; padding: 2rem; color: #94a3b8;">Không có câu hỏi nào khớp với bộ lọc năm / từ khóa hiện tại.</div>`;
+        container.innerHTML = `<div style="text-align:center; padding: 2rem; color: #94a3b8;">Không có câu hỏi nào khớp với bộ lọc hiện tại (0/${allQuestions.length} câu).</div>`;
         return;
       }
 
-      container.innerHTML = filtered.map(q => {
+      const summaryHtml = `<div style="margin-bottom: 0.85rem; font-size: 0.88rem; color: #94a3b8; display: flex; justify-content: space-between; align-items: center;">
+        <span>📋 Đang hiển thị <strong style="color: #34d399;">${filtered.length}</strong> / ${allQuestions.length} câu theo bộ lọc hiện tại</span>
+      </div>`;
+
+      container.innerHTML = summaryHtml + filtered.map(q => {
         const qYears = getQuestionYears(q);
         const yearBadges = qYears.length > 0
           ? `<span class="bank-year-tags">${qYears.map(y => `<span class="bank-year-tag">${y}</span>`).join('')}</span>`
@@ -1119,22 +1142,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     const sel = document.getElementById('rangeSelect');
     const val = sel ? sel.value : 'all';
 
-    let examPool = allQuestions.filter(questionMatchesSelectedYears);
+    let examPool = [...activeQuestions];
     let isSpecificExam = false;
     let customTitle = '';
 
     if (currentSubjectKey === 'vnr202') {
       if (val && val.startsWith('de_')) {
         isSpecificExam = true;
-        examPool = [...activeQuestions];
         const optText = sel.options[sel.selectedIndex]?.textContent || val;
         customTitle = optText.replace('📝 ', '');
       } else if (val === 'vnr_focus_236') {
-        examPool = allQuestions.filter(q => (q.appearances || 1) >= 2 && questionMatchesSelectedYears(q));
-        customTitle = 'Trọng Tâm VNR202 (236 Câu Tủ)';
+        customTitle = `Trọng Tâm VNR202 (${examPool.length} Câu Tủ)`;
       } else if (val === 'vnr_focus_80') {
-        examPool = allQuestions.filter(q => (q.appearances || 1) >= 3 && questionMatchesSelectedYears(q));
-        customTitle = 'Siêu Tủ VNR202 (80 Câu)';
+        customTitle = `Siêu Tủ VNR202 (${examPool.length} Câu)`;
       }
     }
 
