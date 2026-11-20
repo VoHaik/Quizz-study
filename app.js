@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   let isShuffleOn = false;
   let availableYears = [];
   let selectedYears = new Set();
+  let chunkOffset = 0;
+  let scopedTotalCount = 0;
+  let selectedChunk = 'all';
+  let trapQuestionIds = [];
+  let trapClusterCount = 0;
 
   // Stable cache for shuffled questions so order remains FIXED during navigation
   let shuffledCache = {
@@ -308,7 +313,29 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (subEl) subEl.textContent = `${subtitle} (${allQuestions.length} câu)`;
       const vnrQuick = document.getElementById('vnrQuickFilters');
       if (vnrQuick) {
-        vnrQuick.style.display = key === 'vnr202' ? 'inline-flex' : 'none';
+        const focus2Count = allQuestions.filter(q => (q.appearances || 1) >= 2).length;
+        const focus3Count = allQuestions.filter(q => (q.appearances || 1) >= 3).length;
+        if (focus2Count > 0) {
+          vnrQuick.style.display = 'inline-flex';
+          const b2 = document.getElementById('vnrBtnFocus');
+          const b3 = document.getElementById('vnrBtnSuperFocus');
+          const bAll = document.getElementById('vnrBtnAll');
+          if (b2) {
+            b2.textContent = `🔥 ${focus2Count} Câu Tủ`;
+            b2.title = `Lọc riêng ${focus2Count} câu hỏi xuất hiện từ 2 lần trở lên trong các đề thi`;
+          }
+          if (b3) {
+            b3.style.display = focus3Count > 0 ? 'inline-flex' : 'none';
+            b3.textContent = `⭐ ${focus3Count} Câu Siêu Tủ`;
+            b3.title = `Lọc riêng ${focus3Count} câu hỏi xuất hiện từ 3 lần trở lên trong các đề thi`;
+          }
+          if (bAll) {
+            bAll.textContent = `📚 ${allQuestions.length.toLocaleString('vi-VN')} Câu`;
+            bAll.title = `Luyện toàn bộ ${allQuestions.length.toLocaleString('vi-VN')} câu độc bản`;
+          }
+        } else {
+          vnrQuick.style.display = 'none';
+        }
       }
       if (examTitleEl) {
         examTitleEl.textContent = (key === 'vnr202' || key === 'mln131') 
@@ -323,6 +350,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
 
       loadProgress();
+      selectedChunk = 'all';
+      computeTrapClusters();
       initYearFilter();
       populateRangeSelector();
       modeIndices = { quick: 0, flashcard: 0, mistakes: 0 };
@@ -337,6 +366,65 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   async function initData() {
     await loadSubjectData(currentSubjectKey);
+  }
+
+  function computeTrapClusters() {
+    trapQuestionIds = [];
+    trapClusterCount = 0;
+    const norm = (s) => String(s || '').toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ').trim();
+    const getAnsNorm = (q) => {
+      const m = {};
+      (q.options || []).forEach(o => { m[o.key] = o.text; });
+      return norm((q.correctAnswers || []).map(k => m[k] || k).join(' | '));
+    };
+
+    const items = allQuestions.map(q => {
+      delete q._trapClusterIndex;
+      delete q._trapClusterSize;
+      const oset = new Set((q.options || []).map(o => norm(o.text)).filter(Boolean));
+      return { q, oset, ans: getAnsNorm(q) };
+    });
+
+    const visited = new Set();
+    const clusters = [];
+
+    for (let i = 0; i < items.length; i++) {
+      if (visited.has(i) || items[i].oset.size < 3) continue;
+      const groupIdx = [i];
+      for (let j = i + 1; j < items.length; j++) {
+        if (visited.has(j) || items[j].oset.size < 3) continue;
+        let overlap = 0;
+        items[i].oset.forEach(t => { if (items[j].oset.has(t)) overlap++; });
+        if (overlap >= 3) {
+          groupIdx.push(j);
+        }
+      }
+      if (groupIdx.length >= 2) {
+        const distinctAns = new Set(groupIdx.map(idx => items[idx].ans));
+        if (distinctAns.size >= 2) {
+          groupIdx.forEach(idx => visited.add(idx));
+          clusters.push(groupIdx.map(idx => items[idx]));
+        }
+      }
+    }
+
+    clusters.sort((a, b) => {
+      if (b.length !== a.length) return b.length - a.length;
+      const appB = b.reduce((s, x) => s + (x.q.appearances || 1), 0);
+      const appA = a.reduce((s, x) => s + (x.q.appearances || 1), 0);
+      return appB - appA;
+    });
+
+    trapClusterCount = clusters.length;
+    clusters.forEach((group, idx) => {
+      const cNum = idx + 1;
+      group.sort((a, b) => a.ans.localeCompare(b.ans) || ((b.q.appearances || 1) - (a.q.appearances || 1)));
+      group.forEach(item => {
+        item.q._trapClusterIndex = cNum;
+        item.q._trapClusterSize = group.length;
+        trapQuestionIds.push(item.q.id);
+      });
+    });
   }
 
   function extractYearsFromText(str) {
@@ -512,30 +600,31 @@ document.addEventListener('DOMContentLoaded', async () => {
         examGroup.appendChild(opt);
       });
       sel.appendChild(examGroup);
-
-      const chunkGroup = document.createElement('optgroup');
-      chunkGroup.label = '📑 PHÂN ĐOẠN (50 CÂU/LẦN)';
-      const chunkSize = 50;
-      for (let i = 0; i < allQuestions.length; i += chunkSize) {
-        const end = Math.min(i + chunkSize, allQuestions.length);
-        const opt = document.createElement('option');
-        opt.value = `${i + 1}-${end}`;
-        opt.textContent = `Câu ${i + 1} - ${end}`;
-        chunkGroup.appendChild(opt);
-      }
-      sel.appendChild(chunkGroup);
     } else {
-      sel.innerHTML = `<option value="all">Toàn bộ ${allQuestions.length} câu</option>`;
-      const chunkSize = 50;
-      for (let i = 0; i < allQuestions.length; i += chunkSize) {
-        const end = Math.min(i + chunkSize, allQuestions.length);
-        const startNum = i + 1;
-        const endNum = end;
-        const opt = document.createElement('option');
-        opt.value = `${startNum}-${endNum}`;
-        opt.textContent = `Câu ${startNum} - ${endNum}`;
-        sel.appendChild(opt);
+      const focus2Count = allQuestions.filter(q => (q.appearances || 1) >= 2).length;
+      const focus3Count = allQuestions.filter(q => (q.appearances || 1) >= 3).length;
+      let optsHtml = `<option value="all">📚 Toàn bộ ${allQuestions.length.toLocaleString('vi-VN')} câu</option>`;
+      if (focus2Count > 0) {
+        optsHtml += `<option value="vnr_focus_236">🔥 Bộ ${focus2Count} Câu Tủ Trọng Tâm (Xuất hiện >= 2 lần)</option>`;
       }
+      if (focus3Count > 0) {
+        optsHtml += `<option value="vnr_focus_80">⭐ Bộ ${focus3Count} Câu Siêu Tủ (Xuất hiện >= 3 lần)</option>`;
+      }
+      sel.innerHTML = optsHtml;
+    }
+
+    const trapFilterBtn = document.getElementById('trapFilterBtn');
+    if (trapQuestionIds.length > 0) {
+      const trapOpt = document.createElement('option');
+      trapOpt.value = 'trap_clusters';
+      trapOpt.textContent = `⚠️ Bộ câu bẫy dễ nhầm (${trapClusterCount} cụm - ${trapQuestionIds.length} câu)`;
+      sel.appendChild(trapOpt);
+      if (trapFilterBtn) {
+        trapFilterBtn.style.display = 'inline-flex';
+        trapFilterBtn.innerHTML = `⚠️ Ôn ${trapQuestionIds.length} câu bẫy (${trapClusterCount} cụm)`;
+      }
+    } else if (trapFilterBtn) {
+      trapFilterBtn.style.display = 'none';
     }
 
     const multiSelectCount = allQuestions.filter(q => (q.correctAnswers && q.correctAnswers.length >= 2) || q.question.toLowerCase().includes('select two') || q.question.toLowerCase().includes('select 2')).length;
@@ -555,10 +644,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     }
 
-    const customOpt = document.createElement('option');
-    customOpt.value = 'custom';
-    customOpt.textContent = '⚙️ Tùy chỉnh (Nhập dải câu...)';
-    sel.appendChild(customOpt);
+    const chunkSel = document.getElementById('chunkSelect');
+    const resetChunkAndFilter = () => {
+      selectedChunk = 'all';
+      if (chunkSel) chunkSel.value = 'all';
+      if (customBox) customBox.style.display = 'none';
+      filterActiveQuestions(true, true);
+    };
 
     const vnrBtnFocus = document.getElementById('vnrBtnFocus');
     const vnrBtnSuperFocus = document.getElementById('vnrBtnSuperFocus');
@@ -567,8 +659,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       vnrBtnFocus.onclick = () => {
         if (sel) {
           sel.value = 'vnr_focus_236';
-          if (customBox) customBox.style.display = 'none';
-          filterActiveQuestions(true, true);
+          resetChunkAndFilter();
         }
       };
     }
@@ -576,8 +667,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       vnrBtnSuperFocus.onclick = () => {
         if (sel) {
           sel.value = 'vnr_focus_80';
-          if (customBox) customBox.style.display = 'none';
-          filterActiveQuestions(true, true);
+          resetChunkAndFilter();
         }
       };
     }
@@ -585,27 +675,41 @@ document.addEventListener('DOMContentLoaded', async () => {
       vnrBtnAll.onclick = () => {
         if (sel) {
           sel.value = 'all';
+          resetChunkAndFilter();
+        }
+      };
+    }
+
+    sel.onchange = () => {
+      resetChunkAndFilter();
+    };
+
+    if (chunkSel) {
+      chunkSel.onchange = () => {
+        selectedChunk = chunkSel.value;
+        if (chunkSel.value === 'custom') {
+          if (customBox) customBox.style.display = 'flex';
+        } else {
           if (customBox) customBox.style.display = 'none';
           filterActiveQuestions(true, true);
         }
       };
     }
 
-    sel.onchange = () => {
-      if (sel.value === 'custom') {
-        if (customBox) customBox.style.display = 'flex';
-      } else {
-        if (customBox) customBox.style.display = 'none';
-        filterActiveQuestions(true, true);
-      }
-    };
+    if (trapFilterBtn) {
+      trapFilterBtn.onclick = () => {
+        if (sel) {
+          sel.value = 'trap_clusters';
+          resetChunkAndFilter();
+        }
+      };
+    }
 
     if (multiSelectBtn) {
       multiSelectBtn.onclick = () => {
         if (sel) {
           sel.value = 'multi_select';
-          if (customBox) customBox.style.display = 'none';
-          filterActiveQuestions(true, true);
+          resetChunkAndFilter();
         }
       };
     }
@@ -623,7 +727,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (cStart) cStart.max = allQuestions.length;
     if (cEnd) {
       cEnd.max = allQuestions.length;
-      cEnd.value = Math.min(150, allQuestions.length);
+      cEnd.value = Math.min(50, allQuestions.length);
     }
 
     [cStart, cEnd].forEach(input => {
@@ -637,11 +741,54 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
+  function populateChunkSelector(totalCount) {
+    const chunkSel = document.getElementById('chunkSelect');
+    const customBox = document.getElementById('customRangeBox');
+    if (!chunkSel) return;
+
+    const prevVal = selectedChunk || 'all';
+    const chunkSize = 50;
+    let html = `<option value="all">📍 Tất cả (${totalCount} câu)</option>`;
+
+    if (totalCount > chunkSize) {
+      let step = 1;
+      for (let i = 0; i < totalCount; i += chunkSize) {
+        const startNum = i + 1;
+        const endNum = Math.min(i + chunkSize, totalCount);
+        html += `<option value="${startNum}-${endNum}">📍 Chặng ${step}: Câu ${startNum} - ${endNum}</option>`;
+        step++;
+      }
+    }
+    if (totalCount > 0) {
+      html += `<option value="custom">⚙️ Tùy chỉnh chặng...</option>`;
+    }
+
+    chunkSel.innerHTML = html;
+    const stillValid = Array.from(chunkSel.options).some(o => o.value === prevVal);
+    selectedChunk = stillValid ? prevVal : 'all';
+    chunkSel.value = selectedChunk;
+
+    if (customBox) {
+      customBox.style.display = selectedChunk === 'custom' ? 'flex' : 'none';
+    }
+
+    const cStart = document.getElementById('customStart');
+    const cEnd = document.getElementById('customEnd');
+    if (cStart) cStart.max = Math.max(1, totalCount);
+    if (cEnd) {
+      cEnd.max = Math.max(1, totalCount);
+      if (parseInt(cEnd.value, 10) > totalCount) {
+        cEnd.value = Math.max(1, totalCount);
+      }
+    }
+  }
+
   function syncQuickFilterButtons(val) {
     const map = [
       { id: 'vnrBtnFocus', match: 'vnr_focus_236' },
       { id: 'vnrBtnSuperFocus', match: 'vnr_focus_80' },
       { id: 'vnrBtnAll', match: 'all' },
+      { id: 'trapFilterBtn', match: 'trap_clusters' },
       { id: 'multiSelectBtn', match: 'multi_select' }
     ];
     map.forEach(item => {
@@ -658,9 +805,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const val = sel ? sel.value : 'all';
     syncQuickFilterButtons(val);
     const yearsKey = availableYears.length > 0 ? Array.from(selectedYears).sort().join(',') : 'all';
-    let filterKey = `${currentMode}_${val}_${yearsKey}`;
 
-    let baseList = [...allQuestions];
+    // Stage 1: Filter by source & year
+    let scopedList = [...allQuestions];
 
     if (currentMode === 'mistakes') {
       const mistakeIds = Object.keys(progress.mistakes).map(id => parseInt(id, 10));
@@ -670,11 +817,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         .map(id => parseInt(id, 10));
 
       const combinedIds = Array.from(new Set([...mistakeIds, ...starredIds, ...wrongFromAnswered]));
-      baseList = allQuestions.filter(q => combinedIds.includes(q.id));
+      scopedList = allQuestions.filter(q => combinedIds.includes(q.id));
     } else if (val === 'vnr_focus_236') {
-      baseList = allQuestions.filter(q => (q.appearances || 1) >= 2);
+      scopedList = allQuestions.filter(q => (q.appearances || 1) >= 2);
     } else if (val === 'vnr_focus_80') {
-      baseList = allQuestions.filter(q => (q.appearances || 1) >= 3);
+      scopedList = allQuestions.filter(q => (q.appearances || 1) >= 3);
     } else if (typeof val === 'string' && val.startsWith('de_')) {
       const deNum = parseInt(val.replace('de_', ''), 10);
       const deStr = `Đề ${String(deNum).padStart(2, '0')}`;
@@ -702,28 +849,54 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       });
       matched.sort((a, b) => a.qIdx - b.qIdx);
-      baseList = matched.map(m => m.q);
+      scopedList = matched.map(m => m.q);
+    } else if (val === 'trap_clusters') {
+      const qMap = new Map(allQuestions.map(q => [q.id, q]));
+      scopedList = trapQuestionIds.map(id => qMap.get(id)).filter(Boolean);
     } else if (val === 'multi_select') {
-      baseList = allQuestions.filter(q => (q.correctAnswers && q.correctAnswers.length >= 2) || q.question.toLowerCase().includes('select two') || q.question.toLowerCase().includes('select 2'));
-    } else if (val === 'custom') {
-      let cStart = parseInt(document.getElementById('customStart').value, 10) || 1;
-      let cEnd = parseInt(document.getElementById('customEnd').value, 10) || 496;
+      scopedList = allQuestions.filter(q => (q.correctAnswers && q.correctAnswers.length >= 2) || q.question.toLowerCase().includes('select two') || q.question.toLowerCase().includes('select 2'));
+    }
 
-      cStart = Math.max(1, Math.min(cStart, allQuestions.length));
-      cEnd = Math.max(cStart, Math.min(cEnd, allQuestions.length));
+    if (availableYears.length > 0) {
+      scopedList = scopedList.filter(questionMatchesSelectedYears);
+    }
+
+    // Stage 2: Slice by chunk (preserve selectedChunk when visiting mistakes mode)
+    scopedTotalCount = scopedList.length;
+    const chunkSel = document.getElementById('chunkSelect');
+    const customBox = document.getElementById('customRangeBox');
+    let chunkVal = 'all';
+
+    if (currentMode === 'mistakes') {
+      if (chunkSel) chunkSel.disabled = true;
+      if (customBox) customBox.style.display = 'none';
+    } else {
+      if (chunkSel) chunkSel.disabled = false;
+      populateChunkSelector(scopedTotalCount);
+      chunkVal = selectedChunk || 'all';
+    }
+
+    let filterKey = `${currentMode}_${val}_${yearsKey}_${chunkVal}`;
+    let baseList = scopedList;
+    chunkOffset = 0;
+
+    if (chunkVal === 'custom' && scopedTotalCount > 0) {
+      let cStart = parseInt(document.getElementById('customStart').value, 10) || 1;
+      let cEnd = parseInt(document.getElementById('customEnd').value, 10) || Math.min(50, scopedTotalCount);
+
+      cStart = Math.max(1, Math.min(cStart, scopedTotalCount));
+      cEnd = Math.max(cStart, Math.min(cEnd, scopedTotalCount));
 
       document.getElementById('customStart').value = cStart;
       document.getElementById('customEnd').value = cEnd;
 
-      filterKey = `${currentMode}_custom_${cStart}-${cEnd}_${yearsKey}`;
-      baseList = allQuestions.filter(q => q.id >= cStart && q.id <= cEnd);
-    } else if (val !== 'all') {
-      const [start, end] = val.split('-').map(n => parseInt(n, 10));
-      baseList = allQuestions.filter(q => q.id >= start && q.id <= end);
-    }
-
-    if (availableYears.length > 0) {
-      baseList = baseList.filter(questionMatchesSelectedYears);
+      filterKey = `${currentMode}_${val}_${yearsKey}_custom_${cStart}-${cEnd}`;
+      chunkOffset = cStart - 1;
+      baseList = scopedList.slice(chunkOffset, cEnd);
+    } else if (chunkVal !== 'all' && chunkVal.includes('-')) {
+      const [start, end] = chunkVal.split('-').map(n => parseInt(n, 10));
+      chunkOffset = Math.max(0, start - 1);
+      baseList = scopedList.slice(chunkOffset, end);
     }
 
     if (isShuffleOn) {
@@ -851,11 +1024,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const modeLabel = (currentMode === 'mistakes') ? 'CÂU SAI & KHÓ' : 'LUYỆN SIÊU TỐC';
     const shuffleBadge = isShuffleOn ? ' 🔀 Shuffled' : '';
+    const trapBadge = q._trapClusterIndex
+      ? ` <span class="bank-trap-badge">⚠️ Cụm bẫy #${q._trapClusterIndex} (${q._trapClusterSize} câu)</span>`
+      : '';
 
     targetContainer.innerHTML = `
       <div class="quiz-card">
         <div class="quiz-header">
-          <div class="q-badge">${modeLabel} - Câu ${q.id} / ${allQuestions.length} (Vị trí ${currentIndex + 1}/${activeQuestions.length})${shuffleBadge}</div>
+          <div class="q-badge">${modeLabel} - Câu ${q.id} / ${allQuestions.length} (Vị trí ${currentIndex + 1}/${activeQuestions.length})${shuffleBadge}${trapBadge}</div>
           <div class="q-actions">
             <span class="star-btn ${isStarred ? 'starred' : ''}" id="starBtn" title="Đánh dấu sao câu này">★</span>
           </div>
@@ -1113,7 +1289,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       const summaryHtml = `<div style="margin-bottom: 0.85rem; font-size: 0.88rem; color: #94a3b8; display: flex; justify-content: space-between; align-items: center;">
-        <span>📋 Đang hiển thị <strong style="color: #34d399;">${filtered.length}</strong> / ${allQuestions.length} câu theo bộ lọc hiện tại</span>
+        <span>📋 Đang hiển thị <strong style="color: #34d399;">${filtered.length}</strong> / ${scopedTotalCount || allQuestions.length} câu trong bộ đang chọn (tổng môn ${allQuestions.length} câu)</span>
       </div>`;
 
       container.innerHTML = summaryHtml + filtered.map((q, idx) => {
@@ -1121,9 +1297,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         const yearBadges = qYears.length > 0
           ? `<span class="bank-year-tags">${qYears.map(y => `<span class="bank-year-tag">${y}</span>`).join('')}</span>`
           : '';
+        const trapBadge = q._trapClusterIndex
+          ? `<span class="bank-trap-badge">⚠️ Cụm bẫy #${q._trapClusterIndex} (${q._trapClusterSize} câu)</span>`
+          : '';
+        const seqNum = term ? (idx + 1) : (chunkOffset + idx + 1);
+        const seqTotal = term ? filtered.length : (scopedTotalCount || filtered.length);
         return `
         <div class="bank-item">
-          <div class="bank-q-title"><span class="bank-seq-badge">#${idx + 1}/${filtered.length}</span> Câu ${q.id}: ${q.question} ${yearBadges}</div>
+          <div class="bank-q-title"><span class="bank-seq-badge">#${seqNum}/${seqTotal}</span> Câu ${q.id}: ${q.question} ${trapBadge} ${yearBadges}</div>
           <div class="bank-opt-list">
             ${q.options.map(o => {
               const isCorrect = q.correctAnswers.includes(o.key);
@@ -1151,16 +1332,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     let isSpecificExam = false;
     let customTitle = '';
 
-    if (currentSubjectKey === 'vnr202') {
-      if (val && val.startsWith('de_')) {
-        isSpecificExam = true;
-        const optText = sel.options[sel.selectedIndex]?.textContent || val;
-        customTitle = optText.replace('📝 ', '');
-      } else if (val === 'vnr_focus_236') {
-        customTitle = `Trọng Tâm VNR202 (${examPool.length} Câu Tủ)`;
-      } else if (val === 'vnr_focus_80') {
-        customTitle = `Siêu Tủ VNR202 (${examPool.length} Câu)`;
-      }
+    if (val && val.startsWith('de_')) {
+      isSpecificExam = true;
+      const optText = sel.options[sel.selectedIndex]?.textContent || val;
+      customTitle = optText.replace('📝 ', '');
+    } else if (val === 'vnr_focus_236') {
+      customTitle = `Trọng Tâm ${currentSubjectKey.toUpperCase()} (${examPool.length} Câu Tủ)`;
+    } else if (val === 'trap_clusters') {
+      customTitle = `Ôn Cụm Bẫy ${currentSubjectKey.toUpperCase()} (${examPool.length} Câu)`;
+    } else if (val === 'vnr_focus_80') {
+      customTitle = `Siêu Tủ ${currentSubjectKey.toUpperCase()} (${examPool.length} Câu)`;
     }
 
     const qCount = (currentSubjectKey === 'vnr202' || currentSubjectKey === 'mln131') ? Math.min(60, examPool.length) : Math.min(40, examPool.length);
@@ -1894,6 +2075,18 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     });
   });
+
+  // Mobile Filter Drawer Toggle
+  const mobileFilterToggle = document.getElementById('mobileFilterToggle');
+  const headerFiltersEl = document.getElementById('headerFilters');
+  const mobileFilterArrow = document.getElementById('mobileFilterArrow');
+  if (mobileFilterToggle && headerFiltersEl) {
+    mobileFilterToggle.addEventListener('click', () => {
+      const isOpen = headerFiltersEl.classList.toggle('is-open');
+      mobileFilterToggle.setAttribute('aria-expanded', String(isOpen));
+      if (mobileFilterArrow) mobileFilterArrow.textContent = isOpen ? '▴' : '▾';
+    });
+  }
 
   // Run modal setup
   setupImportModal();

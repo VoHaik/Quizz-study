@@ -1562,3 +1562,367 @@ main {
   border: 1px solid rgba(52, 211, 153, 0.45);
   vertical-align: middle;
 }
+
+/* ==========================================================================
+   Mobile-First Responsive Enhancements (<= 768px & <= 480px)
+   ========================================================================== */
+.mobile-filter-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  #app {
+    padding: 0.5rem 0.65rem 2rem;
+  }
+
+  .app-header {
+    padding: 0.85rem 0.9rem;
+    gap: 0.65rem;
+    margin-bottom: 0.85rem;
+    border-radius: 14px;
+  }
+
+  .header-top {
+    gap: 0.65rem;
+  }
+
+  .brand {
+    gap: 0.6rem;
+  }
+
+  .brand-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.15rem;
+  }
+
+  .brand-title {
+    font-size: 1.05rem;
+    line-height: 1.25;
+  }
+
+  .brand-subtitle {
+    font-size: 0.72rem;
+    line-height: 1.3;
+  }
+
+  .header-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: flex-start;
+  }
+
+  .header-tools .btn-ocr-trigger,
+  .header-tools .btn-action {
+    padding: 0.42rem 0.7rem;
+    font-size: 0.78rem;
+    min-height: 36px;
+  }
+
+  /* Single-row horizontal scroll for subjects & mode tabs */
+  .header-subject-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+    padding: 0.45rem 0 0.15rem;
+  }
+
+  .quick-subject-switcher {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+    gap: 0.4rem;
+  }
+
+  .quick-subject-switcher::-webkit-scrollbar,
+  .nav-modes::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sub-pill {
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 0.38rem 0.75rem;
+    font-size: 0.78rem;
+  }
+
+  .header-nav-bar {
+    gap: 0.55rem;
+    padding-top: 0.55rem;
+  }
+
+  .nav-modes {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0.25rem;
+    gap: 0.25rem;
+  }
+
+  .mode-tab {
+    flex-shrink: 0;
+    padding: 0.5rem 0.78rem;
+    font-size: 0.8rem;
+    min-height: 38px;
+  }
+
+  /* Collapsible Filter Drawer on Mobile */
+  .mobile-filter-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.84rem;
+    font-weight: 700;
+    background: rgba(99, 102, 241, 0.14);
+    border: 1px solid rgba(99, 102, 241, 0.38);
+    border-radius: 10px;
+    color: #e0e7ff;
+    min-height: 42px;
+  }
+
+  .header-filters {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.5rem;
+    padding-top: 0.25rem;
+  }
+
+  .header-filters.is-open {
+    display: flex;
+  }
+
+  .year-filter-bar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.45rem 0.6rem;
+  }
+
+  .vnr-quick-filters {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.4rem !important;
+  }
+
+  .vnr-quick-filters .btn-action {
+    flex: 1 1 auto;
+    text-align: center;
+    justify-content: center;
+    min-height: 38px;
+    font-size: 0.8rem;
+    padding: 0.42rem 0.6rem !important;
+  }
+
+  .select-range {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    min-height: 42px;
+    font-size: 0.85rem;
+    padding: 0.48rem 0.75rem;
+    text-overflow: ellipsis;
+  }
+
+  .btn-multi-select {
+    width: 100%;
+    justify-content: center;
+    min-height: 40px;
+  }
+
+  .custom-range-box {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.45rem 0.65rem;
+    box-sizing: border-box;
+  }
+
+  .custom-range-box input {
+    width: 64px;
+    min-height: 34px;
+    font-size: 0.88rem;
+  }
+
+  /* Compact 2x2 Stats Bar */
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .stat-card {
+    padding: 0.65rem 0.75rem;
+    gap: 0.55rem;
+  }
+
+  .stat-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .stat-val {
+    font-size: 1.15rem;
+  }
+
+  .stat-lbl {
+    font-size: 0.72rem;
+  }
+
+  /* Quiz Card & Options */
+  .quiz-card {
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .question-text {
+    font-size: 1.02rem;
+    line-height: 1.5;
+  }
+
+  .options-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .option-btn {
+    padding: 0.8rem 0.9rem;
+    min-height: 48px;
+  }
+
+  .option-content {
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+
+  .quiz-footer,
+  .quiz-actions {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .quiz-footer .btn-action,
+  .quiz-actions .btn-action {
+    min-height: 44px;
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .kbd-hint {
+    display: none;
+  }
+
+  /* Flashcard */
+  .flashcard-container,
+  .flashcard,
+  .card-face {
+    min-height: 320px;
+  }
+
+  .card-face {
+    padding: 1.2rem;
+    overflow-y: auto;
+  }
+
+  /* Question Bank: Natural Full-Page Scroll on Mobile */
+  .bank-list {
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 0;
+    gap: 0.85rem;
+  }
+
+  .bank-item {
+    padding: 0.95rem;
+  }
+
+  .bank-q-title {
+    font-size: 0.96rem;
+    line-height: 1.45;
+  }
+
+  .bank-opt-list {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .bank-opt {
+    padding: 0.55rem 0.75rem;
+    font-size: 0.88rem;
+  }
+
+  .search-input {
+    font-size: 0.92rem;
+    padding: 0.7rem 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.45rem;
+  }
+
+  .brand-title {
+    font-size: 0.98rem;
+  }
+
+  .mode-tab {
+    padding: 0.45rem 0.68rem;
+    font-size: 0.76rem;
+  }
+}
+
+/* Trap Cluster Filter Button & Badge */
+.btn-trap-filter {
+  padding: 0.42rem 0.85rem;
+  font-size: 0.82rem;
+  background: linear-gradient(135deg, #f59e0b, #dc2626);
+  border: none;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-trap-filter:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.45);
+}
+
+.bank-trap-badge {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.12rem 0.5rem;
+  margin-left: 0.4rem;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.2);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .btn-trap-filter {
+    width: 100%;
+    justify-content: center;
+    min-height: 40px;
+  }
+}

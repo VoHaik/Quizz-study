@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ôn Thi Tư Tưởng Hồ Chí Minh (HCM202) - Đề Thi Final Exam 415 Câu 100% Chuẩn</title>
   <meta name="description" content="Ứng dụng web ôn thi trắc nghiệm 415 câu hỏi môn Tư tưởng Hồ Chí Minh (HCM202) Final Exam chính xác 100% chuẩn Giáo trình 2021.">
-  <link rel="stylesheet" href="style.css?v=20261118_bank_seq">
+  <link rel="stylesheet" href="style.css?v=20261120_trap_mode">
 </head>
 <body>
   <div id="app">
@@ -62,7 +62,12 @@
           <button class="mode-tab" data-mode="bank" id="tab-bank">🔍 Ngân Hàng Câu Hỏi</button>
         </nav>
 
-        <div class="header-filters">
+        <button class="btn-action mobile-filter-toggle" id="mobileFilterToggle" type="button" aria-expanded="false">
+          <span>🎛️ Bộ lọc (Năm / Tủ / Chặng)</span>
+          <span class="toggle-arrow" id="mobileFilterArrow">▾</span>
+        </button>
+
+        <div class="header-filters" id="headerFilters">
           <div class="year-filter-bar" id="yearFilterBar" style="display: none;">
             <span class="year-filter-lbl">📅 Năm:</span>
             <div class="year-checkbox-group" id="yearCheckboxGroup"></div>
@@ -77,6 +82,14 @@
           <select class="select-range" id="rangeSelect" title="Chọn dải câu hỏi để học">
             <option value="all">Toàn bộ 496 câu</option>
           </select>
+
+          <select class="select-range" id="chunkSelect" title="Chia chặng học (50 câu/chặng)">
+            <option value="all">📍 Tất cả câu trong bộ</option>
+          </select>
+
+          <button class="btn-action btn-trap-filter" id="trapFilterBtn" style="display: none;" title="Lọc các cụm câu có bộ đáp án giống nhau nhưng đổi câu hỏi là đổi đáp án">
+            ⚠️ Ôn cụm bẫy
+          </button>
 
           <button class="btn-action btn-multi-select" id="multiSelectBtn" title="Lọc riêng các câu hỏi chọn 2 đáp án để học thuộc nhanh">
             ✌️ Ôn câu 2 đáp án
@@ -426,6 +439,6 @@
   <script src="vnr202_fe_data.js?v=20261022_dedup"></script>
   <script src="mln131_fe_data.js?v=20261102_dedup"></script>
   <script src="parser.js?v=20261009_final"></script>
-  <script src="app.js?v=20261118_bank_seq"></script>
+  <script src="app.js?v=20261120_trap_mode"></script>
 </body>
 </html>
