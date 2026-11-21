@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   let selectedChunk = 'all';
   let trapQuestionIds = [];
   let trapClusterCount = 0;
+  let decoyTrapIds = [];
 
   // Stable cache for shuffled questions so order remains FIXED during navigation
   let shuffledCache = {
@@ -425,6 +426,65 @@ document.addEventListener('DOMContentLoaded', async () => {
         trapQuestionIds.push(item.q.id);
       });
     });
+
+    // Part 2: Decoy Traps (wrong option of Q is exact correct answer of another question Q2)
+    decoyTrapIds = [];
+    const GENERIC_ANS = new Set([
+      'cả ba phương án trên đều đúng', 'tất cả các phương án trên',
+      'tất cả đều đúng', 'cả a b và c', 'cả a b c', 'cả ba đều đúng',
+      'các phương án trên đều đúng', 'tất cả các đáp án trên',
+      'cả 3 phương án trên đều đúng', 'cả hai phương án trên đều đúng',
+      'cả a và b đều đúng', 'cả a và c đều đúng', 'tất cả các phương án trên đều đúng'
+    ]);
+    const ansToQs = new Map();
+    allQuestions.forEach(q => {
+      delete q._decoyWarnings;
+      const optMap = {};
+      (q.options || []).forEach(o => { optMap[o.key] = o.text; });
+      (q.correctAnswers || []).forEach(k => {
+        const t = norm(optMap[k] || '');
+        if (t.length >= 8 && !GENERIC_ANS.has(t)) {
+          if (!ansToQs.has(t)) ansToQs.set(t, []);
+          ansToQs.get(t).push(q);
+        }
+      });
+    });
+
+    allQuestions.forEach(q => {
+      const warnings = [];
+      const correctSet = new Set(q.correctAnswers || []);
+      (q.options || []).forEach(o => {
+        if (correctSet.has(o.key)) return;
+        const nt = norm(o.text);
+        const hits = (ansToQs.get(nt) || []).filter(other => other.id !== q.id);
+        if (hits.length > 0) {
+          warnings.push({
+            key: o.key,
+            text: o.text,
+            matches: hits.slice(0, 2).map(h => ({ id: h.id, question: h.question }))
+          });
+        }
+      });
+      if (warnings.length > 0) {
+        q._decoyWarnings = warnings;
+        decoyTrapIds.push(q.id);
+      }
+    });
+  }
+
+  function buildDecoyWarningHtml(q) {
+    if (!q || !Array.isArray(q._decoyWarnings) || q._decoyWarnings.length === 0) return '';
+    const rows = q._decoyWarnings.map(w => {
+      const refs = w.matches.map(m => {
+        const shortQ = m.question.length > 95 ? m.question.slice(0, 95) + '...' : m.question;
+        return `<strong>Câu #${m.id}</strong> (<em>${shortQ}</em>)`;
+      }).join(' &amp; ');
+      return `<li>Phương án <strong>${w.key}</strong> ("${w.text}") là đáp án đúng của ${refs}</li>`;
+    }).join('');
+    return `<div class="decoy-warning-box">
+      <div class="decoy-warning-title">⚠️ Cẩn thận bẫy quen mặt đáp án:</div>
+      <ul>${rows}</ul>
+    </div>`;
   }
 
   function extractYearsFromText(str) {
@@ -614,17 +674,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     const trapFilterBtn = document.getElementById('trapFilterBtn');
+    if (decoyTrapIds.length > 0) {
+      const decoyOpt = document.createElement('option');
+      decoyOpt.value = 'decoy_traps';
+      decoyOpt.textContent = `🎯 Bẫy quen mặt đáp án (${decoyTrapIds.length} câu)`;
+      sel.appendChild(decoyOpt);
+    }
     if (trapQuestionIds.length > 0) {
       const trapOpt = document.createElement('option');
       trapOpt.value = 'trap_clusters';
-      trapOpt.textContent = `⚠️ Bộ câu bẫy dễ nhầm (${trapClusterCount} cụm - ${trapQuestionIds.length} câu)`;
+      trapOpt.textContent = `⚠️ Cụm trùng bộ đáp án (${trapClusterCount} cụm - ${trapQuestionIds.length} câu)`;
       sel.appendChild(trapOpt);
-      if (trapFilterBtn) {
+    }
+    if (trapFilterBtn) {
+      if (decoyTrapIds.length > 0) {
+        trapFilterBtn.style.display = 'inline-flex';
+        trapFilterBtn.innerHTML = `⚠️ Ôn ${decoyTrapIds.length} bẫy quen mặt`;
+      } else if (trapQuestionIds.length > 0) {
         trapFilterBtn.style.display = 'inline-flex';
         trapFilterBtn.innerHTML = `⚠️ Ôn ${trapQuestionIds.length} câu bẫy (${trapClusterCount} cụm)`;
+      } else {
+        trapFilterBtn.style.display = 'none';
       }
-    } else if (trapFilterBtn) {
-      trapFilterBtn.style.display = 'none';
     }
 
     const multiSelectCount = allQuestions.filter(q => (q.correctAnswers && q.correctAnswers.length >= 2) || q.question.toLowerCase().includes('select two') || q.question.toLowerCase().includes('select 2')).length;
@@ -699,7 +770,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (trapFilterBtn) {
       trapFilterBtn.onclick = () => {
         if (sel) {
-          sel.value = 'trap_clusters';
+          sel.value = decoyTrapIds.length > 0 ? 'decoy_traps' : 'trap_clusters';
           resetChunkAndFilter();
         }
       };
@@ -788,7 +859,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       { id: 'vnrBtnFocus', match: 'vnr_focus_236' },
       { id: 'vnrBtnSuperFocus', match: 'vnr_focus_80' },
       { id: 'vnrBtnAll', match: 'all' },
-      { id: 'trapFilterBtn', match: 'trap_clusters' },
+      { id: 'trapFilterBtn', match: decoyTrapIds.length > 0 ? 'decoy_traps' : 'trap_clusters' },
       { id: 'multiSelectBtn', match: 'multi_select' }
     ];
     map.forEach(item => {
@@ -850,6 +921,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
       matched.sort((a, b) => a.qIdx - b.qIdx);
       scopedList = matched.map(m => m.q);
+    } else if (val === 'decoy_traps') {
+      const decoySet = new Set(decoyTrapIds);
+      scopedList = allQuestions.filter(q => decoySet.has(q.id));
     } else if (val === 'trap_clusters') {
       const qMap = new Map(allQuestions.map(q => [q.id, q]));
       scopedList = trapQuestionIds.map(id => qMap.get(id)).filter(Boolean);
@@ -1048,6 +1122,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <div id="expBody">
             <div>Đáp án chính xác: <strong style="color: var(--success); font-size: 1.1rem;">${q.correctAnswers.join(', ')}</strong></div>
             ${q.explanation ? `<div class="exp-detail" style="margin-top: 0.6rem; font-size: 0.95rem; color: #cbd5e1; line-height: 1.6; border-top: 1px dashed rgba(255,255,255,0.15); padding-top: 0.5rem; text-align: left;">💡 <b>Căn cứ giáo trình:</b> ${q.explanation}</div>` : ''}
+            ${buildDecoyWarningHtml(q)}
           </div>
         </div>
 
@@ -1314,6 +1389,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }).join('')}
           </div>
           ${q.explanation ? `<div style="margin-top: 0.65rem; font-size: 0.88rem; color: #cbd5e1; background: rgba(16, 185, 129, 0.08); padding: 0.5rem 0.85rem; border-radius: 8px; border-left: 3px solid var(--success); text-align: left;">💡 <b>Căn cứ giáo trình:</b> ${q.explanation}</div>` : ''}
+          ${buildDecoyWarningHtml(q)}
         </div>
       `;
       }).join('');
@@ -1338,6 +1414,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       customTitle = optText.replace('📝 ', '');
     } else if (val === 'vnr_focus_236') {
       customTitle = `Trọng Tâm ${currentSubjectKey.toUpperCase()} (${examPool.length} Câu Tủ)`;
+    } else if (val === 'decoy_traps') {
+      customTitle = `Ôn Bẫy Quen Mặt ${currentSubjectKey.toUpperCase()} (${examPool.length} Câu)`;
     } else if (val === 'trap_clusters') {
       customTitle = `Ôn Cụm Bẫy ${currentSubjectKey.toUpperCase()} (${examPool.length} Câu)`;
     } else if (val === 'vnr_focus_80') {

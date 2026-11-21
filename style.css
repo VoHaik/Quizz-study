@@ -1926,3 +1926,31 @@ main {
     min-height: 40px;
   }
 }
+
+/* Decoy Distractor Warning Box */
+.decoy-warning-box {
+  margin-top: 0.65rem;
+  padding: 0.6rem 0.85rem;
+  border-radius: 8px;
+  background: rgba(245, 158, 11, 0.1);
+  border-left: 3px solid #f59e0b;
+  color: #fde68a;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.decoy-warning-title {
+  font-weight: 700;
+  color: #fbbf24;
+  margin-bottom: 0.3rem;
+}
+
+.decoy-warning-box ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.decoy-warning-box li {
+  margin-bottom: 0.2rem;
+}
