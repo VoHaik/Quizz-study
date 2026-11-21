@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     mln131: {
       key: 'mln131',
       title: 'MLN131 - Chủ Nghĩa Xã Hội Khoa Học',
-      subtitle: 'Bộ đề trắc nghiệm Final Exam chuẩn Bộ GD&ĐT (Đã lọc sạch trùng lặp từ 22 đề thi)',
+      subtitle: 'Bộ đề trắc nghiệm Final Exam chuẩn Bộ GD&ĐT (Đã lọc sạch trùng lặp từ 24 đề thi)',
       file: 'MLN131_dataset.json'
     },
     vnr202: {
